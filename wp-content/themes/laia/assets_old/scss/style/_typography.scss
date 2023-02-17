@@ -1,0 +1,315 @@
+/**=====================
+     common css start
+==========================**/
+/* custom fonts */
+@font-face {
+    font-family: "SangBleu Sunrise";
+    src: url("../fonts/SangBleu-Sunrise.eot");
+    src: url("../fonts/SangBleu-Sunrise.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SangBleu-Sunrise.woff2") format("woff2"),
+    url("../fonts/SangBleu-Sunrise.woff") format("woff"),
+    url("../fonts/SangBleu-Sunrise.ttf") format("truetype"),
+    url("../fonts/SangBleu-Sunrise.svg#SangBleu Sunrise") format("svg");
+  }
+
+  @font-face {
+    font-family: "Golden Plains";
+    src: url("../fonts/Golden-Plains-Demo.eot");
+    src: url("../fonts/Golden-Plains-Demo.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Golden-Plains-Demo.woff2") format("woff2"),
+    url("../fonts/Golden-Plains-Demo.woff") format("woff"),
+    url("../fonts/Golden-Plains-Demo.ttf") format("truetype"),
+    url("../fonts/Golden-Plains-Demo.svg") format("svg");
+  }
+
+  @font-face {
+    font-family: "Canela-Light";
+    src: url("../fonts/Canela-Light.eot");
+    src: url("../fonts/Canela-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Canela-Light.woff2") format("woff2"),
+    url("../fonts/Canela-Light.woff") format("woff"),
+    url("../fonts/Canela-Light.ttf") format("truetype"),
+    url("../fonts/Canela-Light.svg") format("svg");
+  }
+
+  @font-face {
+    font-family: "BN Nautic Grotesk";
+    src: url("../fonts/BN_Nautic_Grotesk_Bold.eot");
+    src: url("../fonts/BN_Nautic_Grotesk_Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BN_Nautic_Grotesk_Bold.woff2") format("woff2"),
+    url("../fonts/BN_Nautic_Grotesk_Bold.woff") format("woff"),
+    url("../fonts/BN_Nautic_Grotesk_Bold.ttf") format("truetype"),
+    url("../fonts/BN_Nautic_Grotesk_Bold.svg") format("svg");
+  }
+
+  @font-face {
+    font-family: "Atlas Grotesk";
+    src: url("../fonts/Atlas_Grotesk_Web_Black.eot");
+    src: url("../fonts/Atlas_Grotesk_Web_Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Atlas_Grotesk_Web_Black.woff2") format("woff2"),
+    url("../fonts/Atlas_Grotesk_Web_Black.woff") format("woff"),
+    url("../fonts/Atlas_Grotesk_Web_Black.ttf") format("truetype"),
+    url("../fonts/Atlas_Grotesk_Web_Black.svg") format("svg");
+  }
+
+
+  @font-face {
+    font-family: 'Founders Grotesk X-Condensed';
+    src: url('../fonts/founders-grotesk/FoundersGroteskXCond-Lt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Founders Grotesk Condensed';
+    src: url('../fonts/founders-grotesk/FoundersGroteskCond-Lt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/founders-grotesk/FoundersGrotesk-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Founders Grotesk Regular';
+    src: url('../fonts/founders-grotesk/FoundersGrotesk-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/founders-grotesk/FoundersGrotesk-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Founders Grotesk X-Condensed';
+    src: url('../fonts/founders-grotesk/FoundersGroteskXCond-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/founders-grotesk/FoundersGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/founders-grotesk/FoundersGrotesk-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/founders-grotesk/FoundersGrotesk-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/founders-grotesk/FoundersGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/founders-grotesk/FoundersGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/founders-grotesk/FoundersGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Founders Grotesk';
+    src: url('../fonts/founders-grotesk/FoundersGrotesk-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+
+/* typography css start */
+html {
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "SangBleu Sunrise";
+    position: relative;
+    font-size: 14px;
+    color: $black;
+    margin: 0;
+    &.o-hidden {
+        overflow: hidden;
+    }
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 42px;
+    letter-spacing: 0.36px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.36px;
+    font-weight: normal;
+}
+
+a, a.link {
+    font-family: "SangBleu Sunrise";
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: $black;
+    transition: 0.5s ease;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        transition: 0.5s ease;
+        color: $default-color;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    &:focus {
+        outline: none;
+    }
+}
+
+:focus {
+    outline: none;
+}
+
+.form-control {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+h1 {
+    font-family: "Canela-Light";
+    font-size: 40px;
+    line-height: 52px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+    text-transform: inherit;
+    margin: 0;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 36px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    letter-spacing: 0.52px;
+    text-transform: inherit;
+    margin: 0;
+}
+
+h3 {
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 50px;
+    letter-spacing: 0.48px;
+    margin: 0;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 4px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+    margin: 0;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p, span, a {
+    color: $default-color;
+}
+
+section {
+    padding-top: 56px;
+    background-color: #FAF9F5;
+}
+
+.section-b-space {
+    padding-bottom: 56px;
+}
+
+.light-bg {
+    background-color: lighten($light-bg, 12%);
+}
+
+.title {
+    text-align: center;
+    h4 {
+        font-weight: 600;
+        display: inline-block;
+        width: 20%;
+        background-image: url(../images/shape/10.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 33px 0 58px;
+    }
+    h2 {
+      font-family: "Canela-Light";
+      letter-spacing: 0.52px;
+      line-height: 36px;
+      text-transform: inherit;
+      position: relative;
+      color: #13505C;
+      width: 33%;
+      margin: 0 auto;
+    }
+}
+
+/* typography css end */
+
+/**=====================
+     common css end
+==========================**/

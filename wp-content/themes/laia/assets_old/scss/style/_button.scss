@@ -1,0 +1,37 @@
+/**=====================
+     button css start
+==========================**/
+.btn {
+    padding: 9px 13px 6px;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 0;
+    &:focus {
+         box-shadow: none;
+         outline: none;
+    }
+}
+.btn-outline-white {
+     border: 1px solid $white;
+     color: $white;
+     &:hover, &:focus, &.active, &:active {
+          background-color: $white;
+          color: $default-color;
+     }
+}
+.btn-outline-primary {
+     border-color: $default-color;
+     color: $default-color;
+     &:hover, &:focus, &.active, &:active {
+          background-color: $default-color;
+          border-color: $default-color;
+          color: $white;
+     }
+}
+
+/**=====================
+     button css end
+==========================**/

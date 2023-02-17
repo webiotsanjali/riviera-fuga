@@ -1,0 +1,26 @@
+/**=====================
+     location css start
+==========================**/
+.location-section {
+    padding-top: 66px;
+    .location-image {
+        img {
+            height: 600px;
+            object-fit: cover;
+        }
+    }
+    .location-slider {
+        .slick-list {
+            margin: 0 -12px 0 0;
+        }
+        .slick-slide {
+            > div {
+                padding: 0 4px;
+                margin-bottom: -7px;
+            }
+        }
+    }
+}
+/**=====================
+     location css end
+==========================**/

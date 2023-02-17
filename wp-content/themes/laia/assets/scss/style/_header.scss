@@ -1,0 +1,229 @@
+/**=====================
+     header css start
+==========================**/
+.main-header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    padding: 22px 60px;
+    &.open {
+        height: 100vh;
+        position: fixed;
+        background-color: rgba(250, 249, 245, 0.7);
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
+    }
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 1;
+    .navbar-brand {
+        padding: 0;
+        margin: 0;
+        font-size: unset;
+    }
+    .language-list {
+        ul {
+            margin-bottom: 25px;
+            li {
+                line-height: 10px;
+                a {
+                    text-transform: uppercase;
+                    letter-spacing: 2.4px;
+                    color: $default-color;
+                    line-height: unset;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 100%;
+                        background-color: $default-color;
+                        bottom: -6px;
+                        left: 50%;
+                        opacity: 0;
+                        visibility: hidden;
+                        transform: translateX(-50%);
+                        transition: all 0.5s ease;
+                    }
+                    &.active {
+                        font-weight: bold;
+                        &::after { 
+                            opacity: 1;
+                            visibility: visible;
+                            transition: all 0.5s ease;
+                        }
+                    }
+                }
+                + li {
+                    a {
+                        margin-left: 4px;
+                        padding: 0 0 0 7px;
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            width: 1px;
+                            height: 13px;
+                            transform: translateY(-50%);
+                            left: -2px;
+                            top: 50%;
+                            background-color: $default-color;
+                            margin-top: -1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menu-bar {
+        .bar-icon {
+            img {
+                width: 42px;
+                height: 36px;
+            }
+            .menu-toggle, .menu-close {
+                position: fixed;
+                right: 56px;
+                top: 47px;
+            }
+        }
+        .menu-close {
+            opacity: 0;
+            visibility: hidden;
+            animation: fadeOut 0.3s linear;
+        }
+        .menu-toggle {
+            opacity: 1;
+            visibility: visible;
+            animation: fadeIn 0.3s linear;
+        }
+    }
+   
+}
+.main-header {
+    overflow: auto;
+    .menu  {
+        position: fixed;
+        width: 100%;
+        height: calc(100vh - 120px);
+        top: 100px;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        padding: 51px 58px 0 36px;
+        animation: fadeOut 0.3s linear;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        overflow: auto;
+    }
+    .location {
+        display: block;
+        li {
+            display: block;
+            p {
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin: 0;
+            }
+             + li {
+                 margin-top: 36px;
+             }
+        }
+    }
+    .navbar {
+        align-items: center;
+        display: block;
+        padding-top: 182px;
+        ul {
+            align-items: flex-start;
+            li {
+                a {
+                    font-size: 22px;
+                    line-height: 18px;
+                    letter-spacing: 3.6px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    position: relative;
+                    z-index: 1;
+                    padding: 3px 20px 0 23px;
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        background-image: url(../images/shape/1.svg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all 0.5s;
+                        top: 0;
+                        margin-top: -2px;
+                        left: 0;
+                        z-index: -1;
+                    }
+                    &:hover, &.active {
+                        &::before {
+                            opacity: 1;
+                            visibility: visible;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+                .nav-link.active {
+                    &::before {
+                        opacity: 1;
+                        visibility: visible;
+                        transition: all 0.5s;
+                    }
+                }
+                 + li {
+                    margin-top: 20px;
+                 }
+            }
+        }
+    }
+    .menu-brand {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    &.open {  
+        .menu {
+            opacity: 1;
+            visibility: visible;
+            animation: fadeIn 0.3s linear;
+        }
+        .menu-close {
+            opacity: 1;
+            visibility: visible;
+            animation: fadeIn 0.3s linear;
+        }
+        .menu-toggle {
+            opacity: 0;
+            visibility: hidden;
+            animation: fadeOut 0.3s linear;
+        }
+        .bar-icon {
+            position: relative;
+        }
+    }
+}
+
+/**=====================
+     header css end
+==========================**/

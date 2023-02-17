@@ -1,0 +1,149 @@
+/**=====================
+     home css start
+==========================**/
+.home-section {
+     position: relative;
+     height: 100vh;
+     min-height: 780px;
+     padding-top: 0;
+     padding-left: 59px;
+     .shape-bg {
+          width: 100%;
+          position: relative;
+          height: 100vh;
+          min-height: 780px;
+          -webkit-mask-image: url(../images/1.png);
+          mask-image: url(../images/1.png);
+          -webkit-mask-size: cover;
+          mask-size: cover;
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+          -webkit-mask-position: left;
+     }
+     .row {
+          align-items: center;
+          height: 100vh;
+          min-height: 780px;
+     }
+     .bg-home {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+     }
+     .home-content {
+          h1 {
+               margin-bottom: 20px;
+          }
+          p {
+               font-size: 12px;
+               line-height: 16px;
+               letter-spacing: 2px;
+               margin-bottom: 0;
+               font-weight: bold;
+          }
+     }
+     .home-menu {
+          position: absolute;
+          bottom: 34px;
+          left: 48px;
+     }
+     .home-decoration {
+          ul {
+               li {
+                    img {
+                         position: absolute;
+                    }
+                    .decor-1 {
+                         left: -80px;
+                         bottom: 50px;
+                    }
+                    .decor-2 {
+                         position: absolute;
+                         left: 48%;
+                         bottom: 350px;
+                    }
+                    .decor-3 {
+                         left: 56.4%;
+                         bottom: 90px;
+                    }
+               }
+          }
+     }
+     .home-decor-rs {
+          height: 0;
+          ul {
+               li {
+                    .decor-4 {
+                         position: absolute;
+                         bottom: 320px;
+                         left: 39%;
+                    }  
+                    .decor-5 {
+                         position: absolute;
+                         background-image: url(../images/shape/14.svg);
+                         background-size: cover;
+                         background-repeat: no-repeat;
+                         padding: 23px 43px;
+                         width: 224px;
+                         height: 113px;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         bottom: 10px;
+                         left: 50%;
+                         transform: translateX(-50%);
+                         h5 {
+                              line-height: 18px;
+                              font-weight: bold;
+                              letter-spacing: 3.2px;
+                              color: #FAF9F5;
+                              text-transform: uppercase;
+                         }
+                    }
+               }
+          }
+     }
+}
+.menu-with-bg {
+     li {
+          a {
+               font-size: 16px;
+               line-height: 16px;
+               letter-spacing: 2.8px;
+               text-transform: uppercase;
+               position: relative;
+               z-index: 1;
+               padding: 5px 10px 5px;
+               font-weight: bold;
+               &::before {
+                    position: absolute;
+                    content: '';
+                    width: 140px;
+                    height: 38px;
+                    background-image: url(../images/shape/1.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.5s;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: -1;
+               }
+               &:hover, &.active {
+                    &::before {
+                        opacity: 1;
+                        visibility: visible;
+                        transition: all 0.5s;
+                    }
+                }
+          }
+          + li {
+               margin-left: 20px;
+          }
+     }
+}
+/**=====================
+     home css end
+==========================**/

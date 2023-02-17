@@ -1,0 +1,49 @@
+/**=====================
+     brand css start
+==========================**/
+.brand-image {
+    img {
+        margin: 0 auto;
+    }
+}
+.brand-for {
+    margin-top: 33px;
+}
+.brand-section {
+    padding-top: 89px;
+    .slick-slide {
+        opacity: 0.6;
+        .brand-image {
+            position: relative;
+            margin-bottom: 38px;
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url(../images/shape/9.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 99px;
+                height: 27px;
+                bottom: -39px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &.slick-center {
+            opacity: 1;
+            .brand-image {
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+}
+/**=====================
+     brand css end
+==========================**/

@@ -1,0 +1,1079 @@
+/* variables */
+/**=====================
+     common css start
+==========================**/
+/* custom fonts */
+@font-face {
+  font-family: "SangBleu Sunrise";
+  src: url("../fonts/SangBleu-Sunrise.eot");
+  src: url("../fonts/SangBleu-Sunrise.eot?#iefix") format("embedded-opentype"), url("../fonts/SangBleu-Sunrise.woff2") format("woff2"), url("../fonts/SangBleu-Sunrise.woff") format("woff"), url("../fonts/SangBleu-Sunrise.ttf") format("truetype"), url("../fonts/SangBleu-Sunrise.svg#SangBleu Sunrise") format("svg");
+}
+@font-face {
+  font-family: "Golden Plains";
+  src: url("../fonts/Golden-Plains-Demo.eot");
+  src: url("../fonts/Golden-Plains-Demo.eot?#iefix") format("embedded-opentype"), url("../fonts/Golden-Plains-Demo.woff2") format("woff2"), url("../fonts/Golden-Plains-Demo.woff") format("woff"), url("../fonts/Golden-Plains-Demo.ttf") format("truetype"), url("../fonts/Golden-Plains-Demo.svg") format("svg");
+}
+@font-face {
+  font-family: "Canela-Light";
+  src: url("../fonts/Canela-Light.eot");
+  src: url("../fonts/Canela-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Canela-Light.woff2") format("woff2"), url("../fonts/Canela-Light.woff") format("woff"), url("../fonts/Canela-Light.ttf") format("truetype"), url("../fonts/Canela-Light.svg") format("svg");
+}
+@font-face {
+  font-family: "BN Nautic Grotesk";
+  src: url("../fonts/BN_Nautic_Grotesk_Bold.eot");
+  src: url("../fonts/BN_Nautic_Grotesk_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BN_Nautic_Grotesk_Bold.woff2") format("woff2"), url("../fonts/BN_Nautic_Grotesk_Bold.woff") format("woff"), url("../fonts/BN_Nautic_Grotesk_Bold.ttf") format("truetype"), url("../fonts/BN_Nautic_Grotesk_Bold.svg") format("svg");
+}
+@font-face {
+  font-family: "Atlas Grotesk";
+  src: url("../fonts/Atlas_Grotesk_Web_Black.eot");
+  src: url("../fonts/Atlas_Grotesk_Web_Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Atlas_Grotesk_Web_Black.woff2") format("woff2"), url("../fonts/Atlas_Grotesk_Web_Black.woff") format("woff"), url("../fonts/Atlas_Grotesk_Web_Black.ttf") format("truetype"), url("../fonts/Atlas_Grotesk_Web_Black.svg") format("svg");
+}
+@font-face {
+  font-family: "Founders Grotesk X-Condensed";
+  src: url("../fonts/founders-grotesk/FoundersGroteskXCond-Lt.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Founders Grotesk Condensed";
+  src: url("../fonts/founders-grotesk/FoundersGroteskCond-Lt.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/founders-grotesk/FoundersGrotesk-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Founders Grotesk Regular";
+  src: url("../fonts/founders-grotesk/FoundersGrotesk-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/founders-grotesk/FoundersGrotesk-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Founders Grotesk X-Condensed";
+  src: url("../fonts/founders-grotesk/FoundersGroteskXCond-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/founders-grotesk/FoundersGrotesk-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/founders-grotesk/FoundersGrotesk-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/founders-grotesk/FoundersGrotesk-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/founders-grotesk/FoundersGrotesk-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/founders-grotesk/FoundersGrotesk-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/founders-grotesk/FoundersGrotesk-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/founders-grotesk/FoundersGrotesk-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+/* typography css start */
+html {
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --app-height: 100%;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+@media not all and (hover: hover) {
+  html,
+body {
+    height: var(--app-height);
+  }
+}
+
+body {
+  font-family: "SangBleu Sunrise";
+  position: relative;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+}
+body.o-hidden {
+  overflow: hidden;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+li {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 42px;
+  letter-spacing: 0.36px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.36px;
+  font-weight: normal;
+}
+
+a, a.link {
+  font-family: "SangBleu Sunrise";
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000;
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+a:hover, a.link:hover {
+  text-decoration: none;
+  transition: 0.5s ease;
+  color: #397674;
+}
+a:focus, a.link:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+h1 {
+  font-family: "Canela-Light";
+  font-size: 40px;
+  line-height: 52px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  text-transform: inherit;
+  margin: 0;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 36px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  letter-spacing: 0.52px;
+  text-transform: inherit;
+  margin: 0;
+}
+
+h3 {
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 50px;
+  letter-spacing: 0.48px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 4px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  margin: 0;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a {
+  color: #397674;
+}
+
+section {
+  padding-top: 56px;
+  background-color: #FAF9F5;
+}
+
+.section-b-space {
+  padding-bottom: 56px;
+}
+
+.light-bg {
+  background-color: #f8f6ec;
+}
+
+.title {
+  text-align: center;
+}
+.title h4 {
+  font-weight: 600;
+  display: inline-block;
+  width: 20%;
+  background-image: url(../images/shape/10.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 33px 0 58px;
+  z-index: 1;
+  position: relative;
+}
+.title h2 {
+  font-family: "Canela-Light";
+  letter-spacing: 0.52px;
+  line-height: 36px;
+  text-transform: inherit;
+  position: relative;
+  color: #13505C;
+  width: 33%;
+  margin: 0 auto;
+}
+
+/* typography css end */
+/**=====================
+     common css end
+==========================**/
+/**=====================
+     button css start
+==========================**/
+.btn {
+  padding: 9px 13px 6px;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-outline-white {
+  border: 1px solid #ffff;
+  color: #ffff;
+}
+.btn-outline-white:hover, .btn-outline-white:focus, .btn-outline-white.active, .btn-outline-white:active {
+  background-color: #ffff;
+  color: #397674;
+}
+
+.btn-outline-primary {
+  border-color: #397674;
+  color: #397674;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary.active, .btn-outline-primary:active {
+  background-color: #397674;
+  border-color: #397674;
+  color: #ffff;
+}
+
+/**=====================
+     button css end
+==========================**/
+/**=====================
+     header css start
+==========================**/
+.main-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  padding: 22px 60px;
+}
+.main-header.open {
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(250, 249, 245, 0.7);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+header .navbar-brand {
+  padding: 0;
+  margin: 0;
+  font-size: unset;
+}
+header .language-list ul {
+  margin-bottom: 25px;
+}
+header .language-list ul li {
+  line-height: 10px;
+}
+header .language-list ul li a {
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  color: #397674;
+  line-height: unset;
+  position: relative;
+}
+header .language-list ul li a::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #397674;
+  bottom: -6px;
+  left: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: all 0.5s ease;
+}
+header .language-list ul li a.active {
+  font-weight: bold;
+}
+header .language-list ul li a.active::after {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease;
+}
+header .language-list ul li + li a {
+  margin-left: 4px;
+  padding: 0 0 0 7px;
+}
+header .language-list ul li + li a::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 13px;
+  transform: translateY(-50%);
+  left: -2px;
+  top: 50%;
+  background-color: #397674;
+  margin-top: -1px;
+}
+header .menu-bar .bar-icon img {
+  width: 42px;
+  height: 36px;
+}
+header .menu-bar .bar-icon .menu-toggle, header .menu-bar .bar-icon .menu-close {
+  position: fixed;
+  right: 56px;
+  top: 47px;
+}
+header .menu-bar .menu-close {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation: fadeOut 0.3s linear;
+          animation: fadeOut 0.3s linear;
+}
+header .menu-bar .menu-toggle {
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation: fadeIn 0.3s linear;
+          animation: fadeIn 0.3s linear;
+}
+
+.main-header {
+  overflow: auto;
+}
+.main-header .menu {
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 120px);
+  top: 100px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  padding: 51px 58px 0 36px;
+  -webkit-animation: fadeOut 0.3s linear;
+          animation: fadeOut 0.3s linear;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+}
+.main-header .location {
+  display: block;
+}
+.main-header .location li {
+  display: block;
+}
+.main-header .location li p {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+.main-header .location li + li {
+  margin-top: 36px;
+}
+.main-header .navbar {
+  align-items: center;
+  display: block;
+  padding-top: 182px;
+}
+.main-header .navbar ul {
+  align-items: flex-start;
+}
+.main-header .navbar ul li a {
+  font-size: 22px;
+  line-height: 18px;
+  letter-spacing: 3.6px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  padding: 3px 20px 0 23px;
+}
+.main-header .navbar ul li a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/shape/1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  top: 0;
+  margin-top: -2px;
+  left: 0;
+  z-index: -1;
+}
+.main-header .navbar ul li a:hover::before, .main-header .navbar ul li a.active::before {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+.main-header .navbar ul li .nav-link.active::before {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+.main-header .navbar ul li + li {
+  margin-top: 20px;
+}
+.main-header .menu-brand ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header .menu-brand ul li {
+  width: 100%;
+  text-align: center;
+}
+.main-header.open .menu {
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation: fadeIn 0.3s linear;
+          animation: fadeIn 0.3s linear;
+}
+.main-header.open .menu-close {
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation: fadeIn 0.3s linear;
+          animation: fadeIn 0.3s linear;
+}
+.main-header.open .menu-toggle {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation: fadeOut 0.3s linear;
+          animation: fadeOut 0.3s linear;
+}
+.main-header.open .bar-icon {
+  position: relative;
+}
+
+/**=====================
+     header css end
+==========================**/
+/**=====================
+     home css start
+==========================**/
+.home-section {
+  position: relative;
+  height: 100vh;
+  min-height: 780px;
+  padding-top: 0;
+  padding-left: 59px;
+}
+.home-section .shape-bg {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  min-height: 780px;
+  -webkit-mask-image: url(../images/1.png);
+  mask-image: url(../images/1.png);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: left;
+}
+.home-section .row {
+  align-items: center;
+  height: 100vh;
+  min-height: 780px;
+}
+.home-section .bg-home {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-section .home-content h1 {
+  margin-bottom: 20px;
+}
+.home-section .home-content p {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.home-section .home-menu {
+  position: absolute;
+  bottom: 34px;
+  left: 48px;
+}
+.home-section .home-decoration ul li img {
+  position: absolute;
+}
+.home-section .home-decoration ul li .decor-1 {
+  left: -80px;
+  bottom: 50px;
+}
+.home-section .home-decoration ul li .decor-2 {
+  position: absolute;
+  left: 48%;
+  bottom: 350px;
+}
+.home-section .home-decoration ul li .decor-3 {
+  left: 56.4%;
+  bottom: 90px;
+}
+.home-section .home-decor-rs {
+  height: 0;
+}
+.home-section .home-decor-rs ul li .decor-4 {
+  position: absolute;
+  bottom: 320px;
+  left: 39%;
+}
+.home-section .home-decor-rs ul li .decor-5 {
+  position: absolute;
+  background-image: url(../images/shape/14.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 23px 43px;
+  width: 224px;
+  height: 113px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home-section .home-decor-rs ul li .decor-5 h5 {
+  line-height: 18px;
+  font-weight: bold;
+  letter-spacing: 3.2px;
+  color: #FAF9F5;
+  text-transform: uppercase;
+}
+
+.menu-with-bg li a {
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  padding: 5px 10px 5px;
+  font-weight: bold;
+}
+.menu-with-bg li a::before {
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 38px;
+  background-image: url(../images/shape/1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.menu-with-bg li a:hover::before, .menu-with-bg li a.active::before {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+.menu-with-bg li + li {
+  margin-left: 20px;
+}
+
+/**=====================
+     home css end
+==========================**/
+/**=====================
+     brand css start
+==========================**/
+.brand-image img {
+  margin: 0 auto;
+}
+
+.brand-for {
+  margin-top: 33px;
+}
+
+.brand-section {
+  padding-top: 89px;
+}
+.brand-section .slick-slide {
+  opacity: 0.6;
+}
+.brand-section .slick-slide .brand-image {
+  position: relative;
+  margin-bottom: 38px;
+}
+.brand-section .slick-slide .brand-image::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/shape/9.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99px;
+  height: 27px;
+  bottom: -39px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.brand-section .slick-slide.slick-center {
+  opacity: 1;
+}
+.brand-section .slick-slide.slick-center .brand-image::before {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+/**=====================
+     brand css end
+==========================**/
+/**=====================
+     location css start
+==========================**/
+.location-section {
+  padding-top: 66px;
+}
+.location-section .location-image img {
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.location-section .location-slider .slick-list {
+  margin: 0 -12px 0 0;
+}
+.location-section .location-slider .slick-slide > div {
+  padding: 0 4px;
+  margin-bottom: -7px;
+}
+
+/**=====================
+     location css end
+==========================**/
+/**=====================
+     about css start
+==========================**/
+.about-section {
+  padding: 93px 0 40px;
+}
+.about-section .about-wrapper {
+  align-items: center;
+}
+.about-section .about-image {
+  position: relative;
+}
+.about-section .about-image img {
+  width: 100%;
+  height: 477px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-section .about-image .about-shape {
+  position: absolute;
+  height: unset;
+  width: unset;
+  left: 0;
+  top: -110px;
+}
+.about-section .about-content {
+  padding-left: 10px;
+}
+.about-section .about-content .about-detail {
+  padding-left: 20px;
+}
+.about-section .about-content h4 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 52px;
+  font-weight: 600;
+}
+.about-section .about-content p {
+  line-height: 30px;
+  font-family: "Founders Grotesk";
+  letter-spacing: 0.36px;
+  margin-bottom: 0;
+  width: 82%;
+}
+.about-section .about-content ul {
+  margin-top: 30px;
+}
+.about-section .about-content ul li {
+  display: block;
+  line-height: 1;
+}
+.about-section .about-content ul li + li {
+  margin-top: 12px;
+}
+.about-section .about-content ul li a {
+  position: relative;
+  font-size: 14px;
+  line-height: 1;
+  font-family: "Founders Grotesk";
+  font-weight: 500;
+  letter-spacing: 0.42px;
+  padding-left: 20px;
+  display: block;
+}
+.about-section .about-content ul li a::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 8px;
+  background-image: url(../images/shape/8.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  margin-top: -2px;
+}
+
+/**=====================
+     about css end
+==========================**/
+/**=====================
+     event css start
+==========================**/
+.event-image {
+  width: 67%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 600px;
+  -webkit-mask-image: url(../images/1.svg);
+  mask-image: url(../images/1.svg);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: right;
+}
+.event-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 60px 22px 20px 0;
+  height: 600px;
+}
+.event-content .event-tag {
+  background-image: url(../images/shape/5.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  padding: 18px;
+  width: 164px;
+  height: 93px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.event-content .event-tag h6 {
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #C6D8DD;
+  text-transform: uppercase;
+  transform: rotate(11deg);
+}
+.event-content .event-title {
+  display: flex;
+  align-items: center;
+}
+.event-content .event-title .event-shape {
+  background-image: url(../images/shape/6.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 85px;
+  margin-right: 8px;
+}
+.event-content .event-title h4 {
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  line-height: 24px;
+  font-family: "Atlas Grotesk";
+  margin-top: -5px;
+}
+.event-content .event-title h3 {
+  font-family: "Canela-Light";
+}
+.event-content .event-bottom-details {
+  max-height: 145px;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.event-content .event-bottom-details::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px transparent;
+}
+.event-content .event-bottom-details::-webkit-scrollbar-thumb, .event-content .event-bottom-details::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 13px;
+}
+.event-content .event-bottom-details::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0 10px;
+  background-color: transparent;
+  color: transparent;
+}
+.event-content p {
+  font-family: "Founders Grotesk";
+  font-weight: normal;
+  text-transform: inherit;
+  margin-bottom: 0;
+  word-break: break-word;
+}
+.event-content p a {
+  font-family: "Founders Grotesk";
+  font-weight: normal;
+  text-transform: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.36px;
+}
+.event-content .event-bottom {
+  padding-left: 5px;
+  margin-top: 17px;
+}
+.event-content .event-bottom a {
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 21px;
+  display: inline-block;
+}
+.event-content .event-details {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.event-slider.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.event-slider .slick-list {
+  margin-bottom: -12px;
+}
+.event-slider .slick-slide > div {
+  margin-bottom: -12px;
+}
+.event-slider .slick-dots {
+  width: unset;
+  left: 58.35%;
+  bottom: 74px;
+}
+.event-slider .slick-dots li {
+  width: auto;
+  height: auto;
+}
+.event-slider .slick-dots li button {
+  background-image: url(../images/shape/7.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 9px;
+  padding: 0;
+}
+.event-slider .slick-dots li button:before {
+  display: none;
+}
+.event-slider .slick-dots li.slick-active button {
+  background-image: url(../images/shape/8.svg);
+}
+
+/**=====================
+     event css end
+==========================**/
+/**=====================
+     instagram css start
+==========================**/
+@-webkit-keyframes marquee {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-100vw, 0);
+  }
+}
+@keyframes marquee {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-100vw, 0);
+  }
+}
+.instagram-section {
+  overflow-x: hidden;
+  padding-bottom: 148px;
+}
+
+.insta-image-section {
+  margin: 0 -12px -7px;
+}
+.insta-image-section .slick-slide {
+  padding: 0 3px;
+}
+.insta-image-section .slick-slide img {
+  width: 100%;
+  height: 460px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.insta-image-section .slick-slide:nth-child(3n+1) {
+  margin-top: -30px;
+}
+.insta-image-section .slick-slide:nth-child(3n+2) {
+  margin-top: 50px;
+}
+.insta-image-section .slick-slide:nth-child(3n+3) {
+  margin-top: 110px;
+}
+
+/**=====================
+     instagram css end
+==========================**/
+/**=====================
+     footer css start
+==========================**/
+footer {
+  background-color: #FAF9F5;
+  padding-bottom: 40px;
+  padding: 0 42px 27px;
+}
+footer ul li a {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 1px;
+}
+footer ul li + li {
+  margin-left: 48px;
+}
+
+/**=====================
+     footer css end
+==========================**//*# sourceMappingURL=style.css.map */
