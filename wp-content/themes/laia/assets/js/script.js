@@ -113,3 +113,19 @@ $(window).on('load resize', function () {
 
 	}
 });
+
+
+//about us js
+$(window).on('load resize', function () {
+checkPosition();
+
+function checkPosition() {
+   var about_box = $(".about-content").innerHeight();
+      var about_box_width = $(".about-content").innerWidth();
+        var final_height = about_box;
+        $('.about-bg-img').css({
+          'height': final_height,
+		  'width' : about_box_width
+        });
+}
+});

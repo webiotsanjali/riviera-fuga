@@ -214,8 +214,9 @@ class About extends \Elementor\Widget_Base {
 <section id="about" class="about-section">
     <div class="container">
 		<div class="row mx-0 about-wrapper justify-content-center">
-            <div class="col-xxl-5 col-lg-6 col-md-8 px-0">
+            <div class="col-xxl-5 col-lg-6 col-md-8 px-0 about-height">
                 <div class="about-content">
+
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shapes/1.svg" alt=""
 							class="img-fluid about-bg-img">
 					<div class="about-title">
@@ -302,8 +303,27 @@ class About extends \Elementor\Widget_Base {
 </section>
 <!-- about section end -->
 
-<?php  
-	}
+<?php
+if ( \Elementor\Plugin::$instance->editor->is_edit_mode() ) : ?>
+<script>
+	//about us js
+$(window).on('load resize', function () {
+checkPosition();
+
+function checkPosition() {
+   var about_box = $(".about-content").innerHeight();
+      var about_box_width = $(".about-content").innerWidth();
+        var final_height = about_box;
+        $('.about-bg-img').css({
+          'height': final_height,
+		  'width' : about_box_width
+        });
+}
+});
+</script>
+
+<?php endif; 
+}
 }
 
 \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \About() );

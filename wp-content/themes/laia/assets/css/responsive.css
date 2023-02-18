@@ -349,14 +349,19 @@
   /* event section css end */
   /* about section css start */
   .about-section {
-    padding: 90px 0; }
+    padding: 40px 0 32px; }
     .about-section .about-wrapper {
       position: relative; }
     .about-section .about-image {
       text-align: center; }
-      .about-section .about-image img {
-        height: 460px;
-        width: auto; }
+    .about-right {
+      padding-top: 15px;
+      margin-left: 0;
+    }
+    .about-address {
+      padding-left: 23%;
+      margin-bottom: 25px;
+    }
   /* about section css end */
   /* location section css start */
   .location-section .location-slider .slick-list {
@@ -506,17 +511,28 @@
     height: 360px; }
   /* location section css end */
   /* about section css start */
-  .about-section {
-    padding: 70px 0; }
-    .about-section .about-image img {
-      height: 390px;
-      -o-object-fit: cover;
-         object-fit: cover; }
     .about-section .about-image .about-shape {
-      top: -113px;
-      width: 155px; }
-    .about-section .about-content .about-detail {
-      padding-left: 0; }
+      left: 0;
+     top: 0px;
+      width: 110px; }
+    .about-section .about-content {
+      min-height: 720px
+    }
+    .about-section .about-content p {
+      margin-bottom: 15px;
+    }
+    .about-section .about-content {
+      padding: 70px 80px 60px;
+    }
+    .about-address {
+      padding-left: 13%;
+    }
+    .about-right {
+      padding-top: 40px;
+    }
+    .about-section .about-image img {
+      height: 430px;
+    }
   /* about section css end */
   /* brand section css start */
   .brand-slider {
@@ -680,31 +696,44 @@
       padding: 0 2px; }
   .location-slider {
     margin-left: -12px; }
-  .about-section {
-    padding: 67px 0 51px; }
+    .about-section .about-content .about-bg-img {
+      object-fit: cover;
+    }
     .about-section .about-content {
-      padding: 0 24px;
-      margin-top: 57px; }
+    padding: 55px;
+  }
+  .about-section {
+    padding: 50px 0 32px; }
+    .about-section .container {
+      padding: 0 7px;
+    }
+    .about-right {
+      padding-top: 30px;
+    }
+    .about-address {
+      padding-left: 29px;
+    }
+    .about-section .about-image img {
+    height: 280px; }
+    .about-section .about-content {
+      padding: 63px 30px;
+    }
+    .about-title {
+      margin-bottom: 40px;
+    }
       .about-section .about-content h4 {
-        letter-spacing: 3.6px;
-        margin-bottom: 49px; }
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 4.8px; 
+        margin-bottom: 26px;
+      }
       .about-section .about-content p {
-        line-height: 22px;
-        letter-spacing: 0.32px; }
+        margin-bottom: 22px; }
         .about-section .about-content p a {
           font-size: 16px;
           line-height: 22px;
           letter-spacing: 0.32px; }
-      .about-section .about-content ul {
-        margin-top: 20px; }
-        .about-section .about-content ul li a {
-          font-size: 12px;
-          line-height: 14px;
-          letter-spacing: 0.36px; }
-        .about-section .about-content ul li + li {
-          margin-top: 12px; }
-    .about-section .about-image {
-      margin: 0 -12px; } }
+    }
 
 @media (max-width: 480px) {
   .slick-dotted.slick-slider {
@@ -743,18 +772,6 @@
     height: 283px;
     width: auto; }
   /* location section css end */
-  /* about section css start */
-  .about-section .about-content {
-    margin-top: 56px;
-    padding: 0 24px; }
-    .about-section .about-content ul {
-      margin-top: 35px; }
-  .about-section .about-image img {
-    height: 347px; }
-  .about-section .about-image .about-shape {
-    top: -108px;
-    left: -30px; }
-  /* about section css end */
   /* instagram section css start */
   .instagram-section {
     padding-bottom: 59px; }
@@ -807,7 +824,11 @@
     width: 74%; }
   /* about section css start */
   .about-section .about-content {
-    padding: 0 6px; }
+    padding: 50px 30px;
+  }
+  .about-section .about-content p {
+    margin-bottom: 16px;
+  }
   /* about section css end */
   /* instagram section css start */
   .instagram-section .slick-slide img {
