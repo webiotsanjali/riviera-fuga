@@ -213,7 +213,43 @@ class About extends \Elementor\Widget_Base {
 <!-- about section start -->
 <section id="about" class="about-section">
     <div class="container">
-        <div class="row about-wrapper">
+		<div class="row mx-0 about-wrapper justify-content-center">
+            <div class="col-xxl-5 col-lg-6 col-md-8 px-0">
+                <div class="about-content">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shapes/1.svg" alt=""
+							class="img-fluid about-bg-img">
+					<div class="about-title">
+						<h4>
+                        	ABOUT RIVIERA
+                    	</h4>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shapes/2.svg" alt=""
+							class="img-fluid">
+					</div>
+					<p>C’est un restaurant caché du 11ème arrondissement. Une adresse qui déconnecte. Pensée pour sortir de Paris à Paris. Dans une ancienne distillerie du quartier. Au fond d’un jardin. Et tenant un potager sur les toits. Laïa, une adresse pour voyager. A la cuisine cosmopolite, influencée par le Sud de la France, l’Espagne et l’Italie. Et dont l’âme s’ouvre aux bons esprits.</p>
+					<p>C’est un restaurant caché du 11ème arrondissement. Une adresse qui déconnecte. Pensée pour sortir de Paris à Paris. Dans une ancienne distillerie du quartier. Au fond d’un jardin. Et tenant un potager sur les toits. Laïa, une adresse pour voyager. A la cuisine cosmopolite, influencée par le Sud de la France, l’Espagne et l’Italie. Et dont l’âme s’ouvre aux bons esprits.</p>
+					<p> jardin. Et tenant un potager sur les toits. Laïa, une adresse pour voyager. A la cuisine cosmopolite, influencée par le Sud de la France, l’Espagne et l’Italie. Et dont l’âme s’ouvre aux bons esprits.</p>
+                </div>
+            </div>
+			<div class="col-xxl-7 col-lg-6 px-0">
+				<div class="about-right">
+					<div class="about-address">
+						<p>QUAI D’ORSAY </p>
+						<p>10 PORT DES INVALIDES </p>
+						<p>PARIS 750** </p>
+						<p>ALL DAY 08:00 — 00:00 (7/7)</p>
+					</div>
+					<div class="about-image">
+						<?php if ( !empty($settings['about_image']['url'])): ?>
+						<img src="<?php echo esc_url($settings['about_image']['url']) ?>" class="img-fluid"
+							alt="<?php echo esc_attr__( 'about', 'laia' ); ?>">
+						<?php endif;?>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shape/12.svg" alt=""
+							class="img-fluid about-shape">
+					</div>
+				</div>
+            </div>
+        </div>
+        <!-- <div class="row about-wrapper">
             <div class="col-lg-6">
                 <div class="about-image">
                     <?php if ( !empty($settings['about_image']['url'])): ?>
@@ -261,7 +297,7 @@ class About extends \Elementor\Widget_Base {
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 <!-- about section end -->

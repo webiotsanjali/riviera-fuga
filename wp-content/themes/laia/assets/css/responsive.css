@@ -78,6 +78,15 @@
   .home-section .home-decoration ul li .decor-3 {
     left: 64%; }
   /* home section css end */
+  /* about section css start */
+  .about-right {
+    padding-top: 38%;
+    margin-left: -23%;
+  }
+  .about-section .about-content {
+    min-height: 760px;
+  }
+  /* about section css end */
   /* instagram section css start */
   .insta-image-section .slick-slide img {
     height: 350px; }
@@ -158,24 +167,6 @@
   .brand-slider {
     padding: 0 40px; }
   /* brand section css end */
-  /* about section css start */
-  .about-section .about-content {
-    padding-left: 0;
-    margin-left: -1px; }
-    .about-section .about-content p {
-      width: 88%; }
-    .about-section .about-content ul {
-      margin-left: -24px; }
-      .about-section .about-content ul li a {
-        font-size: 12px;
-        letter-spacing: 0.36px; }
-      .about-section .about-content ul li + li {
-        margin-top: 8px; }
-    .about-section .about-content .about-detail {
-      padding-left: 0; }
-  .about-section .about-image img {
-    width: 94%; }
-  /* about section css end */
   /* instagram section css start */
   .insta-image-section .slick-slide img {
     height: 346px; }
@@ -212,12 +203,27 @@
 
   /* home section css end */
   /* about section css start */
+  .about-section .about-content {
+    padding: 70px 50px 60px;
+  }
+  .about-section {
+    padding: 20px 0 60px;
+  }
   .about-section .about-image img {
-    height: 530px; }
-  .about-section .about-content p {
-    width: 100%; }
-  .about-section .about-content ul {
-    margin-left: 0; }
+    height: 460px;
+  }
+  .about-address {
+    padding-left: 35%;
+  }
+  .about-title h4 {
+    margin-bottom: 20px;
+  }
+  .about-title {
+    margin-bottom: 30px;
+  }
+  .about-right {
+    padding-top: 45%;
+  }
   /* about section css end */ }
 
 @media (max-width: 1077px) {
@@ -351,9 +357,6 @@
       .about-section .about-image img {
         height: 460px;
         width: auto; }
-    .about-section .about-content {
-      margin-top: 80px;
-      margin-left: 0; }
   /* about section css end */
   /* location section css start */
   .location-section .location-slider .slick-list {
