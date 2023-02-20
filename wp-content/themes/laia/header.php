@@ -39,17 +39,18 @@
 
     <!-- header start -->
     <div class="main-header">
+        <div class="menu-top">
+            <div class="container">
         <header>
             <div class="language-list">
               
                     <?php dynamic_sidebar('header-3') ?>
-               
-                <div class="navbar-brand">
+            </div>
+            <div class="navbar-brand">
                     <a href="<?php echo get_home_url(); ?>"><img
                             src="<?php echo get_template_directory_uri();?>/assets/images/logo.svg" class="img-fluid"
                             alt="logo image"></a>
                 </div>
-            </div>
             <div class="menu-bar">
                 <div class="bar-icon">
                     <a href="javascript:void(0)" class="menu-toggle">
@@ -62,7 +63,22 @@
                     </a>
                 </div>
             </div>
-            <div class="menu">
+        </header>
+    </div>
+        </div>
+             
+    <div class="menu">
+        <div class="row w-100">
+            <div class="col-lg-4">
+                <div class="row row-cols-lg-5 yellow-line">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
                 <nav class="navbar">
                     <?php
 							wp_nav_menu(
@@ -80,29 +96,41 @@
 							);
 							?>
                 </nav>
-                <ul class="location d-md-block d-none">
+                <ul class="location">
                     <?php dynamic_sidebar( 'header-1' ); ?>
                 </ul>
-                <ul class="location d-md-none d-block">
+            </div>
+            <div class="col-lg-4">
+                <div class="row row-cols-lg-5 yellow-line">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+                
+                <!-- <ul class="location d-md-none d-block">
                     <?php dynamic_sidebar('header-2'); ?>
-                </ul>
-                <ul class="location location-icon d-md-none d-flex">
+                </ul> -->
+                <!-- <ul class="location location-icon d-md-none d-flex"> -->
 <!--                     <li>
                         <a href="#">
                             <img src="<?php //echo get_template_directory_uri();?>/assets/images/icons/3.svg"
                                 alt="phone icon" class="img-fluid">
                         </a>
                     </li> -->
-					 <?php dynamic_sidebar('header-phone-icon'); ?>
-                    <li>
+					 <!-- <?php dynamic_sidebar('header-phone-icon'); ?> -->
+                    <!-- <li> -->
 <!--                         <a href="#">
                             <img src="<?php //echo get_template_directory_uri();?>/assets/images/icons/instagram.svg"
                                 alt="instragram icon" class="img-fluid">
                         </a> -->
-						 <?php dynamic_sidebar('header-insta-icon'); ?>
-                    </li>
-                </ul>
+						 <!-- <?php dynamic_sidebar('header-insta-icon'); ?> -->
+                    <!-- </li> -->
+                <!-- </ul> -->
             </div>
-        </header>
     </div>
+    
     <!-- header end -->

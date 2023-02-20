@@ -156,7 +156,7 @@ p {
   font-weight: normal; }
 
 a, a.link {
-  font-family: "SangBleu Sunrise";
+  font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-weight: normal;
   font-size: 12px;
@@ -169,7 +169,7 @@ a, a.link {
     text-decoration: none;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    color: #397674; }
+    color: #215584; }
   a:focus, a.link:focus {
     outline: none; }
 
@@ -303,14 +303,14 @@ section {
   color: #ffff; }
   .btn-outline-white:hover, .btn-outline-white:focus, .btn-outline-white.active, .btn-outline-white:active {
     background-color: #ffff;
-    color: #397674; }
+    color: #215584; }
 
 .btn-outline-primary {
-  border-color: #397674;
-  color: #397674; }
+  border-color: #215584;
+  color: #215584; }
   .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary.active, .btn-outline-primary:active {
-    background-color: #397674;
-    border-color: #397674;
+    background-color: #215584;
+    border-color: #215584;
     color: #ffff; }
 
 /**=====================
@@ -320,11 +320,19 @@ section {
      header css start
 ==========================**/
 .main-header {
-  position: absolute;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+.main-header .menu-top {
+  background: #fff;
+  z-index: 3;
+  position: relative;
   width: 100%;
   top: 0;
-  z-index: 3;
-  padding: 22px 60px; }
+  padding: 22px 60px;
+  clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 78%, 86% 87%, 50% 98%, 19% 89%, 0 78%, 0% 35%, 0 0);
+   }
   .main-header.open {
     height: 100vh;
     z-index: 10;
@@ -360,63 +368,41 @@ header {
         margin-right: 1px;
       }
       header .language-list ul li + li {
-        padding-left: 7px;
+        padding-left: 9px;
     }
       header .language-list ul li a {
         text-transform: uppercase;
-        letter-spacing: 2.4px;
+        letter-spacing: 2.8px;
+        font-size: 14px;
+        line-height: 20px;
         padding-bottom: 2px !important;
         display: inline-block;
-        width: 22px !important;
+        width: 23px !important;
         overflow: hidden;
-        color: #397674;
+        color: #215584;
         position: relative; }
         header .language-list ul li:first-child a::after {
           margin-left: -2px;
         }
-        header .language-list ul li a::after {
-          position: absolute;
-          content: '';
-          width: 4px;
-          height: 4px;
-          border-radius: 100%;
-          background-color: #397674;
-          bottom: 0;
-          left: 50%;
-          opacity: 0;
-          visibility: hidden;
-          -webkit-transform: translateX(-50%);
-                  transform: translateX(-50%);
-          -webkit-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-          margin-left: -1px; }
         header .language-list ul li a.active {
           font-weight: bold; }
-          header .language-list ul li a.active::after {
-            opacity: 1;
-            visibility: visible;
-            -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease; }
       header .language-list ul li + li a {
         padding: 0; }
           header .language-list ul li + li::after {
             position: absolute;
             content: '';
-            width: 1px;
-            height: 13px;
-            background-color: #397674;
+            width: 2px;
+            background-color: #215584;
             left: 0;
             top: 50%;
-            margin-top: -4px;
-            transform: translateY(-50%);
+            margin-top: -2px;
+          transform: translateY(-50%);
+          height: 18px;
           }
   header .menu-bar .bar-icon img {
     width: 42px;
     height: 36px; }
   header .menu-bar .bar-icon .menu-toggle, header .menu-bar .bar-icon .menu-close {
-    position: fixed;
-    right: 56px;
-    top: 47px;
     display: block !important;}
   header .menu-bar .menu-close {
     opacity: 0;
@@ -431,13 +417,14 @@ header {
 
 .main-header .menu {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: calc(100vh - 120px);
   top: 100px;
   left: 0;
   opacity: 0;
   visibility: hidden;
-  padding: 51px 58px 0 36px;
+    background: #fff;
+  padding: 0;
   -webkit-animation: fadeOut 0.3s linear;
           animation: fadeOut 0.3s linear;
   z-index: 1;
@@ -448,7 +435,12 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: auto; }
-
+.yellow-line {
+      height: 100%;
+}
+.yellow-line > div:nth-child(odd) {
+      background-color: #FCF6DA;
+}
 .main-header .location {
   display: block; }
   .main-header .location li {
@@ -527,6 +519,11 @@ header {
 
 .main-header.open {
   overflow: auto; }
+  .main-header .menu-close, .main-header .menu-toggle {
+    top: 29px;
+    position: absolute;
+    right: 16%;
+  }
   .main-header.open .menu {
     opacity: 1;
     visibility: visible;
@@ -542,8 +539,6 @@ header {
     visibility: hidden;
     -webkit-animation: fadeOut 0.3s linear;
             animation: fadeOut 0.3s linear; }
-  .main-header.open .bar-icon {
-    position: relative; }
 
 /**=====================
      header css end
@@ -555,20 +550,14 @@ header {
   position: relative;
   height: 100vh;
   min-height: 780px;
-  padding-top: 0;
-  padding-left: 59px; }
+  padding-top: 0; }
   .home-section .shape-bg {
     width: 100%;
     position: relative;
     height: 100vh;
     min-height: 780px;
-    -webkit-mask-image: url(../images/1.png);
-    mask-image: url(../images/1.png);
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: left; }
+    clip-path: polygon(50% 3%, 82% 2%, 100% 0, 100% 100%, 75% 97%, 50% 96%, 25% 97%, 0 100%, 0 0, 19% 2%);
+  }
   .home-section .row {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -580,85 +569,6 @@ header {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
-   .home-section .home-content-restaurant-details{
-    margin-bottom: 20px; }
-    .home-section .home-content-restaurant-details p{
-      font-family: "Canela-Light";
-      font-size: 40px;
-      line-height: 52px;
-      -webkit-font-smoothing: antialiased;
-      font-weight: 500;
-      text-transform: inherit;
-      margin-bottom: 0;
-    }
-    .home-section .home-content-restaurant-details h1 a,.home-section .home-content-restaurant-details p a{
-      font-family: "Canela-Light";
-      font-size: 40px;
-      line-height: 52px;
-      -webkit-font-smoothing: antialiased;
-      font-weight: 500;
-      text-transform: inherit;
-    text-decoration: underline;
-    text-decoration-thickness: 2px; 
-  }
-     
-  .home-section .home-content >p {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 2px;
-    margin-bottom: 0;
-    font-weight: bold; }
-  .home-section .home-menu {
-    position: absolute;
-    bottom: 34px;
-    left: 48px; }
-  .home-section .home-decoration ul li img {
-    position: absolute; }
-  .home-section .home-decoration ul li .decor-1 {
-    left: -80px;
-    bottom: 50px; }
-  .home-section .home-decoration ul li .decor-2 {
-    position: absolute;
-    left: 48%;
-    bottom: 350px; }
-  .home-section .home-decoration ul li .decor-3 {
-    left: 56.4%;
-    bottom: 90px; }
-  .home-section .home-decor-rs {
-    height: 0; }
-    .home-section .home-decor-rs ul li .decor-4 {
-      position: absolute;
-      bottom: 320px;
-      left: 39%; }
-    .home-section .home-decor-rs ul li .decor-5 {
-      position: absolute;
-      background-image: url(../images/shape/14.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      padding: 23px 43px;
-      width: 224px;
-      height: 113px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      bottom: 10px;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
-	.home-section .home-decor-rs ul li .decor-5 h5,.home-section .home-decor-rs ul li .decor-5 h5 a{
-        line-height: 18px;
-        font-weight: bold;
-        letter-spacing: 3.2px;
-        color: #FAF9F5;
-        text-transform: uppercase;
-		-webkit-text-fill-color: #FAF9F5;
-}
 
 .menu-with-bg li a {
   font-size: 16px;
@@ -774,6 +684,45 @@ header {
 .about-title h4 {
   margin-bottom: 26px;
 }
+.about-height {
+  position: relative;
+}
+.about-height::before, .about-height::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/shapes/shape1.svg);
+  width: 100%;
+  left: 0;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+.about-height::before {
+  top: 0;
+}
+.about-height::after {
+  bottom: 0;
+  transform: scaleY(-1);
+}
+
+.about-content::before, .about-content::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/shapes/shape2.svg);
+  width: 20px;
+  top: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+      background-size: cover;
+}
+.about-content::before {
+  left: 0;
+}
+.about-content::after {
+  right: 0;
+  transform: scaleX(-1);
+}
 .about-section {
   padding: 52px 0 100px; }
   .about-section .about-wrapper {
@@ -827,6 +776,7 @@ header {
   .about-section .about-content {
     padding: 82px 90px 67px;
     position: relative;
+    background: #f9edb6;
     z-index: 1;
     text-align: center;
     min-height: 798px;
@@ -1121,7 +1071,7 @@ header {
     font: normal normal 600 16px/18px SangBleu Sunrise;
     letter-spacing: 3.2px;
     background: unset;
-    color: #397674;
+    color: #215584;
     text-transform: uppercase;
     width: 179px;
     height: 139px;
@@ -1150,7 +1100,7 @@ header {
     .menu-wrap nav .nav-link.active {
       background-color: transparent;
       border: none;
-      color: #397674; }
+      color: #215584; }
       .menu-wrap nav .nav-link.active img {
         opacity: 1;
         visibility: visible;
@@ -1168,7 +1118,7 @@ header {
     .menu-wrap nav .nav-tabs .nav-item.show .nav-link {
       background-color: transparent;
       border: none;
-      color: #397674; }
+      color: #215584; }
 
 @-webkit-keyframes fadeIn {
   0% {
@@ -1204,7 +1154,7 @@ header {
       font-weight: 600;
       line-height: 1.2;
       letter-spacing: 2.8px;
-      color: #397674;
+      color: #215584;
       text-transform: uppercase;
       position: relative;
       opacity: 0.5; }
@@ -1213,7 +1163,7 @@ header {
         content: '';
         width: 5px;
         height: 5px;
-        background: #397674;
+        background: #215584;
         top: 50%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
@@ -1246,7 +1196,7 @@ header {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 3.2px;
-    color: #397674;
+    color: #215584;
     text-transform: uppercase;
     margin-bottom: 32px;
     text-align: center; }
@@ -1254,7 +1204,7 @@ header {
       font-size: 16px;
       font-weight: 600;
       letter-spacing: 3.2px;
-      color: #397674;
+      color: #215584;
       text-transform: uppercase; }
   .menu-content .menu-title {
     text-align: center;
@@ -1265,24 +1215,24 @@ header {
       font-size: 16px;
       font-weight: 600;
       letter-spacing: 3.2px;
-      color: #397674;
+      color: #215584;
       text-transform: uppercase;
       margin-bottom: 32px; }
       .menu-content .menu-title h6 p {
         font-size: 16px;
         font-weight: 600;
         letter-spacing: 3.2px;
-        color: #397674;
+        color: #215584;
         text-transform: uppercase; }
     .menu-content .menu-title span {
       font: italic normal bold 14px/18px Times New Roman;
       letter-spacing: 0.28px;
-      color: #397674;
+      color: #215584;
       text-transform: capitalize; }
       .menu-content .menu-title span p {
         font: italic normal bold 14px/18px Times New Roman;
         letter-spacing: 0.28px;
-        color: #397674;
+        color: #215584;
         text-transform: capitalize;
         margin-bottom: 0; }
 
@@ -1297,7 +1247,7 @@ header {
       line-height: 18px;
       font-weight: normal;
       letter-spacing: 0.96px;
-      color: #397674;
+      color: #215584;
       text-transform: uppercase; }
       .main-list ul li .d-flex h6 p {
         font-size: 16px;
@@ -1311,7 +1261,7 @@ header {
       line-height: 22px;
       font-weight: normal;
       letter-spacing: 0.56px;
-      color: #397674;
+      color: #215584;
       margin-bottom: 0; }
     .main-list ul li .d-flex > h6 {
       margin-left: 20px;
@@ -1380,7 +1330,7 @@ header {
       .menu-type ul li span {
         font: normal normal normal 12px/18px Atlas Grotesk regular;
         letter-spacing: 0.3px;
-        color: #397674; }
+        color: #215584; }
 
 .menu-beverage {
   padding-bottom: 96px; }
@@ -1619,18 +1569,7 @@ footer {
   padding-top: 0;
 }
 a:visited{
-  color:#397674 !important;
-}
-.home-section .home-decoration ul li .decor-video {
-  position: absolute;
-  left: 48%;
-  bottom: 350px;
-}
-.home-section .home-decoration ul li .decor-video .a {
-  fill: #cf8a80;
-  opacity: 0.7;
-  mix-blend-mode: multiply;
-  isolation: isolate;
+  color:#215584 !important;
 }
 .main-header .navbar ul {
   margin: 0;
@@ -1690,7 +1629,7 @@ a:visited{
         font: normal normal 600 16px/18px SangBleu Sunrise;
         letter-spacing: 3.2px;
         background: unset;
-        color: #397674;
+        color: #215584;
         text-transform: uppercase;
         width: 165px;
         height: 127px;
@@ -1766,7 +1705,7 @@ a:visited{
         font-weight: 600;
         line-height: 1.2;
         letter-spacing: 2.8px;
-        color: #397674;
+        color: #215584;
         text-transform: uppercase;
         position: relative;
       }

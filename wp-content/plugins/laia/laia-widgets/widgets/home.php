@@ -301,9 +301,9 @@ class Home extends \Elementor\Widget_Base {
 
 <!-- home section start -->
 <section class="home-section">
-    <div class="container-fluid p-0">
+    <div class="container p-0">
         <div class="row m-0">
-            <div class="col-xxl-3 col-lg-4 col-md-7  p-0">
+            <!-- <div class="col-xxl-3 col-lg-4 col-md-7  p-0">
                 <div class="home-content">
 					<div class="home-content-restaurant-details">
 						<?php if ( !empty($settings['restorent_title']) ): ?>
@@ -358,29 +358,33 @@ class Home extends \Elementor\Widget_Base {
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-xxl-9 col-lg-8 p-0">
-                <div class="shape-bg">
-                    <!-- <img src="assets/images/1.jpg" alt="home image" class="img-fluid bg-home"> -->
-                    <?php if( $settings['restorent_image_video'] == 'image' ):  ?>
+            </div> -->
+            <div class="col-xxl-12 p-0">
+				<div class="home-img">
+					<div class="shape-bg">
+						<!-- <img src="assets/images/1.jpg" alt="home image" class="img-fluid bg-home"> -->
+						<?php if( $settings['restorent_image_video'] == 'image' ):  ?>
 
-                    <?php if ( !empty($settings['restorent_background_image']['url'])): ?>
+						<?php if ( !empty($settings['restorent_background_image']['url'])): ?>
 
-                    <img src="<?php echo esc_url($settings['restorent_background_image']['url']) ?>"
-                        class="img-fluid bg-home" alt="">
-                    <?php endif;?>
-                    <?php else : ?>
-                    <?php if ( !empty($settings['restorent_background_video']['url'])): ?>
-                    <video class="bg-home" autoplay
-                        src="<?php echo esc_url( $settings['restorent_background_video']['url'] ); ?>" loop
-                        preload="none" muted="muted"></video>
-                    <?php endif;?>
-                    <?php endif; ?>
-                </div>
+						<img src="<?php echo esc_url($settings['restorent_background_image']['url']) ?>"
+							class="img-fluid bg-home" alt="">
+						<?php endif;?>
+						<?php else : ?>
+						<?php if ( !empty($settings['restorent_background_video']['url'])): ?>
+						<video class="bg-home" autoplay
+							src="<?php echo esc_url( $settings['restorent_background_video']['url'] ); ?>" loop
+							preload="none" muted="muted"></video>
+						<?php endif;?>
+						<?php endif; ?>
+                	</div>
+					<a href="#" class="btn btn-solid">Reserver</a>
+				</div>
+                
             </div>
         </div>
     </div>
-    <div class="home-decoration d-lg-block d-none">
+    <!-- <div class="home-decoration d-lg-block d-none">
         <ul>
             <li>
                 <img src="<?php echo get_template_directory_uri();?>/assets/images/shape/2.svg" alt=""
@@ -410,8 +414,8 @@ class Home extends \Elementor\Widget_Base {
                     class="img-fluid decor-3">
             </li>
         </ul>
-    </div>
-    <div class="home-decor-rs d-lg-none d-block">
+    </div> -->
+    <!-- <div class="home-decor-rs d-lg-none d-block">
         <ul>
             <li>
                 <img src="<?php echo get_template_directory_uri();?>/assets/images/shape/15.svg" alt=""
@@ -429,12 +433,11 @@ class Home extends \Elementor\Widget_Base {
                                     <?php endif; ?>
 
                        </a>
-<!-- 						Reserver -->
 					</h5>
                 </div>
             </li>
         </ul>
-    </div>
+    </div> -->
 </section>
 <!-- home section end -->
 
