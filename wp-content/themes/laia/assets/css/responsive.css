@@ -73,10 +73,15 @@
   .title h2 {
     width: 46%; }
   /* home section css start */
-  .home-section .home-decoration ul li .decor-2 {
-    left: 49%; }
-  .home-section .home-decoration ul li .decor-3 {
-    left: 64%; }
+  .home-section .shape-bg::before, .home-section .shape-bg::after {
+    width: 37px;
+  }
+  .home-img::before, .home-img::after {
+    height: 30px;
+  }
+  .home-img .btn {
+    bottom: 6px;
+  }
   /* home section css end */
   /* about section css start */
   .about-right {
@@ -110,39 +115,13 @@
   footer ul li a {
     font-size: 10px; }
   /* home section css start */
-  .home-section {
-    min-height: 800px; }
+
     .home-section .row {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      padding-top: 261px; }
+ }
 
-  
-    .home-section .home-content p {
-      font-size: 10px;
-      line-height: 14px; }
-    
-    .home-section .home-content-restaurant-details p{
-      font-size: 40px;
-      line-height: 52px;
-    }
-
-    .home-section .shape-bg {
-      width: 73%;
-      position: absolute;
-      right: 0;
-      top: 0; }
-    .home-section .home-decoration ul li .decor-1 {
-      bottom: 60px; }
-    .home-section .home-decoration ul li .decor-2 {
-      left: 39%;
-      bottom: 315px; }
-    .home-section .home-decoration ul li .decor-3 {
-      left: 53%;
-      bottom: 80px; }
-    .home-section .home-menu {
-      bottom: 27px; }
   /* home section css end */
   /* event section css start */
   .event-image, .event-content {
@@ -226,6 +205,15 @@
   }
   /* about section css end */ }
 
+@media only screen and (max-width: 1091px) {
+  .home-img::before, .home-img::after {
+        height: 25px;
+  }
+  .home-section .shape-bg {
+    height: 685px;
+    min-height: 685px;
+  }
+}
 @media (max-width: 1077px) {
   .title h2 {
     width: 59%; } }
@@ -245,13 +233,17 @@
       width: 160px; }
     .main-header .menu {
       padding: 51px 40px 0 17px; }
-  header .menu-bar .bar-icon .menu-toggle, header .menu-bar .bar-icon .menu-close {
-    right: 40px; }
   .title h2 {
     width: 65%; }
   .title h4 a {
     width: 42%; }
   /* home section css start */
+  .home-img::before, .home-img::after {
+    height: 20px;
+  }
+  .home-img .btn {
+    bottom: 0;
+  }
   .home-section {
     padding-left: 0;
     height: auto;
@@ -262,20 +254,6 @@
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-    .home-section .home-content {
-      padding: 0 50px;
-      text-align: center; }
-      .home-section .home-content p {
-        display: inline-block; }
-    .home-section .home-decoration {
-      width: 0;
-      height: 0; }
-      .home-section .home-decoration ul li .decor-1, .home-section .home-decoration ul li .decor-2, .home-section .home-decoration ul li .decor-3 {
-        display: none; }
-    .home-section .shape-bg {
-      position: relative;
-      width: 100%;
-      height: 700px; }
   /* home section css end */
   /* event section css start */
   .event-content {
@@ -379,8 +357,6 @@
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     text-align: center; }
     header .language-list {
       display: -webkit-box;
@@ -402,18 +378,6 @@
               order: -1; }
       header .navbar-brand img {
         height: 65px; }
-    header .menu-bar .bar-icon .menu-toggle, header .menu-bar .bar-icon .menu-close {
-      position: absolute;
-      right: unset;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      z-index: 1;
-      top: 92px;
-      width: 42px;
-      height: 36px;
-      -webkit-transition: unset;
-      transition: unset; }
     .main-header .menu {
       display: block;
       height: auto;
@@ -461,15 +425,18 @@
     text-align: center; }
     footer ul li + li {
       margin-left: 0; }
-  .home-section {
-    padding-bottom: 10px; }
     .home-section .shape-bg {
+      min-height: 640px;
       height: 640px; }
-    .home-section .home-decor-rs ul li .decor-4 {
-      bottom: 300px;
-      left: 30%; }
-    .home-section .row {
-      padding-top: 224px; }
+    .home-img::before, .home-img::after {
+        height: 15px;
+    }
+    .home-img {
+      margin-bottom: 7px;
+    }
+    .home-img .btn {
+      bottom: -7px;
+    }
   /* event section css start */
   /* .event-content {
     background-image: url(../images/shape/11.svg);
@@ -606,7 +573,13 @@
           width: auto;
         }
   .home-section .shape-bg {
-    height: 420px; }
+    padding: 0 6px;
+    min-height: 426px;
+    height: 426px; }
+    .home-section .shape-bg::before, .home-section .shape-bg::after {
+      background-position: center;
+      width: 27px;
+    }
   .home-section .home-decor-rs ul li .decor-4 {
     bottom: 190px;
     left: 29%; }
@@ -708,6 +681,7 @@
     height: 280px; }
     .about-section .about-content {
       padding: 63px 30px;
+      background-size: cover;
     }
     .about-title {
       margin-bottom: 40px;
@@ -726,6 +700,11 @@
           letter-spacing: 0.32px; }
     }
 
+@media (max-width: 520px) {
+  .home-img::before, .home-img::after {
+    height: 13px;
+  }
+}
 @media (max-width: 480px) {
   .slick-dotted.slick-slider {
     margin-bottom: 28px; }
@@ -773,7 +752,14 @@
   .insta-image-section .slick-slide:nth-child(3n+2) {
     margin-top: 46px; }
   /* instagram section css end */ }
-
+@media (max-width: 460px) {
+  .home-img {
+    margin-bottom: 10px;
+  }
+  .home-img .btn {
+    bottom: -10px;
+  }
+}
 @media (max-width: 475px) {
   /* instagram section css start */
   .insta-image-section .slick-slide:nth-child(3n+1) {
@@ -803,7 +789,17 @@
 @media (max-width: 400px) {
   .home-section .home-decor-rs ul li .decor-4 {
     bottom: 190px; } }
-
+@media (max-width: 380px) {
+  .home-img::before, .home-img::after {
+    height: 10px;
+  }
+  .home-img {
+    margin-bottom: 12px;
+  }
+  .home-img .btn {
+    bottom: -12px;
+  }
+}
 @media (max-width: 360px) {
   .main-header .menu .container {
     padding: 0; }

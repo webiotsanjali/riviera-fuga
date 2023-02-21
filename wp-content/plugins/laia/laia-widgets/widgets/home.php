@@ -377,8 +377,9 @@ class Home extends \Elementor\Widget_Base {
 							preload="none" muted="muted"></video>
 						<?php endif;?>
 						<?php endif; ?>
+						<a href="#" class="btn btn-solid">Reserver</a>
                 	</div>
-					<a href="#" class="btn btn-solid">Reserver</a>
+					
 				</div>
                 
             </div>

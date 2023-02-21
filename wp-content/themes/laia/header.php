@@ -68,8 +68,9 @@
         </div>
              
     <div class="menu">
-        <div class="row w-100">
-            <div class="col-lg-4">
+        <div class="container-fluid">
+            <div class="row w-100 h-100 mx-0">
+            <div class="col-lg-4 px-0">
                 <div class="row row-cols-lg-5 yellow-line">
                     <div class="col"></div>
                     <div class="col"></div>
@@ -78,7 +79,7 @@
                     <div class="col"></div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 px-0">
                 <nav class="navbar">
                     <?php
 							wp_nav_menu(
@@ -100,7 +101,7 @@
                     <?php dynamic_sidebar( 'header-1' ); ?>
                 </ul>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 px-0">
                 <div class="row row-cols-lg-5 yellow-line">
                     <div class="col"></div>
                     <div class="col"></div>
@@ -109,6 +110,7 @@
                     <div class="col"></div>
                 </div>
             </div>
+        </div>
         </div>
                 
                 <!-- <ul class="location d-md-none d-block">
