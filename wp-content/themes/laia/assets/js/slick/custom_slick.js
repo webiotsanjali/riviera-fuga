@@ -65,10 +65,10 @@ $('.brand-slider').slick({
 
 // location slider js
 $('.location-slider').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    arrows: false,
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 3000,
     centerPadding: '200px',

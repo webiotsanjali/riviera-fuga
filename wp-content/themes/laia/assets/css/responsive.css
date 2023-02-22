@@ -83,6 +83,10 @@
     bottom: 6px;
   }
   /* home section css end */
+  /* boat section css start */
+  .boat-wrap::before {
+    width: calc(100% - -3px);
+  }
   /* about section css start */
   .about-right {
     padding-top: 38%;
@@ -181,6 +185,15 @@
   }
 
   /* home section css end */
+  /* boat section css start */
+  .boat-wrap {
+    padding: 129px 68px 59px 68px;
+  }
+  .boat-image .boat-img {
+    min-height: 400px;
+    height: 400px;
+  }
+  /* boat section css end */
   /* about section css start */
   .about-section .about-content {
     padding: 70px 50px 60px;
@@ -255,6 +268,23 @@
           -ms-flex-pack: center;
               justify-content: center; }
   /* home section css end */
+  /* boat section css start */
+  .boat-wrap::before {
+    width: calc(100% - 0px);
+  }
+  .boat-wrap .row > div:last-child {
+    order: -1;
+  }
+  .boat-content {
+    padding-top: 30px;
+  }
+  .boat-section p {
+    margin-bottom: 20px !important;
+  }
+  .boat-title {
+    padding-bottom: 40px;
+  }
+  /* boat section css end */
   /* event section css start */
   .event-content {
     background-image: url(../images/shape/11.svg);
@@ -489,6 +519,51 @@
       height: 430px;
     }
   /* about section css end */
+  /* boat section css start */
+  .boat-section p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .boat-section a {
+    margin-left: 66px;
+  }
+  .boat-image .boat-img {
+    min-height: 300px;
+    height: 300px;
+  }
+  .boat-wrap::before {
+    width: calc(100% - -7px);
+  }
+  .boat-title {
+    padding-bottom: 0;
+  }
+  .boat-title h2 {
+    padding: 0;
+    padding-bottom: 52px;
+    margin-bottom: 40px;
+  }
+  .boat-title h2::before {
+    top: unset;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+  }
+  .boat-title h2::after {
+    display: none;
+  }
+  .boat-wrap {
+    padding: 100px 40px 54px 40px;
+  }
+  .boat-section .btn {
+    background: #fff;
+    transition: 0.7s ease-in-out;
+  }
+  .boat-section .btn:hover {
+    background:url(../images/shapes/9.svg);
+    background-repeat: no-repeat;
+    transition: 0.7s ease-in-out;
+  }
+  /* boat section css end */
   /* brand section css start */
   .brand-slider {
     padding: 0; }
@@ -551,6 +626,19 @@
         font-size: 10px;
         line-height: 14px;
         letter-spacing: 2px; }
+  /* boat section css start */
+  .boat-section .container {
+    padding: 0;
+  }
+  .boat-wrap {
+    padding: 100px 6px 54px 6px;
+  }
+  .boat-wrap::before {
+    width: calc(100% - -13px);
+    left: -1px;
+    top: -1px;
+  }
+  /* boat section css end */
   /* home section css start */
   .home-section .home-content {
     padding: 0 30px; }
@@ -781,6 +869,15 @@
     width: 54%; }
     .event-content {
       background-size: auto; }
+      /* boat section css start */
+      .boat-wrap {
+        padding-top: 75px;
+      }
+      .boat-image .boat-img {
+        min-height: 247px;
+        height: 247px;
+      }
+      /* boat section css end */
   /* instagram section css start */
   .instagram-section .slick-slide img {
     height: 189px; }
@@ -809,6 +906,10 @@
     bottom: 198px; }
   .event-content .event-details {
     width: 74%; }
+    /* boat section css start */
+    .boat-section a {
+        margin-left: 30px;
+      }
   /* about section css start */
   .about-section .about-content {
     padding: 50px 30px;

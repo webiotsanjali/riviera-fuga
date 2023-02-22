@@ -301,6 +301,32 @@ class About extends \Elementor\Widget_Base {
     </div>
 </section>
 <!-- about section end -->
+<!-- boat section start -->
+<section id="boat" class="boat-section">
+		<div class="container">
+			<div class="boat-wrap">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-lg-4">
+						<div class="boat-content">
+							<p>C’est un restaurant caché du 11ème arrondissement. Une adresse qui déconnecte. Pensée pour sortir de Paris à Paris. Dans une ancienne distillerie du quartier. Au fond d’un jardin. Et tenant un potager sur les toits. Laïa, une adresse pour voyager. A la cuisine cosmopolite, influencée par le Sud de la France, l’Espagne et l’Italie. Et dont l’âme s’ouvre aux bons esprits.</p>
+							<a href="javascript:void(0)" class="btn">RESERVER BATEAU</a>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<div class="boat-image">
+							<div class="boat-title">
+								<h2>FUGA BATEAU</h2>
+							</div>
+							<img src="<?php echo get_template_directory_uri();?>/assets/images/boat.jpg" alt=""
+								class="img-fluid boat-img">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>							
+</section>
+<!-- boat section end -->
 
 <?php
 if ( \Elementor\Plugin::$instance->editor->is_edit_mode() ) : ?>
