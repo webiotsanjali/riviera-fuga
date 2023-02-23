@@ -301,7 +301,7 @@ class Home extends \Elementor\Widget_Base {
 
 <!-- home section start -->
 <section class="home-section">
-    <div class="container p-0">
+    <div class="container-fluid p-0">
         <div class="row m-0">
             <!-- <div class="col-xxl-3 col-lg-4 col-md-7  p-0">
                 <div class="home-content">

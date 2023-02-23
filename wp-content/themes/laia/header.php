@@ -40,7 +40,7 @@
     <!-- header start -->
     <div class="main-header">
         <div class="menu-top">
-            <div class="container">
+            <div class="container-fluid">
         <header>
             <div class="language-list">
               

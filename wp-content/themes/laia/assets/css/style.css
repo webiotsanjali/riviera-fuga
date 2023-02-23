@@ -233,6 +233,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
   color: #215584; }
 
 section {
+  padding: 0 35px;
   padding-top: 56px; }
 
 .section-b-space {
@@ -240,9 +241,6 @@ section {
 
 .light-bg {
   background-color: #f8f6ec; }
-
-.title {
-  text-align: center; }
   .title h4 a {
     font-weight: 600;
     display: inline-block;
@@ -258,13 +256,11 @@ section {
     z-index: 1;
     position: relative; }
   .title h2 {
-    font-family: "Canela-Light";
-    letter-spacing: 0.52px;
-    line-height: 36px;
+    font: normal normal normal 32px/42px Source Sans Pro;
+    letter-spacing: 0.64px;
+    color: #215584;
     text-transform: inherit;
     position: relative;
-    color: #13505C;
-    width: 33%;
     margin: 0 auto; }
     .title p, .title h2 p, .title h2 a {
       color: #13505C;
@@ -331,7 +327,6 @@ section {
   position: relative;
   width: 100%;
   top: 0;
-  padding: 18px;
   background-image: url(../images/shapes/7.svg);
   background-size: cover;
   background-position: bottom;
@@ -363,6 +358,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 18px 53px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -422,6 +418,10 @@ header {
     height: 36px; }
   header .menu-bar .bar-icon .menu-toggle, header .menu-bar .bar-icon .menu-close {
     display: block !important;}
+    header .menu-bar .bar-icon {
+      width: 42px;
+      height: 36px
+    }
   header .menu-bar .menu-close {
     opacity: 0;
     visibility: hidden;
@@ -544,9 +544,9 @@ header {
 .main-header.open {
   overflow: auto; }
   .main-header .menu-close, .main-header .menu-toggle {
-    top: 6px;
+    top: 18px;
     position: absolute;
-    right: 16px;
+    right: 61px;
   }
   .main-header.open .menu {
     opacity: 1;
@@ -572,7 +572,7 @@ header {
 ==========================**/
 .home-section {
   position: relative;
-  margin-top: 70px;
+  margin-top: 61px;
   padding-top: 0; }
   .home-section .shape-bg {
     width: 100%;
@@ -611,7 +611,7 @@ header {
     position: absolute;
     content: '';
     width: 100%;
-    height: 33px;
+    height: 46px;
     left: 0;
     background-image: url(../images/shapes/4.svg);
     background-size: cover;
@@ -690,44 +690,32 @@ header {
      brand css start
 ==========================**/
 .brand-image img {
-  height: 115px !important;
+  cursor: pointer;
+  max-height: 55px !important;
   margin: 0 auto; 
   object-fit: contain;
 }
+.brand-wrap {
+  margin: 0 30px;
+}
 
 .brand-for {
-  margin-top: 33px; }
+    margin-top: 65px;
+}
 
 .brand-section {
-  padding-top: 89px; }
-  .brand-section .slick-slide {
+  padding-top: 89px;
+  padding-bottom: 128px;
+ }
+ .brand-section .slick-dots {
+  text-align: left;
+ }
+  .brand-section .slick-slide img {
     opacity: 0.6; }
     .brand-section .slick-slide .brand-image {
-      position: relative;
-      margin-bottom: 38px; }
-      .brand-section .slick-slide .brand-image::before {
-        position: absolute;
-        content: '';
-        background-image: url(../images/shape/9.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 99px;
-        height: 27px;
-        bottom: -39px;
-        opacity: 0;
-        visibility: hidden;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%); }
-    .brand-section .slick-slide.slick-center.slick-current {
+      position: relative; }
+    .brand-section .slick-slide.slick-current img {
       opacity: 1; }
-      .brand-section .slick-slide.slick-center.slick-current .brand-image::before {
-        opacity: 1;
-        visibility: visible;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s; }
 
 /**=====================
      brand css end
@@ -738,7 +726,7 @@ header {
 .location-section {
   padding-top: 0; }
   .location-section .location-image img {
-    height: 600px;
+    max-height: 479px;
     -o-object-fit: cover;
        object-fit: cover; }
   .location-section .location-slider .slick-list {
@@ -749,6 +737,28 @@ header {
     .location-section .location-slider .slick-dots {
       justify-content: center;
     }
+.location-slider .slick-arrow:before {
+  display: none;
+}
+.location-slider {
+  padding-bottom: 45px;
+}
+.location-slider .slick-arrow {
+  background-image: url(../images/shapes/11.svg);
+  background-size: cover;
+  width: 16px;
+  height: 15px;
+  bottom: 0;
+  top: unset;
+}
+.location-slider .slick-next {
+  right: unset;
+  left: 35px;
+}
+.location-slider .slick-prev {
+  left: 0;
+  transform: rotate(180deg) translateY(7px);
+}
 
 /**=====================
      location css end
@@ -913,10 +923,10 @@ header {
   background-size: contain;
   position: absolute;
   content: '';
-  width: calc(100% - -4px);
-  top: 0;
-  left: 0;
-  height: 250px;
+  width: calc(100% - -2px);
+  top: -1px;
+  left: -1px;
+  height: 100%;
 }
 .boat-section p {
   color: #fff;
@@ -930,18 +940,26 @@ header {
   -webkit-box-orient: vertical;
 }
 .boat-section .btn {
+  position: relative;
   padding: 12px;
   min-width: 230px;
-  background:url(../images/shapes/9.svg);
+  background: #fff;
+  transition: 0.7s ease-in-out;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
   color: #215584;
 }
+  .boat-section .btn:hover {
+    background:url(../images/shapes/9.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.7s ease-in-out;
+  }
 .boat-image .boat-img {
-  min-height: 457px;
-  height: 457px;
+  min-height: 520px;
+  height: 520px;
   width: 100%;
 }
 .boat-title {
@@ -1120,21 +1138,21 @@ header {
     width: auto;
     height: auto; }
     .slick-dots li button {
-      background-image: url(../images/shape/7.svg);
+      background-image: url(../images/shapes/12.svg);
       background-size: contain;
       background-repeat: no-repeat;
       border: none;
       border-radius: unset;
       padding: 0;
-      width: 10px;
-      height: 9px; }
+      width: 12px;
+      height: 12px; }
       .slick-dots li button:before {
         display: none; }
     .slick-dots li.slick-active button {
       background-size: contain;
       border-radius: unset !important;
       border: none !important;
-      background-image: url(../images/shape/8.svg); }
+      background-image: url(../images/shapes/2.svg); }
       .event-wrapper .slick-dots {
         bottom: 58px;
         display: -webkit-box;

@@ -2,31 +2,27 @@
 /**=====================
     responsive css start
 ==========================**/
+@media (min-width: 1570px) {
+  .home-img .btn {
+    bottom: 20px;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1399px) {
   .container {
     max-width: 1170px; } }
-
-@media (max-width: 1810px) {
-  .title h2 {
-    width: 35%; } }
 
 @media (max-width: 1800px) {
   /* instagram section css start */
   .insta-image-section .slick-slide img {
     height: 430px; }
   /* instagram section css end */ }
-
-@media (max-width: 1708px) {
-  .title h2 {
-    width: 37%; } }
+@media (max-width: 1700px) {
+  .home-img::before, .home-img::after {
+    height: 44px;
+  }
+}
 
 @media (max-width: 1660px) {
-  /* home section css start */
-  .home-section .home-decoration ul li .decor-2 {
-    left: 42%; }
-  .home-section .home-decoration ul li .decor-3 {
-    left: 55%; }
-  /* home section css end */
   /* event section css start */
   .event-image {
     width: 61%; }
@@ -38,23 +34,16 @@
     height: 400px; }
   /* instagram section css end */ }
 
-@media (max-width: 1617px) {
-  .title h2 {
-    width: 39%; } }
-
-@media (max-width: 1536px) {
-  .title h2 {
-    width: 41%; } }
-
 @media (max-width: 1519px) {
   /* instagram section css start */
   .insta-image-section .slick-slide img {
     height: 370px; }
   /* instagram section css end */ }
-
-@media (max-width: 1462px) {
-  .title h2 {
-    width: 43%; } }
+@media (max-width: 1550px) {
+  .home-img::before, .home-img::after {
+    height: 39px;
+  }
+}
 
 @media (min-width: 1400px) {
   .event-content .event-bottom-details {
@@ -70,14 +59,12 @@
     width: 31%; } }
 
 @media (max-width: 1399px) {
-  .title h2 {
-    width: 46%; }
   /* home section css start */
   .home-section .shape-bg::before, .home-section .shape-bg::after {
     width: 37px;
   }
   .home-img::before, .home-img::after {
-    height: 30px;
+    height: 33px;
   }
   .home-img .btn {
     bottom: 6px;
@@ -86,6 +73,10 @@
   /* boat section css start */
   .boat-wrap::before {
     width: calc(100% - -3px);
+  }
+  .boat-image .boat-img {
+    min-height: 457px;
+    height: 457px;
   }
   /* about section css start */
   .about-right {
@@ -140,9 +131,6 @@
       margin-top: 22px; }
   /* event section css end */
   /* location section css start */
-  .location-section .location-image img {
-    width: 100%;
-    height: 482px; }
   .location-section .location-slider .slick-list {
     padding-left: 0 !important; }
   /* location section css end */
@@ -155,20 +143,13 @@
     height: 346px; }
   /* instagram section css end */ }
 
-@media (max-width: 1305px) {
-  .title h2 {
-    width: 48%; } }
-
-@media (max-width: 1252px) {
-  .title h2 {
-    width: 51%; } }
-
 @media (max-width: 1199px) {
   h1 {
     font-size: 38px;
     line-height: 50px; }
-  .title h2 {
-    width: 56%; }
+   .location-section .location-image img {
+    width: 100%;
+    max-height: 450px; }
   /* home section css start */
   .home-section .home-decoration ul li .decor-2 {
     left: 43%;
@@ -227,9 +208,6 @@
     min-height: 685px;
   }
 }
-@media (max-width: 1077px) {
-  .title h2 {
-    width: 59%; } }
 
 @media (max-width: 1023px) {
   .insta-image-section .slick-slide:nth-child(3n+1) {
@@ -246,19 +224,13 @@
       width: 160px; }
     .main-header .menu {
       padding: 51px 40px 0 17px; }
-  .title h2 {
-    width: 65%; }
   .title h4 a {
     width: 42%; }
   /* home section css start */
-  .home-img::before, .home-img::after {
-    height: 20px;
-  }
   .home-img .btn {
     bottom: 0;
   }
   .home-section {
-    padding-left: 0;
     height: auto;
     min-height: auto; }
     .home-section .row {
@@ -366,18 +338,32 @@
   /* location section css start */
   .location-section .location-slider .slick-list {
     margin-right: -12px; }
+    .location-section .location-image img {
+    max-height: 420px; }
+  .location-slider .slick-prev {
+    left: 48%;
+  }
+  .location-slider .slick-next {
+    left: 52%;
+  }
   /* location section css end */
   /* instagram section css start */
   .instagram-section {
     padding-bottom: 90px; }
   /* instagram section css end */ }
-
+@media (max-width: 900px) {
+  .home-img::before, .home-img::after {
+    height: 22px;
+  }
+}
+@media (max-width: 800px) {
+  .home-img::before, .home-img::after {
+    height: 20px;
+  }
+}
 @media (max-width: 767px) {
   h2 {
     font-size: 22px; }
-  .title h2 {
-    line-height: 32px;
-    width: 73%; }
     .title h2 p, .title h2 a {
       font-size: 22px;
       line-height: 32px; }
@@ -458,9 +444,6 @@
     .home-section .shape-bg {
       min-height: 640px;
       height: 640px; }
-    .home-img::before, .home-img::after {
-        height: 15px;
-    }
     .home-img {
       margin-bottom: 7px;
     }
@@ -493,7 +476,13 @@
   /* event section css end */
   /* location section css start */
   .location-section .location-image img {
-    height: 360px; }
+    max-height: 360px; }
+  .location-slider .slick-next {
+    left: 53%;
+  }
+  .location-slider .slick-prev {
+    left: 47%;
+  }
   /* location section css end */
   /* about section css start */
     .about-section .about-image .about-shape {
@@ -554,15 +543,6 @@
   .boat-wrap {
     padding: 100px 40px 54px 40px;
   }
-  .boat-section .btn {
-    background: #fff;
-    transition: 0.7s ease-in-out;
-  }
-  .boat-section .btn:hover {
-    background:url(../images/shapes/9.svg);
-    background-repeat: no-repeat;
-    transition: 0.7s ease-in-out;
-  }
   /* boat section css end */
   /* brand section css start */
   .brand-slider {
@@ -576,12 +556,16 @@
     .instagram-section .slick-slide img {
       height: 300px; }
   /* instagram section css end */ }
-
-@media (max-width: 600px) {
-  .title h2 {
-    width: 92%; } }
+@media (max-width: 700px) {
+  .home-img::before, .home-img::after {
+    height: 15px;
+  }
+}
 
 @media (max-width: 575px) {
+  section {
+    padding: 0 6px;
+  }
   .main-header .location li p {
     line-height: 14px;
     letter-spacing: 2.4px; }
@@ -606,8 +590,6 @@
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.32px; }
-  .title h2 {
-    line-height: 24px; }
     .title h2 p, .title h2 a {
       font-size: 18px;
       line-height: 24px;
@@ -626,6 +608,12 @@
         font-size: 10px;
         line-height: 14px;
         letter-spacing: 2px; }
+  .location-slider .slick-next {
+    left: 52%;
+  }
+  .location-slider .slick-prev {
+    left: 46%;
+  }
   /* boat section css start */
   .boat-section .container {
     padding: 0;
@@ -739,12 +727,16 @@
         bottom: -29px; }
   .brand-for {
     margin-top: 20px; }
-  .location-section {
-    padding-top: 40px; }
     .location-section .location-slider .slick-slide > div {
       padding: 0 2px; }
   .location-slider {
     margin-left: -12px; }
+  .location-slider .slick-next {
+    left: 52%;
+  }
+  .location-slider .slick-prev {
+    left: 44%;
+  }
     .about-section .about-content .about-bg-img {
       object-fit: cover;
     }
@@ -827,7 +819,7 @@
   /* brand section css end */
   /* location section css start */
   .location-section .location-image img {
-    height: 283px;
+    max-height: 280px;
     width: auto; }
   /* location section css end */
   /* instagram section css start */
@@ -859,6 +851,12 @@
   /* instagram section css end */ }
 
 @media (max-width: 420px) {
+  .location-slider .slick-next {
+    left: 55%;
+  }
+  .location-slider .slick-prev {
+    left: 44%;
+  }
   .home-section .shape-bg {
     height: 410px;
     margin-top: -21px; }

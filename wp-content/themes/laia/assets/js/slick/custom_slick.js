@@ -12,56 +12,75 @@ $('.event-slider').slick({
 
 // brand slider js
 $('.brand-for').slick({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 1,
-    fade: true,
-    asNavFor: '.brand-slider',
-    slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 576,
-            settings: {
-                arrows: false,
-            }
-        },
-    ]
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: false,
+  dots: true,
+    infinite: false,
+    speed: 1000,
+  asNavFor: '.brand-slider',
 });
-
 $('.brand-slider').slick({
-    asNavFor: '.brand-for',
-    dots: false,
-    infinite: true,
-    speed: 500,
-    centerMode: true,
-    centerPadding: '0px',
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    responsive: [{
-        breakpoint: 992,
-        settings: {
-            centerMode: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-        }
-    }, {
-        breakpoint: 480,
-        settings: {
-            centerMode: true,
-            centerPadding: '105px',
-            slidesToShow: 2,
-            slidesToScroll: 1,
-        }
-    },
-    ]
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  variableWidth: true,
+  asNavFor: '.brand-for',
+  centerMode: false,
+  dots: false,
+  focusOnSelect: true
 });
+// $('.brand-for').slick({
+//     dots: false,
+//     infinite: false,
+//     speed: 500,
+//     arrows: false,
+//     // autoplay: true,
+//     // autoplaySpeed: 3000,
+//     slidesToShow: 1,
+//     fade: true,
+//     asNavFor: '.brand-slider',
+//     slidesToScroll: 1,
+//     responsive: [
+//         {
+//             breakpoint: 576,
+//             settings: {
+//                 arrows: false,
+//             }
+//         },
+//     ]
+// });
+
+// $('.brand-slider').slick({
+//     asNavFor: '.brand-for',
+//     dots: false,
+//     infinite: false,
+//     speed: 500,
+//     // centerMode: true,
+//     // centerPadding: '0px',
+//     arrows: false,
+//     // autoplay: true,
+//     // autoplaySpeed: 3000,
+//     slidesToShow: 5,
+//     slidesToScroll: 1,
+//     responsive: [{
+//         breakpoint: 992,
+//         settings: {
+//             centerMode: true,
+//             slidesToShow: 3,
+//             slidesToScroll: 1,
+//         }
+//     }, {
+//         breakpoint: 480,
+//         settings: {
+//             centerMode: true,
+//             centerPadding: '105px',
+//             slidesToShow: 2,
+//             slidesToScroll: 1,
+//         }
+//     },
+//     ]
+// });
 
 // location slider js
 $('.location-slider').slick({

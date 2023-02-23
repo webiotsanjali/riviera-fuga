@@ -212,17 +212,21 @@ class Brand extends \Elementor\Widget_Base {
 <!-- brand section start -->
 <section class="brand-section">
     <div class="container-fluid">
-        <div class="brand-slider">
+        <div class="row">
+			<div class="col-lg-8">
+				<div class="brand-slider">
             <?php foreach( $settings['brand_section'] as $key => $brand ): ?>
             <div>
                 <div class="brand-wrap">
                     <div class="brand-image">
 						<?php if ( !empty($brand['brand_image']['url']) ): ?>
 						<?php if( $brand['show_link'] == 'show' ) : ?>
-                        <a href="<?php echo esc_url( $brand['image_url_link']['url'] ); ?>"
+                        <!-- <a href="<?php echo esc_url( $brand['image_url_link']['url'] ); ?>" 
                             <?php if ( $brand['image_url_link']['is_external'] ): ?> target="_blank" <?php endif; ?>
-                            role="button"><img src="<?php echo esc_url($brand['brand_image']['url']); ?>"
-								class="img-fluid" alt=""></a>
+                            role="button"> -->
+							<img src="<?php echo esc_url($brand['brand_image']['url']); ?>"
+								class="img-fluid" alt="">
+							<!-- </a> -->
 						<?php else:?>
 						<img src="<?php echo esc_url($brand['brand_image']['url']); ?>"
 								class="img-fluid" alt="">
@@ -242,6 +246,8 @@ class Brand extends \Elementor\Widget_Base {
             </div>
             <?php endforeach;?>
         </div>
+			</div>
+		</div>
     </div>
 </section>
 
@@ -251,52 +257,21 @@ if ( \Elementor\Plugin::$instance->editor->is_edit_mode() ) : ?>
 <script>
 // brand slider js
 $('.brand-for').slick({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    arrows: false,
-    slidesToShow: 1,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 6000,
-    asNavFor: '.brand-slider',
-    slidesToScroll: 1,
-    responsive: [{
-        breakpoint: 576,
-        settings: {
-            arrows: false,
-        }
-    }, ]
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: false,
+	infinite: false,
+	speed: 1000,
+  asNavFor: '.brand-slider',
 });
-
 $('.brand-slider').slick({
-    asNavFor: '.brand-for',
-    dots: false,
-    infinite: true,
-    speed: 500,
-    centerMode: true,
-    centerPadding: '0px',
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 6000,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    responsive: [{
-        breakpoint: 992,
-        settings: {
-            centerMode: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-        }
-    }, {
-        breakpoint: 480,
-        settings: {
-            centerMode: true,
-            centerPadding: '105px',
-            slidesToShow: 2,
-            slidesToScroll: 1,
-        }
-    }, ]
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  asNavFor: '.brand-for',
+  dots: false,
+  centerMode: false,
+  focusOnSelect: true
 });
 </script>
 

@@ -302,8 +302,8 @@ class About extends \Elementor\Widget_Base {
 </section>
 <!-- about section end -->
 <!-- boat section start -->
-<section id="boat" class="boat-section">
-		<div class="container">
+<section id="boat" class="boat-section px-0">
+		<div class="container-fluid px-0">
 			<div class="boat-wrap">
 				<div class="row justify-content-between align-items-center">
 					<div class="col-lg-4">

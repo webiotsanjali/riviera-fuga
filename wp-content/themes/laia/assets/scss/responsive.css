@@ -7,11 +7,6 @@
     max-width: 1170px;
   }
 }
-@media (max-width: 1810px) {
-  .title h2 {
-    width: 35%;
-  }
-}
 @media (max-width: 1800px) {
   /* instagram section css start */
   .insta-image-section .slick-slide img {
@@ -19,11 +14,6 @@
   }
 
   /* instagram section css end */
-}
-@media (max-width: 1708px) {
-  .title h2 {
-    width: 37%;
-  }
 }
 @media (max-width: 1660px) {
   /* home section css start */
@@ -52,16 +42,6 @@
 
   /* instagram section css end */
 }
-@media (max-width: 1617px) {
-  .title h2 {
-    width: 39%;
-  }
-}
-@media (max-width: 1536px) {
-  .title h2 {
-    width: 41%;
-  }
-}
 @media (max-width: 1519px) {
   /* instagram section css start */
   .insta-image-section .slick-slide img {
@@ -70,20 +50,12 @@
 
   /* instagram section css end */
 }
-@media (max-width: 1462px) {
-  .title h2 {
-    width: 43%;
-  }
-}
 @media (max-width: 1460px) {
   .title h4 {
     width: 31%;
   }
 }
 @media (max-width: 1399px) {
-  .title h2 {
-    width: 46%;
-  }
 
   /* home section css start */
   .home-section .home-decoration ul li .decor-2 {
@@ -225,24 +197,10 @@
 
   /* instagram section css end */
 }
-@media (max-width: 1305px) {
-  .title h2 {
-    width: 48%;
-  }
-}
-@media (max-width: 1252px) {
-  .title h2 {
-    width: 51%;
-  }
-}
 @media (max-width: 1199px) {
   h1 {
     font-size: 38px;
     line-height: 50px;
-  }
-
-  .title h2 {
-    width: 56%;
   }
 
   /* home section css start */
@@ -267,11 +225,6 @@
   }
 
   /* about section css end */
-}
-@media (max-width: 1077px) {
-  .title h2 {
-    width: 59%;
-  }
 }
 @media (max-width: 1023px) {
   .insta-image-section .slick-slide:nth-child(3n+1) {
@@ -301,10 +254,6 @@
 
   header .menu-bar .bar-icon .menu-toggle, header .menu-bar .bar-icon .menu-close {
     right: 40px;
-  }
-
-  .title h2 {
-    width: 65%;
   }
   .title h4 {
     width: 42%;
@@ -438,11 +387,6 @@
 @media (max-width: 767px) {
   h2 {
     font-size: 22px;
-  }
-
-  .title h2 {
-    line-height: 32px;
-    width: 73%;
   }
   .title h4 {
     width: 60%;
@@ -642,11 +586,6 @@
 
   /* instagram section css end */
 }
-@media (max-width: 600px) {
-  .title h2 {
-    width: 92%;
-  }
-}
 @media (max-width: 575px) {
   .main-header .location li p {
     line-height: 14px;
@@ -681,10 +620,6 @@
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.32px;
-  }
-
-  .title h2 {
-    line-height: 24px;
   }
   .title h4 {
     line-height: 24px;
