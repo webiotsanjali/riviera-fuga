@@ -241,26 +241,39 @@ section {
 
 .light-bg {
   background-color: #f8f6ec; }
+  .title h4 {
+    padding: 75px 0 86px;
+  }
   .title h4 a {
     font-weight: 600;
     display: inline-block;
     width: 20%;
-	font-size: 20px;
-	letter-spacing: 4px;
-	 line-height: 28px;
-    background-image: url(../images/shape/10.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 33px 0 58px;
+    font: normal normal bold 29px/28px Source Sans Pro;
+    letter-spacing: 5.8px;
+    color: #215584;
     z-index: 1;
     position: relative; }
+
+    .title h2::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px transparent; }
+    .title h2::-webkit-scrollbar {
+      width: 3px;
+      border-radius: 13px; }
+    .title h2::-webkit-scrollbar-thumb {
+      -webkit-box-shadow: inset 0 0 0 10px;
+              box-shadow: inset 0 0 0 10px;
+      background-color: transparent;
+      color: transparent; }
   .title h2 {
     font: normal normal normal 32px/42px Source Sans Pro;
     letter-spacing: 0.64px;
     color: #215584;
     text-transform: inherit;
     position: relative;
+    height: 164px;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     margin: 0 auto; }
     .title p, .title h2 p, .title h2 a {
       color: #13505C;
@@ -703,10 +716,23 @@ header {
     margin-top: 65px;
 }
 
+.brand-slider .slick-list {
+  margin-left: -30px;
+}
+
+.brand-for .brand-image {
+  display: none;
+}
+
 .brand-section {
-  padding-top: 89px;
-  padding-bottom: 128px;
+  padding: 152px 48px 128px 48px;
  }
+ .brand-section .title {
+    max-width: 751px;
+ }
+ .brand-section .slick-dotted.slick-slider {
+    margin-bottom: 25px;
+}
  .brand-section .slick-dots {
   text-align: left;
  }
@@ -1000,19 +1026,41 @@ header {
 /**=====================
      event css start
 ==========================**/
+.title-main {
+  font: normal normal bold 29px/28px Source Sans Pro;
+  letter-spacing: 5.8px;
+  margin-bottom: 39px;
+  padding-left: 102px;
+}
+.event-section {
+  padding: 130px 48px 90px 48px;
+}
 .event-image {
-  width: 67%;
+  position: relative;
+  height: 480px; 
+}
+.event-image::before {
   position: absolute;
+  content: '';
+  width: 100%;
+  height: 9px;
+  background: url(../images/shapes/13.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   left: 0;
-  height: 600px;
-  -webkit-mask-image: url(../images/1.svg);
-  mask-image: url(../images/1.svg);
-  -webkit-mask-size: cover;
-  mask-size: cover;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: right; }
+}
+.event-image::after {
+  position: absolute;
+  content: '';
+  width: 9px;
+  height: 100%;
+  background: url(../images/shapes/14.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
   .event-image img {
     width: 100%;
     height: 100%;
@@ -1020,8 +1068,11 @@ header {
     object-fit: cover; }
 
 .event-content {
-  padding: 60px 22px 20px 0;
-  height: 600px; }
+  padding-left: 76px;
+  padding-right: 76px;
+  height: 420px;
+  background-color: #f9edb6;
+ }
   .event-content .event-tag {
     background-image: url(../images/shape/5.svg);
     background-size: cover;
@@ -1053,30 +1104,10 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .event-content .event-title .event-shape {
-      background-image: url(../images/shape/6.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      width: 90px;
-      height: 85px;
-      margin-right: 8px; }
     .event-content .event-title h4 {
-      font-weight: bold;
-      letter-spacing: 0.6px;
-      line-height: 24px;
-      font-family: "Atlas Grotesk";
-      margin-top: -5px; }
-    .event-content .event-title h3 {
-      font-family: "Canela-Light"; }
+      text-transform: uppercase;
+      font: normal normal bold 14px/14px Source Sans Pro;
+      letter-spacing: 2.8px; }
   .event-content .event-bottom-details {
     max-height: 145px;
     overflow: auto;
@@ -1118,6 +1149,10 @@ header {
         letter-spacing: 0.36px;
         text-decoration: underline;}
   .event-content .event-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     padding-top: 20px;
     padding-bottom: 20px; }
 
@@ -1182,9 +1217,18 @@ header {
             transform: translate(-100vw, 0); } }
 
 .instagram-section {
+  padding-top: 12px;
+  position: relative;
   overflow-x: hidden;
-  padding-bottom: 148px; }
-
+  padding-bottom: 438px; }
+  .instagram-section .bg-stripe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+.instagram-section .bg-stripe > div:nth-child(odd){
+  background: #E1EEF8;
+}
 .insta-image-section {
   margin: 0 -12px -7px; }
   .insta-image-section .slick-slide {
@@ -1692,18 +1736,17 @@ header {
      footer css start
 ==========================**/
 footer {
-  background-color: #FAF9F5;
   padding-bottom: 40px;
-  padding: 0 42px 27px; }
+  padding: 37px 48px 27px; }
   footer ul li a {
-    letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 14px;
-    letter-spacing: 1px; }
+    font: normal normal bold 18px/14px Source Sans Pro;
+    letter-spacing: 1.8px;
+    color: #215584;
+    text-transform: uppercase;
+     }
   footer ul li + li {
-    margin-left: 48px; }
+    margin-left: 38px; }
 
 /**=====================
      footer css end

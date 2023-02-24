@@ -226,8 +226,25 @@ class Instagram extends \Elementor\Widget_Base {
       ?>
 
 <!-- Instagram section start -->
-<section class="instagram-section pt-0">
-    <div class="title">
+<section class="instagram-section px-0">
+    <div class="row row-cols-sm-15 row-cols-7 mx-0 bg-stripe">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+    </div>
+    <div class="title text-center">
         <?php if ( !empty($settings['post_title']) ): ?>
         <h4>
 			<a href="https://www.instagram.com/laia_restaurant/" target="_blank">

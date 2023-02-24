@@ -59,6 +59,9 @@
     width: 31%; } }
 
 @media (max-width: 1399px) {
+  .brand-section .title {
+    max-width: 653px;
+  }
   /* home section css start */
   .home-section .shape-bg::before, .home-section .shape-bg::after {
     width: 37px;
@@ -107,8 +110,6 @@
     .menu-with-bg li a::before {
       width: 131px;
       height: 34px; }
-  footer ul li a {
-    font-size: 10px; }
   /* home section css start */
 
     .home-section .row {
@@ -134,22 +135,30 @@
   .location-section .location-slider .slick-list {
     padding-left: 0 !important; }
   /* location section css end */
-  /* brand section css start */
-  .brand-slider {
-    padding: 0 40px; }
-  /* brand section css end */
   /* instagram section css start */
   .insta-image-section .slick-slide img {
     height: 346px; }
   /* instagram section css end */ }
 
 @media (max-width: 1199px) {
+  footer ul li a {
+        font-size: 16px; }
   h1 {
     font-size: 38px;
     line-height: 50px; }
    .location-section .location-image img {
     width: 100%;
     max-height: 450px; }
+    /* brand section css start */
+    .brand-wrap {
+       margin: 0 20px;
+    }
+    .brand-for {
+      margin-top: 45px;
+    }
+    .brand-section {
+      padding-bottom: 100px;
+    }
   /* home section css start */
   .home-section .home-decoration ul li .decor-2 {
     left: 43%;
@@ -226,6 +235,9 @@
       padding: 51px 40px 0 17px; }
   .title h4 a {
     width: 42%; }
+  .brand-section {
+      padding: 152px 35px 128px 35px;
+  }
   /* home section css start */
   .home-img .btn {
     bottom: 0;
@@ -347,10 +359,7 @@
     left: 52%;
   }
   /* location section css end */
-  /* instagram section css start */
-  .instagram-section {
-    padding-bottom: 90px; }
-  /* instagram section css end */ }
+  }
 @media (max-width: 900px) {
   .home-img::before, .home-img::after {
     height: 22px;
@@ -437,9 +446,11 @@
         opacity: 0;
         visibility: hidden; }
   footer ul li {
+    line-height: 24px;
     display: block;
     text-align: center; }
     footer ul li + li {
+      margin-top: 4px;
       margin-left: 0; }
     .home-section .shape-bg {
       min-height: 640px;
@@ -545,14 +556,37 @@
   }
   /* boat section css end */
   /* brand section css start */
-  .brand-slider {
-    padding: 0; }
+  .brand-for {
+    margin-top: 0;
+  }
+  .brand-section .title {
+    max-width: unset;
+  }
+  .brand-section .brand-slider {
+    display: none;
+  }
+  .brand-for .brand-image {
+    display: block;
+  }
   .brand-image img {
-    height: 80px !important; }
+    margin: 0;
+    max-height: 76px !important;
+  }
+  .brand-section .slick-slide .brand-image {
+    margin-bottom: 36px;
+  }
+  .title h2 {
+    font: normal normal normal 26px/34px Source Sans Pro;
+    letter-spacing: 0.52px;
+    height: 170px;
+  }
   /* brand section css end */
   /* instagram section css start */
+  .title h4 {
+    padding: 60px 0 54px;
+  }
   .instagram-section {
-    padding-bottom: 80px; }
+    padding-bottom: 674px; }
     .instagram-section .slick-slide img {
       height: 300px; }
   /* instagram section css end */ }
@@ -595,24 +629,24 @@
       line-height: 24px;
       letter-spacing: 0.54px; }
   .title h4 a {
-	font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 3.6px;
-    width: 72%;
-    padding-top: 44px; }
+	  font: normal normal bold 24px/28px Source Sans Pro;
+    letter-spacing: 4.8px;
+    width: 72%;}
   footer {
-    padding: 23px 23px 33px; }
+    padding: 32px 23px 43px; }
     footer ul li {
       line-height: 24px; }
       footer ul li a {
-        font-size: 10px;
-        line-height: 14px;
-        letter-spacing: 2px; }
+        font-size: 14px;
+        letter-spacing: 2.8px; }
   .location-slider .slick-next {
     left: 52%;
   }
   .location-slider .slick-prev {
     left: 46%;
+  }
+  .title h2 {
+    height: 210px;
   }
   /* boat section css start */
   .boat-section .container {
@@ -662,8 +696,6 @@
   /* home section css end */
   .instagram-section .slick-slide img {
     height: 220px; }
-  .insta-image-section {
-    margin-top: -45px; }
   .event-image img {
     margin-bottom: 40px; }
   .event-content {
@@ -718,15 +750,7 @@
   .slick-slide .event-image img {
     height: 330px; }
   .brand-section {
-    padding-top: 48px; }
-    .brand-section .slick-slide .brand-image {
-      margin-bottom: 29px; }
-      .brand-section .slick-slide .brand-image::before {
-        width: 69px;
-        height: 19px;
-        bottom: -29px; }
-  .brand-for {
-    margin-top: 20px; }
+    padding: 48px 37px 65px 25px; }
     .location-section .location-slider .slick-slide > div {
       padding: 0 2px; }
   .location-slider {
@@ -790,8 +814,6 @@
     margin-bottom: 28px; }
   .main-header .location {
     width: 100%; }
-  footer {
-    padding: 28px 28px 26px; }
   .title h4 a {
     width: 85%; }
   .home-section .home-decor-rs ul li .decor-4 {
@@ -812,10 +834,7 @@
     -o-object-fit: contain;
        object-fit: contain; }
   .brand-slider .slick-list {
-    padding-left: 0 !important;
-    margin-right: -12px; }
-  .brand-section .slick-slide img {
-    padding: 0 0 5px; }
+    padding-left: 0 !important; }
   /* brand section css end */
   /* location section css start */
   .location-section .location-image img {
@@ -823,8 +842,6 @@
     width: auto; }
   /* location section css end */
   /* instagram section css start */
-  .instagram-section {
-    padding-bottom: 59px; }
   .insta-image-section > div {
     padding: 0 2px; }
   .insta-image-section .slick-slide:nth-child(3n+1) {

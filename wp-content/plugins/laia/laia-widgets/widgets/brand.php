@@ -213,7 +213,7 @@ class Brand extends \Elementor\Widget_Base {
 <section class="brand-section">
     <div class="container-fluid">
         <div class="row">
-			<div class="col-lg-8">
+			<div class="col-lg-9 col-xxl-7">
 				<div class="brand-slider">
             <?php foreach( $settings['brand_section'] as $key => $brand ): ?>
             <div>
@@ -240,6 +240,21 @@ class Brand extends \Elementor\Widget_Base {
         <div class="brand-for">
             <?php foreach( $settings['brand_section'] as $key => $brand ): ?>
             <div>
+				<div class="brand-image">
+						<?php if ( !empty($brand['brand_image']['url']) ): ?>
+						<?php if( $brand['show_link'] == 'show' ) : ?>
+                        <!-- <a href="<?php echo esc_url( $brand['image_url_link']['url'] ); ?>" 
+                            <?php if ( $brand['image_url_link']['is_external'] ): ?> target="_blank" <?php endif; ?>
+                            role="button"> -->
+							<img src="<?php echo esc_url($brand['brand_image']['url']); ?>"
+								class="img-fluid" alt="">
+							<!-- </a> -->
+						<?php else:?>
+						<img src="<?php echo esc_url($brand['brand_image']['url']); ?>"
+								class="img-fluid" alt="">
+						<?php endif;?>
+						<?php endif;?>
+                    </div>
                 <div class="title">
                     <?php echo ($brand['brand_logo_description']); ?>
                 </div>
@@ -259,19 +274,37 @@ if ( \Elementor\Plugin::$instance->editor->is_edit_mode() ) : ?>
 $('.brand-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: true,
+  arrows: false,
   fade: false,
 	infinite: false,
 	speed: 1000,
   asNavFor: '.brand-slider',
+  responsive: [{
+        breakpoint: 767,
+        settings: {
+            fade: true,
+		}
+	}
+]
 });
 $('.brand-slider').slick({
   slidesToShow: 5,
   slidesToScroll: 5,
+  variableWidth: true,
   asNavFor: '.brand-for',
-  dots: false,
   centerMode: false,
-  focusOnSelect: true
+  dots: false,
+  focusOnSelect: true,
+  responsive: [{
+        breakpoint: 767,
+        settings: {
+            fade: true,
+            variableWidth: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        }
+    },
+  ]
 });
 </script>
 

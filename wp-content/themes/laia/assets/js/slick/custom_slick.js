@@ -1,9 +1,9 @@
 // event slider js
 $('.event-slider').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    arrows: false,
+    arrows: true,
     autoplay: false,
     fade: true,
     slidesToShow: 1,
@@ -14,12 +14,19 @@ $('.event-slider').slick({
 $('.brand-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: true,
+  arrows: false,
   fade: false,
   dots: true,
     infinite: false,
     speed: 1000,
   asNavFor: '.brand-slider',
+  responsive: [{
+        breakpoint: 767,
+        settings: {
+            fade: true,
+		}
+	}
+]
 });
 $('.brand-slider').slick({
   slidesToShow: 5,
@@ -28,7 +35,17 @@ $('.brand-slider').slick({
   asNavFor: '.brand-for',
   centerMode: false,
   dots: false,
-  focusOnSelect: true
+  focusOnSelect: true,
+  responsive: [{
+        breakpoint: 767,
+        settings: {
+            fade: true,
+            variableWidth: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        }
+    },
+  ]
 });
 // $('.brand-for').slick({
 //     dots: false,

@@ -304,12 +304,17 @@ class Event extends \Elementor\Widget_Base {
         
       ?>
 <!-- event section start -->
-<section class="event-section pt-0">
+<section class="event-section">
     <div class="container-fluid p-0">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="title-main">NOS ÉVÈNEMENT</h2>
+			</div>
+		</div>
         <div class="event-slider">
             <?php foreach( $settings['event_section'] as $key => $event ): ?>
             <div>
-                <div class="row m-0">
+                <div class="row m-0 align-items-center">
                     <div class="col-lg-7 p-0">
                         <div class="event-image">
                             <?php if( $event['event_image_video'] == 'image' ):  ?>
@@ -328,7 +333,7 @@ class Event extends \Elementor\Widget_Base {
                     </div>
                     <div class="col-lg-5 p-0">
                         <div class="event-content">
-                            <div class="event-tag">
+                            <!-- <div class="event-tag">
                                 <?php if ( !empty($settings['event_button'] =='show') ): ?>
                                 <a href="<?php echo esc_url( $settings['event_button_link']['url'] ); ?>"
                                     <?php if ( $settings['event_button_link']['is_external'] ): ?> target="_blank"
@@ -338,13 +343,11 @@ class Event extends \Elementor\Widget_Base {
                                     <?php endif; ?>
                                 </a>
                                 <?php endif;?>
-                            </div>
+                            </div> -->
                             <div class="event-details">
                                 <div class="event-title">
-                                    <div class="event-shape">
-                                        <h4><?php echo esc_html__( $event['event_date'], 'laia' ) ?></h4>
-                                    </div>
-                                    <h3><?php echo esc_html__( $event['event_month'], 'laia' ) ?></h3>
+                                    <h4 class="pe-2"><?php echo esc_html__( $event['event_date'], 'laia' ) ?></h4>
+                                    <h4><?php echo esc_html__( $event['event_month'], 'laia' ) ?></h4>
                                 </div>
                                 <div class="event-bottom">
                                     <div class="event-bottom-details">
@@ -377,10 +380,10 @@ class Event extends \Elementor\Widget_Base {
 if ( \Elementor\Plugin::$instance->editor->is_edit_mode() ) : ?>
 <script>
 $('.event-slider').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    arrows: false,
+    arrows: true,
     autoplay: false,
     fade: true,
     slidesToShow: 1,
