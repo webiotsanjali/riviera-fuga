@@ -3,12 +3,22 @@ $('.event-slider').slick({
     dots: false,
     infinite: true,
     speed: 500,
-    arrows: true,
+    arrows: false,
     autoplay: false,
     fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
 });
+$(".next-btn").click(function () {
+		$(".event-slider").slick("slickNext");
+	});
+	$(".event-slider").on("afterChange", function () {
+		if ($(".slick-next").hasClass("slick-disabled")) {
+			$(".next-btn").addClass("slick-disabled");
+		} else {
+			$(".next-btn").removeClass("slick-disabled");
+		}
+	});
 
 // brand slider js
 $('.brand-for').slick({

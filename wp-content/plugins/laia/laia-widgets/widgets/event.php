@@ -331,20 +331,10 @@ class Event extends \Elementor\Widget_Base {
                             <?php endif; ?>
                         </div>
                     </div>
-                    <div class="col-lg-5 p-0">
+                    <div class="col-lg-5 col-md-9 col-sm-11 p-0">
                         <div class="event-content">
-                            <!-- <div class="event-tag">
-                                <?php if ( !empty($settings['event_button'] =='show') ): ?>
-                                <a href="<?php echo esc_url( $settings['event_button_link']['url'] ); ?>"
-                                    <?php if ( $settings['event_button_link']['is_external'] ): ?> target="_blank"
-                                    <?php endif; ?> role="button">
-                                    <?php if ( !empty($settings['event_button_text']) ): ?>
-                                    <h6><?php echo esc_html( $settings['event_button_text'] ); ?></h6>
-                                    <?php endif; ?>
-                                </a>
-                                <?php endif;?>
-                            </div> -->
-                            <div class="event-details">
+							<div class="event-main">
+								<div class="event-details">
                                 <div class="event-title">
                                     <h4 class="pe-2"><?php echo esc_html__( $event['event_date'], 'laia' ) ?></h4>
                                     <h4><?php echo esc_html__( $event['event_month'], 'laia' ) ?></h4>
@@ -366,12 +356,30 @@ class Event extends \Elementor\Widget_Base {
                                     <?php  endif ; ?>
                                 </div>
                             </div>
+							</div>
+                            <!-- <div class="event-tag">
+                                <?php if ( !empty($settings['event_button'] =='show') ): ?>
+                                <a href="<?php echo esc_url( $settings['event_button_link']['url'] ); ?>"
+                                    <?php if ( $settings['event_button_link']['is_external'] ): ?> target="_blank"
+                                    <?php endif; ?> role="button">
+                                    <?php if ( !empty($settings['event_button_text']) ): ?>
+                                    <h6><?php echo esc_html( $settings['event_button_text'] ); ?></h6>
+                                    <?php endif; ?>
+                                </a>
+                                <?php endif;?>
+                            </div> -->
+                            
                         </div>
                     </div>
                 </div>
             </div>
             <?php endforeach;?>
         </div>
+		<a href="javascript:void(0)" class="next-btn">
+			<img src="<?php echo get_template_directory_uri();?>/assets/images/shapes/11.svg" alt=""
+								class="img-fluid">
+			<span>NEXT EVENT</span>					
+		</a>
     </div>
 </section>
 <!-- event section end -->
@@ -383,12 +391,22 @@ $('.event-slider').slick({
     dots: false,
     infinite: true,
     speed: 500,
-    arrows: true,
+    arrows: false,
     autoplay: false,
     fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
 });
+	$(".next-btn").click(function () {
+		$(".event-slider").slick("slickNext");
+	});
+	$(".event-slider").on("afterChange", function () {
+		if ($(".slick-next").hasClass("slick-disabled")) {
+			$(".next-btn").addClass("slick-disabled");
+		} else {
+			$(".next-btn").removeClass("slick-disabled");
+		}
+	});
 </script>
 
 <?php endif; 

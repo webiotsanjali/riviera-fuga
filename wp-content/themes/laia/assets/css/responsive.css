@@ -23,12 +23,6 @@
 }
 
 @media (max-width: 1660px) {
-  /* event section css start */
-  .event-image {
-    width: 61%; }
-  .event-content .event-bottom-details {
-    width: 80%; }
-  /* event section css end */
   /* instagram section css start */
   .insta-image-section .slick-slide img {
     height: 400px; }
@@ -48,7 +42,6 @@
 @media (min-width: 1400px) {
   .event-content .event-bottom-details {
     max-height: 90px;
-    width: 60%;
   }
   .event-slider .slick-dots {
     bottom: 130px;
@@ -61,6 +54,9 @@
 @media (max-width: 1399px) {
   .brand-section .title {
     max-width: 653px;
+  }
+  .event-image {
+    height: 443px;
   }
   /* home section css start */
   .home-section .shape-bg::before, .home-section .shape-bg::after {
@@ -120,16 +116,8 @@
 
   /* home section css end */
   /* event section css start */
-  .event-image, .event-content {
-    height: 508px; }
-  .event-content {
-    padding-top: 55px; }
     .event-content .event-bottom-details {
-      max-height: 67px; }
-    .event-content .event-bottom a {
-      font-size: 10px;
-      line-height: 14px;
-      margin-top: 22px; }
+      max-height: 72px; }
   /* event section css end */
   /* location section css start */
   .location-section .location-slider .slick-list {
@@ -141,6 +129,12 @@
   /* instagram section css end */ }
 
 @media (max-width: 1199px) {
+  .event-content {
+    height: 400px;
+  }
+  .event-content .event-details {
+    padding: 20px 60px;
+  }
   footer ul li a {
         font-size: 16px; }
   h1 {
@@ -271,13 +265,32 @@
   /* boat section css end */
   /* event section css start */
   .event-content {
-    background-image: url(../images/shape/11.svg);
+    /* background-image: url(../images/shape/11.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 130px 0 30px; }
+    background-size: cover; */
+    /* padding: 130px 0 30px;  */
+  }
+  .event-main::before {
+    position: absolute;
+    content: '';
+    width: 21px;
+    height: 100%;
+    background: url(../images/shapes/16.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .title-main {
+    padding-left: 140px;
+  }
+  .event-slider .row {
+    justify-content: center;
+  }
     .event-content .event-details {
       margin: 0 auto;
-      width: 90%; }
+          padding: 73px 40px 70px; }
     .event-content .event-tag {
       position: absolute;
       left: 50%;
@@ -286,27 +299,19 @@
       bottom: 0;
       margin-right: 0; }
   .event-image {
+    margin-top: -30px;
     position: relative;
-    top: unset;
-    left: unset;
-    width: 100%;
-    -webkit-mask-image: unset;
-    mask-image: unset; }
+    z-index: 2;
+    width: 100%; }
     .slick-slide .event-image img {
-      margin-bottom: 52px;
-      height: 500px; }
-  .event-image, .event-content {
+      margin-bottom: 52px; }
+  .event-content {
     height: unset; }
   .event-content {
     padding-right: 0;
     padding-bottom: 0; }
-    .event-content .event-details {
-      width: 70%;
-      padding: 20px 20px 70px; }
     .event-content .event-bottom-details {
       width: 100%;
-      max-height: unset;
-      height: 42px;
       overflow: auto; }
       .event-slider .slick-list {
         margin-bottom: -11px;
@@ -477,10 +482,12 @@
               transform: translateX(-50%);
       bottom: 0;
       margin-right: 0; } */
-    .slick-slide .event-image img {
-    height: 450px; }
-  .event-slider .slick-dots {
-    top: 40%; }
+    .title-main {
+      padding-left: 90px;
+    }
+    .event-image {
+      height: 390px;
+    }
     .event-content .event-bottom-details {
       max-height: 140px;
     }
@@ -597,6 +604,9 @@
 }
 
 @media (max-width: 575px) {
+  .next-btn { 
+    padding-left: 109px;
+  }
   section {
     padding: 0 6px;
   }
@@ -694,61 +704,41 @@
     bottom: 190px;
     left: 29%; }
   /* home section css end */
+  .event-content::before, .event-content::after {
+    height: 6px;
+  }
+  .event-content .event-details::after , .event-content .event-details::before{
+    width: 6px;
+  }
   .instagram-section .slick-slide img {
     height: 220px; }
+    .event-section {
+      padding: 68px 6px 90px 6px;
+    }
+    .event-image {
+      height: 328px;
+    }
+    .event-content .event-bottom a {
+      margin-top: 19px;
+    }
+    .title-main {
+      padding-left: 30px;
+      font: normal normal bold 24px/28px Source Sans Pro;
+      letter-spacing: 4.8px;
+      margin-bottom: 48px;
+    }
+    .event-content p {
+      font: normal normal normal 18px/24px Source Sans Pro;
+      letter-spacing: 0.36px;
+    }
   .event-image img {
     margin-bottom: 40px; }
   .event-content {
-    padding: 40px 0 32px; }
+    margin: 0 14px; }
     .event-slider.slick-dotted.slick-slider {
       margin-bottom: 6px;
     }
-    .event-content p {
-      font-size: 16px;
-      line-height: 22px;
-      letter-spacing: 0.32px; }
-    .event-content .event-title h4 {
-      font-family: 'Founders Grotesk';
-      font-size: 24px;
-      line-height: 24px;
-      letter-spacing: 0.72px;
-      margin-top: 4px; }
-    .event-content .event-title h3 {
-      font-size: 20px;
-      line-height: 50px;
-      letter-spacing: 0.4px; }
-    .event-content .event-title .event-shape {
-      width: 79px;
-      height: 77px;
-      margin-right: 12px;
-      background-image: url(../images/shape/13.svg); }
-    .event-content .event-details {
-      width: 64%;
-      padding: 10px; }
-    .event-content .event-bottom {
-      margin-top: 13px; }
-      .event-content .event-bottom a {
-        margin-top: 14px;
-        font-size: 8px;
-        letter-spacing: 1.6px; }
-    .event-content .event-tag {
-      width: 130px;
-      height: 72px; }
-      .event-content .event-tag h6 {
-        font-size: 8px;
-        line-height: 11px;
-        letter-spacing: 1.6px;
-        color: #FAF9F5;
-        -webkit-transform: rotate(10deg);
-                transform: rotate(10deg);
-        margin-top: 5px; }
-    .event-content .event-bottom-details {
-      height: 68px;
-      width: 69%; }
-  .event-slider .slick-dots {
-    top: 37.5%; }
-  .slick-slide .event-image img {
-    height: 330px; }
+  
   .brand-section {
     padding: 48px 37px 65px 25px; }
     .location-section .location-slider .slick-slide > div {
@@ -820,14 +810,6 @@
     left: 19%; }
   .home-section .home-content p {
     width: 42%; }
-    .event-content .event-details {
-      width: 68%; }
-    .event-content .event-bottom-details {
-      width: 100%; }
-  .event-slider .slick-dots {
-    top: 44%; }
-  .slick-slide .event-image img {
-    height: 241px; }
   /* brand section css start */
   .brand-image img {
     height: 80px !important;
@@ -919,8 +901,6 @@
     width: 53%; }
   .home-section .home-decor-rs ul li .decor-4 {
     bottom: 198px; }
-  .event-content .event-details {
-    width: 74%; }
     /* boat section css start */
     .boat-section a {
         margin-left: 30px;
