@@ -232,7 +232,7 @@ class About extends \Elementor\Widget_Base {
             </div>
 			<div class="col-xxl-7 col-lg-6 px-0">
 				<div class="about-right">
-					<div class="about-address">
+					<div class="about-address" id="about-address">
 						<p>QUAI D’ORSAY </p>
 						<p>10 PORT DES INVALIDES </p>
 						<p>PARIS 750** </p>

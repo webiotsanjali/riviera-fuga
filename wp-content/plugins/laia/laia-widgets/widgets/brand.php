@@ -210,7 +210,7 @@ class Brand extends \Elementor\Widget_Base {
       ?>
 
 <!-- brand section start -->
-<section class="brand-section">
+<section id="brand" class="brand-section">
     <div class="container-fluid">
         <div class="row">
 			<div class="col-lg-9 col-xxl-7">

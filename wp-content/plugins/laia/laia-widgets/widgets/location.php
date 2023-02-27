@@ -141,7 +141,7 @@ class Location extends \Elementor\Widget_Base {
 
 
 <!-- location section start -->
-<section class="location-section px-0">
+<section id="location" class="location-section px-0">
     <div class="container-fluid px-0">
 		<div class="row">
 			<div class="col-lg-9 ms-auto">

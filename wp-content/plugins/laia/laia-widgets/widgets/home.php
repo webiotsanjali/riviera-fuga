@@ -441,9 +441,53 @@ class Home extends \Elementor\Widget_Base {
     </div> -->
 </section>
 <!-- home section end -->
+<div class="menu-fix">
+	<div class="menu-main">
+		<div class="menu-image">
+			<img src="<?php echo get_template_directory_uri();?>/assets/images/seahorse.png" alt=""
+								class="img-fluid">
 
+		</div>
+		<div class="menu-details">
+			<h6>reserver</h6>
+			<ul>
+				<li>
+					<a href="#">
+						table
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						bateau
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 
-<?php  
+<?php
+if ( \Elementor\Plugin::$instance->editor->is_edit_mode() ) : ?>
+<script>
+	$(window).on('scroll', function () {
+
+		 var docViewTop = $(window).scrollTop();
+		 var top = this.scrollY
+    console.log("$('#about')[0].scrollHeight",top,$("#about").offset().top, $("#boat").offset().top);
+if (top >= $("#about").offset().top && top <= $("#boat").offset().top) {
+    console.log("i am in");
+     $('.menu-fix').addClass('show');
+}
+else {
+    console.log("i am out");
+     $('.menu-fix').removeClass('show');  
+}
+			
+
+	});
+</script>
+
+<?php endif; 
 	}
 }
 

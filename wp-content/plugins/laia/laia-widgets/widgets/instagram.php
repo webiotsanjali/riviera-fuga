@@ -226,7 +226,7 @@ class Instagram extends \Elementor\Widget_Base {
       ?>
 
 <!-- Instagram section start -->
-<section class="instagram-section px-0">
+<section id="instagram" class="instagram-section px-0">
     <div class="row row-cols-sm-15 row-cols-7 mx-0 bg-stripe">
         <div class="col"></div>
         <div class="col"></div>

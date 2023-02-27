@@ -324,3 +324,21 @@ $('.insta-image-section').slick({
         }
     ]
 });
+
+// menu fix js
+var instagramSection = $("#instagram").height();
+console.log(instagramSection);
+	$(window).on('scroll', function () {
+		 var top = this.scrollY, about= $("#about").offset().top-100, boat=$("#about-address").offset().top, brand=$("#brand").offset().top-100, location=$("#location").offset().top-400
+    console.log("$('#about')[0].scrollHeight",top,$("#about").offset().top, $("#boat").offset().top);
+if (top >=about && top<= boat || top >= brand && top<=location ) {
+    console.log("i am in");
+     $('.menu-fix').addClass('show');
+}
+else {
+    console.log("i am out");
+     $('.menu-fix').removeClass('show');  
+}
+			
+
+	});
