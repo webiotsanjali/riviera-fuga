@@ -81,21 +81,15 @@
             </div>
             <div class="col-lg-4 px-0">
                 <nav class="navbar">
-                    <?php
-							wp_nav_menu(
-								array(
-									'theme_location'  => 'menu-1',
-									'container'       => 'div',
-									'container_class' => '"navbar-nav',
-									'container_id'    => '',
-									'menu_class'      => 'navbar-nav',
-									'menu_id'         => 'mymenu',
-									'depth'	          =>  '', // Level of Dropdown Menu
-									'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-									'walker'          => new WP_Bootstrap_Navwalker(),
-								)
-							);
-							?>
+         <?php wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'container'       => 'div',
+							'container_class' => '"navbar-nav',
+							'container_id'    => '',
+							'menu_class'      => 'navbar-nav',
+						    'menu_id'         => 'mymenu',
+			
+		) ); ?>
                 </nav>
                 <ul class="location">
                     <?php dynamic_sidebar( 'header-1' ); ?>

@@ -11,7 +11,7 @@
 
 ?>
 
-<footer <?php if(is_front_page() == true) :?>class="home-footer" <?php endif;?>>
+<footer id="footer" <?php if(is_front_page() == true) :?>class="home-footer" <?php endif;?>>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">

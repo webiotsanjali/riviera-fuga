@@ -235,7 +235,13 @@
   .title h4 a {
     width: 42%; }
   .brand-section {
-      padding: 152px 35px 128px 35px;
+      padding: 418px 35px 128px 35px;
+  }
+  .menu-fix {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 285px;
   }
   /* home section css start */
   .home-img .btn {

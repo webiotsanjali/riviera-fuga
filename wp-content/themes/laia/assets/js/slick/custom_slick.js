@@ -327,18 +327,39 @@ $('.insta-image-section').slick({
 
 // menu fix js
 var instagramSection = $("#instagram").height();
-console.log(instagramSection);
-	$(window).on('scroll', function () {
-		 var top = this.scrollY, about= $("#about").offset().top-100, boat=$("#about-address").offset().top, brand=$("#brand").offset().top-100, location=$("#location").offset().top-400
-    console.log("$('#about')[0].scrollHeight",top,$("#about").offset().top, $("#boat").offset().top);
-if (top >=about && top<= boat || top >= brand && top<=location ) {
-    console.log("i am in");
-     $('.menu-fix').addClass('show');
-}
-else {
-    console.log("i am out");
-     $('.menu-fix').removeClass('show');  
-}
-			
+	$(window).on('scroll resize', function () {
+     var bottom = 350
+	 var top = this.scrollY, about= $("#about").offset().top, boat=$("#about-address").offset().top, brand=$("#brand").offset().top, location=$("#location").offset().top - bottom, instagram=$("#instagram").offset().top, footer=$("#footer").offset().top
+     var style = document.querySelector('#instagram').currentStyle || window.getComputedStyle(document.querySelector('#instagram'));
+     var instaHeight= document.querySelector('#instagram').offsetHeight
+     var instaPadding = parseInt(style.paddingBottom)
+     var showDiv=instaHeight-instaPadding
+     var scrolltoShowdiv= (instagram+showDiv)
+    if(window.innerWidth >= 991 ){
+    
+        if (top >=about-bottom && top<= boat-bottom|| top >= brand-bottom && top<=location-bottom || top >= scrolltoShowdiv-bottom && top <= footer-bottom) {
+            $('.menu-fix').addClass('show');
+        }
+        else {
+            $('.menu-fix').removeClass('show');  
+        }
+    }
+    else {
+         var styleBrand = document.querySelector('#brand').currentStyle || window.getComputedStyle(document.querySelector('#brand'));
+     var brandHeight= document.querySelector('#brand').offsetHeight
+     var brandPadding = parseInt(styleBrand.paddingTop)
+     var showDivBrand=brandHeight-brandPadding
+     var scrolltoShowdivbrand= (brand+showDivBrand)
+     console.log("brandPadding",brandPadding,brandHeight, brand, top, scrolltoShowdivbrand);
+         $('.menu-fix').removeClass('show');
+             if(window.innerWidth < 991 ) var bottom = 200
+             console.log("bottom", bottom);
+          if (top >= scrolltoShowdiv-bottom && top <= footer-bottom || top >= scrolltoShowdivbrand-1000 && top <= brand-bottom) {
+            $('.menu-fix').addClass('show');
+            }
+            else {
+                $('.menu-fix').removeClass('show');  
+            }
+    }     
 
 	});
