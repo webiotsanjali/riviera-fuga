@@ -70,17 +70,22 @@
     <div class="menu">
         <div class="container-fluid">
             <div class="row w-100 h-100 mx-0">
-            <div class="col-lg-4 px-0">
-                <div class="row row-cols-lg-5 yellow-line">
+            <div class="col-xl-4 col-md-3 col-1 px-0">
+                <div class="row row-cols-xl-5 row-cols-md-3 row-cols-1 yellow-line">
                     <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+                    <div class="col d-md-block d-none"></div>
+                    <div class="col d-md-block d-none"></div>
+                    <div class="col d-xl-block d-none"></div>
+                    <div class="col d-xl-block d-none"></div>
                 </div>
             </div>
-            <div class="col-lg-4 px-0">
+            <div class="col-xl-4 col-md-6 col-10 px-0">
+                <div class="language-list">
+              
+                    <?php dynamic_sidebar('header-3') ?>
+            </div>
                 <nav class="navbar">
+                    
          <?php wp_nav_menu( array(
 							'theme_location' => 'menu-1',
 							'container'       => 'div',
@@ -95,13 +100,13 @@
                     <?php dynamic_sidebar( 'header-1' ); ?>
                 </ul>
             </div>
-            <div class="col-lg-4 px-0">
-                <div class="row row-cols-lg-5 yellow-line">
+            <div class="col-xl-4 col-md-3  col-1 px-0">
+                <div class="row row-cols-xl-5 row-cols-md-3 row-cols-1 yellow-line">
                     <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+                    <div class="col d-md-block d-none"></div>
+                    <div class="col d-md-block d-none"></div>
+                    <div class="col d-xl-block d-none"></div>
+                    <div class="col d-xl-block d-none"></div>
                 </div>
             </div>
         </div>

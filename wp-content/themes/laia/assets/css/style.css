@@ -316,18 +316,18 @@ header {
 
     .main-header.open {
       z-index: 10; }
-  header .language-list ul {
+   .language-list ul {
     margin-bottom: 25px; }
-    header .language-list ul li {
+    .language-list ul li {
       position: relative;
       line-height: 10px; }
-      header .language-list ul li:first-child {
+      .language-list ul li:first-child {
         margin-right: 1px;
       }
-      header .language-list ul li + li {
+      .language-list ul li + li {
         padding-left: 9px;
     }
-      header .language-list ul li a {
+     .language-list ul li a {
         text-transform: uppercase;
         letter-spacing: 2.8px;
         font-size: 14px;
@@ -338,14 +338,14 @@ header {
         overflow: hidden;
         color: #215584;
         position: relative; }
-        header .language-list ul li:first-child a::after {
+         .language-list ul li:first-child a::after {
           margin-left: -2px;
         }
-        header .language-list ul li a.active {
+         .language-list ul li a.active {
           font-weight: bold; }
-      header .language-list ul li + li a {
+       .language-list ul li + li a {
         padding: 0; }
-          header .language-list ul li + li::after {
+           .language-list ul li + li::after {
             position: absolute;
             content: '';
             width: 2px;
@@ -427,48 +427,66 @@ header {
       -ms-flex-align: center;
           align-items: center;
   display: block;
-  padding-top: 188px; }
+  padding-top: 240px;
+  padding-bottom: 106px; }
   .main-header .navbar ul {
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: center; }
     .main-header .navbar ul li a {
-      font-size: 22px;
-      line-height: 18px;
-      letter-spacing: 3.6px;
-      font-weight: 500;
+      font: normal normal bold 34px/51px Source Sans Pro;
+      letter-spacing: 3.4px;
       text-transform: uppercase;
       position: relative;
       z-index: 1;
-      padding: 3px 20px 0 23px; }
+      padding: 0 53px; }
       .main-header .navbar ul li a::before {
         position: absolute;
         content: '';
-        width: 100%;
-        height: 100%;
-        background-image: url(../images/shape/1.svg);
+        width: 15px;
+        height: 14px;
+        background-image: url(../images/shapes/11.svg);
         background-size: cover;
         background-repeat: no-repeat;
         opacity: 0;
         visibility: hidden;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-        top: 0;
-        margin-top: -2px;
+        top: 50%;
+        transform: translateY(-50%);
         left: 0;
+        margin-top: 1px;
         z-index: -1; }
-      .main-header .navbar ul li a:hover::before, .main-header .navbar ul li a.active::before {
+        .main-header .navbar ul li a::after {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 14px;
+        background-image: url(../images/shapes/11.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        right: 0;
+        margin-top: 1px;
+        z-index: 1; }
+      .main-header .navbar ul li a:hover::before, .main-header .navbar ul li a.active::before, 
+      .main-header .navbar ul li a:hover::after, .main-header .navbar ul li a.active::after {
         opacity: 1;
         visibility: visible;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
-    .main-header .navbar ul li .nav-link.active::before {
+    .main-header .navbar ul li .nav-link.active::before, .main-header .navbar ul li .nav-link.active::after {
       opacity: 1;
       visibility: visible;
       -webkit-transition: all 0.5s;
       transition: all 0.5s; }
     .main-header .navbar ul li + li {
-      margin-top: 40px; }
+      margin-top: 4px; }
 
 .main-header .menu-brand ul {
   display: -webkit-box;

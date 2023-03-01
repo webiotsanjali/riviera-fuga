@@ -98,13 +98,8 @@
 
 @media (max-width: 1366px) {
   .main-header .navbar ul li a {
-    letter-spacing: 3.6px;
-    font-size: 18px;
-    line-height: 22px; }
-  .main-header .navbar ul li + li {
-    /* margin-top: 11px; */
-    margin-top: 30px;
-   }
+    font-size: 25px;
+    line-height: 34px; }
   .menu-with-bg li a {
     font-size: 14px;
     line-height: 14px; }
@@ -226,12 +221,13 @@
     margin-top: 0; } }
 
 @media (max-width: 991px) {
+  .main-header .navbar ul li a {
+    padding: 0 35px
+  }
   footer {
     padding: 30px; }
     .main-header .menu-brand ul li img {
       width: 160px; }
-    .main-header .menu {
-      padding: 51px 40px 0 17px; }
   .title h4 a {
     width: 42%; }
   .brand-section {
@@ -397,19 +393,35 @@
       line-height: 32px; }
   .title h4 a {
     width: 60%; }
+    header .menu-bar .bar-icon {
+      width: unset;
+      height: unset;
+    }
+    .main-header .location li + li {
+      margin-top: 30px;
+    }
+    header .menu-bar .bar-icon img {
+      width: 29px;
+      height: 29px;
+    }
+    .main-header .menu-close, .main-header .menu-toggle {
+      right: 17px;
+    }
+    .main-header .menu-top {
+       background-image: url(../images/shapes/20.svg);
+    }
   header {
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    justify-content: center;
+    padding: 68px 17px 20px;
     text-align: center; }
     header .language-list {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
+       display: none; }
+              .main-header .menu-top {
+                height: 141px;
+              }
       header .language-list ul {
         opacity: 0;
         visibility: hidden;
@@ -421,16 +433,24 @@
           -ms-flex-order: -1;
               order: -1; }
       header .navbar-brand img {
-        height: 65px; }
+        height: 54px; }
     .main-header .menu {
-      display: block;
-      height: auto;
+      height: calc(100vh - 0px);
       min-height: 500px;
-      top: 200px;
+      top: 0;
       padding: 0; }
+      .main-header .col-md-6 {
+        padding-top: 200px;
+      }
+      .language-list {
+        text-align: center;
+      }
+      .main-header .navbar ul li + li {
+        margin-top: 1px;
+      }
     .main-header .navbar {
-      padding-bottom: 95px;
-      padding-top: 68px; }
+      padding-bottom: 100px;
+    padding-top: 20px; }
       .main-header .navbar ul {
         -webkit-box-align: center;
             -ms-flex-align: center;
@@ -455,8 +475,8 @@
       top: 0;
       overflow: scroll;
       height: 100%; }
-      .main-header.open header .navbar-brand {
-        margin-bottom: 120px; }
+      /* .main-header.open header .navbar-brand {
+        margin-bottom: 120px; } */
       .main-header.open header .language-list ul {
         opacity: 1;
         visibility: visible;
@@ -618,15 +638,23 @@
 }
 
 @media (max-width: 575px) {
+  .main-header .navbar ul li a {
+    font: normal normal bold 26px/51px Source Sans Pro;
+    letter-spacing: 2.6px;
+  }
+  .main-header .navbar ul li a {
+    padding: 0 20px;
+  }
+  .main-header .navbar ul li a:hover::before, .main-header .navbar ul li a.active::before, .main-header .navbar ul li a:hover::after, .main-header .navbar ul li a.active::after {
+    opacity: 0;
+    visibility: hidden;
+  }
   .next-btn { 
     padding-left: 109px;
   }
   section {
     padding: 0 6px;
   }
-  .main-header .location li p {
-    line-height: 14px;
-    letter-spacing: 2.4px; }
   .main-header .menu {
     padding-top: 0; }
   /* .main-header .navbar ul li + li {
@@ -754,7 +782,7 @@
     }
   
   .brand-section {
-    padding: 48px 37px 65px 25px; }
+    padding: 418px 37px 65px 25px; }
     .location-section .location-slider .slick-slide > div {
       padding: 0 2px; }
   .location-slider {
@@ -909,6 +937,9 @@
   }
 }
 @media (max-width: 360px) {
+  .main-header .navbar ul li a {
+    letter-spacing: 1.5px;
+  }
   .main-header .menu .container {
     padding: 0; }
   .home-section .home-content p {
