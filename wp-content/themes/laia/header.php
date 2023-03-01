@@ -98,6 +98,8 @@
                 </nav>
                 <ul class="location">
                     <?php dynamic_sidebar( 'header-1' ); ?>
+                    <li>
+                    </li>
                 </ul>
             </div>
             <div class="col-xl-4 col-md-3  col-1 px-0">
