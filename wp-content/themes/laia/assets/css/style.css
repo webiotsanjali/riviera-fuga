@@ -184,12 +184,14 @@ section {
   visibility: hidden;
   -webkit-animation: fadeOut 0.5s linear;
   animation: fadeOut 0.5s linear;
+  transition: all 0.5s ease;
 }
 .menu-fix.show {
   opacity: 1;
   visibility: visible;
   -webkit-animation: fadeIn 0.5s linear;
   animation: fadeIn 0.5s linear;
+  transition: all 0.5s ease;
 }
 .menu-details h6, .menu-details ul li a {
   color: #fff;
@@ -438,6 +440,7 @@ header {
       letter-spacing: 3.4px;
       text-transform: uppercase;
       position: relative;
+      transition: unset;
       z-index: 1;
       padding: 0 53px; }
       .main-header .navbar ul li a::before {
@@ -538,7 +541,7 @@ header {
   .home-section .shape-bg {
     width: 100%;
     position: relative;
-    height: 695px;
+    height: calc(100vh - 60px);
     min-height: 695px;
   }
   .home-img {
@@ -552,7 +555,7 @@ header {
     background: #215584;
     left: 50%;
     transform: translateX(-50%);
-    transition: 0.3s;
+    transition: 0.1s;
     color: #fff;
   }
   .home-img .btn:hover {
@@ -560,7 +563,7 @@ header {
     background: url(../images/shapes/5.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    transition: 0.3s;
+    transition: 0.1s;
   }
   .home-img .btn:visited {
     background: url(../images/shapes/5.svg);
@@ -700,7 +703,7 @@ header {
 .location-section {
   padding-top: 0; }
   .location-section .location-image img {
-    max-height: 479px;
+    max-height: 481px;
     -o-object-fit: cover;
        object-fit: cover; }
   .location-section .location-slider .slick-list {
@@ -715,7 +718,7 @@ header {
   display: none;
 }
 .location-slider {
-  padding-bottom: 45px;
+  padding-bottom: 47px;
 }
 .location-slider .slick-arrow {
   background-image: url(../images/shapes/11.svg);
@@ -994,7 +997,7 @@ header {
   margin-top: 25px;
 }
 .event-section {
-  padding: 130px 60px 90px 60px;
+  padding: 127px 60px 90px 60px;
 }
 .event-image {
   position: relative;
@@ -1245,6 +1248,9 @@ header {
   }
 .instagram-section .bg-stripe > div:nth-child(odd){
   background: #E1EEF8;
+}
+.insta-image-section .slick-list .slick-track {
+  transition-timing-function: linear !important;
 }
 .insta-image-section {
   margin: 0 -12px -7px; }

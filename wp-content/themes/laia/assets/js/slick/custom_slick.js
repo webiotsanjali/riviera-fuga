@@ -25,7 +25,7 @@ $('.brand-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  fade: false,
+  fade: true,
   dots: true,
     infinite: false,
     speed: 1000,

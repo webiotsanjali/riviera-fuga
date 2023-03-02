@@ -275,7 +275,7 @@ $('.brand-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  fade: false,
+  fade: true,
 	infinite: false,
 	speed: 1000,
   asNavFor: '.brand-slider',
