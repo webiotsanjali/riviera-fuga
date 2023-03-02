@@ -683,6 +683,8 @@ header {
  }
  .brand-section .slick-dotted.slick-slider {
     margin-bottom: 25px;
+    z-index: 2;
+    background: #fff;
 }
  .brand-section .slick-dots {
   text-align: left;
@@ -890,6 +892,8 @@ header {
      boat css start
 ==========================**/
 .boat-section {
+  position: relative;
+  z-index: 1;
   padding-top: 0;
 }
 .boat-wrap {
@@ -1248,6 +1252,9 @@ header {
   }
 .instagram-section .bg-stripe > div:nth-child(odd){
   background: #E1EEF8;
+}
+.insta-image-section {
+  z-index: 2;
 }
 .insta-image-section .slick-list .slick-track {
   transition-timing-function: linear !important;
