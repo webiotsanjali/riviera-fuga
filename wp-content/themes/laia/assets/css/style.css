@@ -1370,7 +1370,7 @@ header {
     position: relative;
     display: block;
     font-size: 16px;
-    line-height: 1.2; }
+    line-height: 1.1; }
     .menu-sub-list li a {
       font-size: 16px;
       font-weight: 600;
@@ -1383,22 +1383,24 @@ header {
       .menu-sub-list li a::after, .menu-sub-list li a::before {
         position: absolute;
         content: '';
-        width: 5px;
-        height: 5px;
-        background: #215584;
+        width: 15px;
+		height: 14px;
+        background: url(../images/shapes/11.svg);
         top: 50%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         border-radius: 100%;
-        margin-top: -2px;
+        margin-top: 0px;
         opacity: 0;
         visibility: hidden;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
       .menu-sub-list li a::before {
-        left: -24px; }
+        left: 0px; }
       .menu-sub-list li a::after {
-        right: -24px; }
+      	-webkit-transform: translateY(-50%) rotate(180deg);
+                transform: translateY(-50%) rotate(180deg);
+        right: 0px; }
       .menu-sub-list li a.active {
         opacity: 1; }
         .menu-sub-list li a.active::after, .menu-sub-list li a.active::before {
@@ -1406,17 +1408,18 @@ header {
           visibility: visible;
           -webkit-transition: 0.5s;
           transition: 0.5s; }
-    .menu-sub-list li + li {
-      margin-top: 17px; }
+   .sub-menu li + li {
+      margin-top: 14px; }
 
 .menu-content {
   max-width: 750px;
   margin: 0 auto 0;
   /* border-top: 1px solid #477573; */
-  padding-top: 76px; }
+  padding-top: 75px; }
   .menu-content h6 {
     font-size: 16px;
-    font-weight: 600;
+    line-height: 14px;
+    font-weight: bold;
     letter-spacing: 3.2px;
     color: #215584;
     text-transform: uppercase;
@@ -1430,7 +1433,7 @@ header {
       text-transform: uppercase; }
   .menu-content .menu-title {
     text-align: center;
-    margin-bottom: 25px; }
+    margin-bottom: 30px; }
     .menu-content .menu-title img {
       margin-bottom: 8px; }
     .menu-content .menu-title h6 {
@@ -1447,7 +1450,7 @@ header {
         color: #215584;
         text-transform: uppercase; }
     .menu-content .menu-title span {
-      font: italic normal bold 14px/18px Times New Roman;
+      font: italic normal normal 14px/18px Source Sans Pro;
       letter-spacing: 0.28px;
       color: #215584;
       text-transform: capitalize; }
@@ -1478,11 +1481,9 @@ header {
         letter-spacing: 0.96px;
         text-transform: uppercase; }
     .main-list ul li .d-flex p {
-      font-size: 14px;
-      font-family: "Atlas Grotesk regular";
-      line-height: 22px;
+      font: normal normal normal 14px/22px Source Sans Pro;
+	  letter-spacing: 0.56px;
       font-weight: normal;
-      letter-spacing: 0.56px;
       color: #215584;
       margin-bottom: 0; }
     .main-list ul li .d-flex > h6 {
@@ -1491,13 +1492,15 @@ header {
       letter-spacing: 0.48px;
       margin: -4px 0 0 20px; }
     .main-list ul li .d-flex > div h6 {
-      margin-bottom: 8px;
+      font: normal normal bold 16px/18px Source Sans Pro;
+      letter-spacing: 0.96px;
+      margin-bottom: 13px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
       .main-list ul li .d-flex > div h6 ul {
         display: none;
-        margin-left: 12px;
+        margin-left: 61px;
         margin-top: -2px; }
         .main-list ul li .d-flex > div h6 ul li {
           display: inline-block;
@@ -1505,9 +1508,9 @@ header {
           line-height: 0; }
           .main-list ul li .d-flex > div h6 ul li + li {
             margin-top: 0;
-            margin-left: 1px; }
+            margin-left: 12px; }
   .main-list ul li + li {
-    margin-top: 31px; }
+    margin-top: 22px; }
 
 .main-list .price-list {
   margin-left: 70px;
@@ -1546,12 +1549,12 @@ header {
     margin: -5px -45px; }
     .menu-type ul li {
       white-space: nowrap;
-      padding: 5px 45px; }
+      padding: 5px 25px; }
       .menu-type ul li img {
         margin-right: 18px; }
       .menu-type ul li span {
-        font: normal normal normal 12px/18px Atlas Grotesk regular;
-        letter-spacing: 0.3px;
+        font: normal normal normal 12px/18px Source Sans Pro;
+		letter-spacing: 0.36px;
         color: #215584; }
 
 .menu-beverage {
@@ -1595,12 +1598,8 @@ header {
       font-size: 14px; }
       .menu-sub-list li a {
         font-size: 14px; }
-      .menu-sub-list li + li {
-        margin-top: 18px; }
   .menu-type {
     max-width: 715px; }
-    .menu-type ul li span {
-      font-size: 10px; }
   .menu-content {
     max-width: 572px; }
   .menu-beverage {
@@ -1647,6 +1646,9 @@ header {
     width: 18px; } }
 
 @media (max-width: 575px) {
+ .menu-type ul li span {
+    font: normal normal normal 10px/18px Source Sans Pro;
+    letter-spacing: 0.3px;  }
   .menu-wrap nav {
     margin-bottom: -4px; }
     .menu-wrap nav .nav-link {
@@ -1731,8 +1733,6 @@ header {
     font-size: 10px;
     line-height: 18px;
     letter-spacing: 0.3px; }
-  .main-list ul li .d-flex > div h6 {
-    margin-bottom: 0; }
   .main-list ul li + li {
     margin-top: 21px; }
   .main-list .price-list {
@@ -1802,17 +1802,16 @@ a:visited{
   opacity: 1;
 }
 .horizontal-line{
-  border-top: 1px solid #477573;
-  margin: 28px auto 0;
+  border-top: 1px solid #2E5580;
+  margin: 21px auto 0;
   max-width:750px;
   width: 100%;
   display: none;
 }
 
 .main-list ul li .d-flex .price-list p {
-	font-size: 16px;
-  font-family: 'Founders Grotesk';
-  line-height: 18px;
+	font: normal normal bold 16px/18px Source Sans Pro;
+	letter-spacing: 0.48px;
 }
 
 .menu-footer-menu-container {
@@ -1839,7 +1838,7 @@ a:visited{
   }
   .menu-wrap > li {
     position: unset;
-    margin-bottom: -43px;
+    // margin-bottom: -43px;
   }
   #menu-food-menu, #menu-food-menu-en {
     margin-bottom: 7px;
@@ -1847,18 +1846,31 @@ a:visited{
   .menu-wrap > li > a {
         position: relative;
         opacity: 1;
-        font: normal normal 600 16px/18px SangBleu Sunrise;
-        letter-spacing: 3.2px;
+        font: normal normal bold 16px/14px Source Sans Pro;
+		letter-spacing: 3.2px;
         background: unset;
         color: #215584;
         text-transform: uppercase;
-        width: 165px;
-        height: 127px;
+        width: 180px;
+        height: 40px;
         background-color: transparent;
         border: none;
         padding: 0;
-          z-index: 8;
-          display: inline-block;
+          z-index: 1;
+          display: flex;
+    align-items: center;
+    justify-content: center;
+              margin-bottom: 66px;
+  }
+  .menu-wrap > li >a::before {
+  	display: none;
+  }
+  
+  .menu-wrap > li > a.active {
+  	background: url(../images/shapes/22.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
   }
 
   .menu-wrap > li >a::before {
@@ -1883,29 +1895,10 @@ a:visited{
   .menu-wrap > li > a::after {
     display: none;
   }
-  .menu-wrap > li:first-child > a:before {
-    background-image: url(../images/shape/16.svg);
-  }
-  .menu-wrap > li:last-child > a:before {
-    background-image: url(../images/shape/17.svg);
-    height: 112px;
-    width: 92px;
-    left: 48%;
-    margin-top: -50px;
-  }
-  .menu-wrap nav  > li:last-child > a:before  {
-    height: 110px;
-    margin-top: -3px; }
-    .menu-wrap > li  > a.active::before {
-      opacity: 1;
-      visibility: visible;
-      transition: all 0.5s;
-      color: #13505C; }
     .menu-wrap li a:hover {
       border: none; }
       .menu-wrap > li + li {
-        margin-top: 0;
-        margin-left: -20px; }
+        margin-left: 12px; }
   
       .menu-wrap li .sub-menu {
         display: none;
@@ -1916,19 +1909,18 @@ a:visited{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        margin: -34px 0 0;
+        margin: 0 0 0;
         padding-top: 0;
-        z-index: 9;
+        z-index: 1;
       }
   
       .menu-wrap li .sub-menu li a {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 1.2;
-        letter-spacing: 2.8px;
+        font: normal normal bold 16px/18px Source Sans Pro;
+		letter-spacing: 3.2px;
         color: #215584;
         text-transform: uppercase;
         position: relative;
+        padding: 0 30px 0 34px;
       }
       .menu-wrap li .sub-menu li a.active {
         opacity: 1;
@@ -1944,9 +1936,6 @@ a:visited{
 
 
     @media (max-width: 1366px) {
-      .menu-wrap li .sub-menu li a {
-        font-size: 14px;
-      }
       .horizontal-line {
         max-width: 575px;
       }
@@ -1966,23 +1955,52 @@ a:visited{
 		}
 		.main-list ul li .d-flex .price-list p {
 			font-size: 14px;
-			    line-height: 16px;
+			letter-spacing: 0.42px;
 		}
     }
     @media (max-width: 575px) {
       #menu-food-menu, #menu-food-menu-en {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
+      }
+      .main-list ul li .d-flex p {
+      	font: normal normal normal 10px/18px Source Sans Pro;
+		letter-spacing: 0.3px;
+      }
+      .menu-content .menu-title {
+      	margin-bottom: 20px;
+      }
+      .main-list ul li .d-flex > div h6 {
+      	font: normal normal bold 12px/18px Source Sans Pro;
+		letter-spacing: 0.6px;
+            margin-bottom: 5px;
+      }
+      .main-list ul li + li {
+      	margin-top: 17px;
+      }
+      .menu-content h6 {
+      	margin-bottom: 39px;
+      }
+      .menu-content {
+      	padding: 72px 0 0;
+      }
+      .sub-menu li + li {
+      	margin-top: 16px
       }
       .horizontal-line {
         max-width: unset;
         margin: 0 24px;
     }
       .menu-wrap > li > a {
-        font-size: 14px;
-        letter-spacing: 2.8px;
-        width: 133px;
-        height: 115px;
+        width: 155px;
+        margin-bottom: 34px;
       }
+      .menu-wrap li .sub-menu li a {
+        font: normal normal bold 14px/18px Source Sans Pro;
+		letter-spacing: 2.8px;
+      }
+      .menu-wrap > li > a.active {
+      	background-image: url(../images/shapes/23.svg);
+       }
       .menu-wrap > li >a::before {
         margin-top: -41px;
       }
@@ -2006,9 +2024,6 @@ a:visited{
     @media (max-width: 480px) {
       .menu-wrap li .sub-menu {
         margin: -50px 0 0;
-      }
-      #menu-food-menu, #menu-food-menu-en {
-        margin-bottom: 21px;
       }
 		.main-list ul li .d-flex .price-list p {
 			font-size: 12px;
