@@ -315,7 +315,7 @@ class Event extends \Elementor\Widget_Base {
             <?php foreach( $settings['event_section'] as $key => $event ): ?>
             <div>
                 <div class="row m-0 align-items-center">
-                    <div class="col-lg-7 p-0">
+                    <div class="col-lg-7 col-xxl-8 p-0">
                         <div class="event-image">
                             <?php if( $event['event_image_video'] == 'image' ):  ?>
 
@@ -331,7 +331,7 @@ class Event extends \Elementor\Widget_Base {
                             <?php endif; ?>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-9 col-sm-11 p-0">
+                    <div class="col-lg-5 col-xxl-4 col-md-9 col-sm-11 p-0">
                         <div class="event-content">
 							<div class="event-main">
 								<div class="event-details">

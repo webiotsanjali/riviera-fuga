@@ -182,16 +182,18 @@ section {
   background-repeat: no-repeat;
   opacity: 0;
   visibility: hidden;
-  -webkit-animation: fadeOut 0.5s linear;
-  animation: fadeOut 0.5s linear;
-  transition: all 0.5s ease;
+  -webkit-animation: fadeOut 0.3s linear;
+  animation: fadeOut 0.3s linear;
+  transition: all 0.3s ease;
+  transform: scale(0);
 }
 .menu-fix.show {
   opacity: 1;
   visibility: visible;
-  -webkit-animation: fadeIn 0.5s linear;
-  animation: fadeIn 0.5s linear;
-  transition: all 0.5s ease;
+  -webkit-animation: fadeIn 0.3s linear;
+  animation: fadeIn 0.3s linear;
+  transition: all 0.3s ease;
+  transform: scale(1);
 }
 .menu-details h6, .menu-details ul li a {
   color: #fff;
@@ -592,7 +594,7 @@ header {
   .home-section .shape-bg::before , .home-section .shape-bg::after {
     position: absolute;
     content: '';
-    width: 42px;
+    width: 42px !important;
     height: 100%;
     background-image: url(../images/shapes/3.svg);
     background-size: cover;
@@ -929,7 +931,7 @@ header {
   padding: 12px;
   min-width: 230px;
   background: #fff;
-  transition: 0.7s ease-in-out;
+  transition: 0.3s;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -940,7 +942,7 @@ header {
     background:url(../images/shapes/9.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 0.7s ease-in-out;
+    transition: 0.3s;
   }
 .boat-image .boat-img {
   min-height: 520px;
@@ -1256,24 +1258,51 @@ header {
 .insta-image-section {
   z-index: 2;
 }
-.insta-image-section .slick-list .slick-track {
-  transition-timing-function: linear !important;
+
+.insta-image-section .swiper-wrapper {
+    transition-timing-function: linear !important;
 }
-.insta-image-section {
-  margin: 0 -12px -7px; }
-  .insta-image-section .slick-slide {
-    padding: 0 3px; }
-    .insta-image-section .slick-slide img {
-      width: 100%;
-      height: 460px;
-      -o-object-fit: cover;
-         object-fit: cover; }
-    .insta-image-section .slick-slide:nth-child(3n+1) {
-      margin-top: -30px; }
-    .insta-image-section .slick-slide:nth-child(3n+2) {
-      margin-top: 50px; }
-    .insta-image-section .slick-slide:nth-child(3n+3) {
-      margin-top: 110px; }
+
+.insta-image-section.swiper-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.insta-image-section .swiper-slide:nth-child(3n+1){
+  margin-top: -30px;
+}.insta-image-section .swiper-slide:nth-child(3n+2){
+  margin-top: 50px;
+}.insta-image-section .swiper-slide:nth-child(3n+3){
+  margin-top: 110px;
+}
+.insta-image-section .swiper-slide img{
+  width: 100%;
+  height: 460px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+// .insta-image-section .slick-list .slick-track {
+//   transition-timing-function: linear !important;
+// }
+// .insta-image-section {
+//   margin: 0 -12px -7px; }
+//   .insta-image-section .slick-slide {
+//     padding: 0 3px; }
+//     .insta-image-section .slick-slide img {
+//       width: 100%;
+//       height: 460px;
+//       -o-object-fit: cover;
+//          object-fit: cover; }
+//     .insta-image-section .slick-slide:nth-child(3n+1) {
+//       margin-top: -30px; }
+//     .insta-image-section .slick-slide:nth-child(3n+2) {
+//       margin-top: 50px; }
+//     .insta-image-section .slick-slide:nth-child(3n+3) {
+//       margin-top: 110px; }
 
 /**=====================
      instagram css end
