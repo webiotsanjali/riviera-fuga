@@ -231,8 +231,6 @@ final class Elementor_Laia {
 
 		require_once( __DIR__ . '/widgets/about.php' );
 
-		require_once( __DIR__ . '/widgets/boat.php' );
-
 		require_once( __DIR__ . '/widgets/instagram.php' );
 
 		require_once( __DIR__ . '/widgets/menu-header.php' );

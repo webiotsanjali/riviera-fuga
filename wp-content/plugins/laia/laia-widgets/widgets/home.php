@@ -80,22 +80,22 @@ class Home extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Home', 'laia' )
 			]
 		);
-		// $this->add_control(
-		// 	'restorent_title',
-		// 	[
-		// 		'label' => esc_html__( 'restorent Title', 'laia' ),
-		// 		'type' => \Elementor\Controls_Manager::TEXT,
-		// 		'default' => 'Restaurant caché, Cuisine latine méditerranéenne au charbons de bois.'
-		// 	]
-		// );
-		// $this->add_control(
-		// 	'details',
-		// 	[
-		// 		'label' => esc_html__( 'Details', 'laia' ),
-		// 		'type' => \Elementor\Controls_Manager::WYSIWYG,
-		// 		'default' => '<p>226 BLVD. VOLTTAIRE <span>•</span> PARIS 11<sup>EME</sup></p>'
-		// 	]
-		// );
+		$this->add_control(
+			'restorent_title',
+			[
+				'label' => esc_html__( 'restorent Title', 'laia' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => 'Restaurant caché, Cuisine latine méditerranéenne au charbons de bois.'
+			]
+		);
+		$this->add_control(
+			'details',
+			[
+				'label' => esc_html__( 'Details', 'laia' ),
+				'type' => \Elementor\Controls_Manager::WYSIWYG,
+				'default' => '<p>226 BLVD. VOLTTAIRE <span>•</span> PARIS 11<sup>EME</sup></p>'
+			]
+		);
 		$this->add_control(
 			'restorent_image_video',
 			[
@@ -144,120 +144,120 @@ class Home extends \Elementor\Widget_Base {
 			]
 		);
 		
-		// $this->add_control(
-		// 	'menu_link_button',
-		// 	[
-		// 		'label' => esc_html__( 'Show Menu Details', 'laia' ),
-		// 		'type' => \Elementor\Controls_Manager::SWITCHER,
-		// 		'label_on' => esc_html__( 'Show', 'laia' ),
-		// 		'label_off' => esc_html__( 'Hide', 'laia' ),
-		// 		'return_value' => 'show',
-		// 		'default' => 'show'
-		// 	]
-		// );
+		$this->add_control(
+			'menu_link_button',
+			[
+				'label' => esc_html__( 'Show Menu Details', 'laia' ),
+				'type' => \Elementor\Controls_Manager::SWITCHER,
+				'label_on' => esc_html__( 'Show', 'laia' ),
+				'label_off' => esc_html__( 'Hide', 'laia' ),
+				'return_value' => 'show',
+				'default' => 'show'
+			]
+		);
 		
-		// $this->add_control(
-		// 	'menu_link_details_text',
-		// 	[
-		// 		'label' => __( 'Menu Details Link Text', 'laia' ),
-		// 		'type' => \Elementor\Controls_Manager::TEXT,
-		// 		'default' => 'Menu',
-		// 		'condition' => [
-		// 			'menu_link_button' => 'show'
-		// 		]
-		// 	]
-		// );
+		$this->add_control(
+			'menu_link_details_text',
+			[
+				'label' => __( 'Menu Details Link Text', 'laia' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => 'Menu',
+				'condition' => [
+					'menu_link_button' => 'show'
+				]
+			]
+		);
 
-		// $this->add_control(
-		// 	'menu_detail_button_link',
-		// 	[
-		// 		'label' => __( 'Menu Detail Button Link', 'laia' ),
-		// 		'type' => \Elementor\Controls_Manager::URL,
-		// 		'default' => [
-		// 			'url' => '#'
-		// 		],
-		// 		'condition' => [
-		// 			'menu_link_button' => 'show'
-		// 		]
-		// 	]
-		// );
+		$this->add_control(
+			'menu_detail_button_link',
+			[
+				'label' => __( 'Menu Detail Button Link', 'laia' ),
+				'type' => \Elementor\Controls_Manager::URL,
+				'default' => [
+					'url' => '#'
+				],
+				'condition' => [
+					'menu_link_button' => 'show'
+				]
+			]
+		);
 
 
-		// $this->add_control(
-		// 	'reserver_link_button',
-		// 	[
-		// 		'label' => esc_html__( 'Show Reserver Details', 'laia' ),
-		// 		'type' => \Elementor\Controls_Manager::SWITCHER,
-		// 		'label_on' => esc_html__( 'Show', 'laia' ),
-		// 		'label_off' => esc_html__( 'Hide', 'laia' ),
-		// 		'return_value' => 'show',
-		// 		'default' => 'show'
-		// 	]
-		// );
+		$this->add_control(
+			'reserver_link_button',
+			[
+				'label' => esc_html__( 'Show Reserver Details', 'laia' ),
+				'type' => \Elementor\Controls_Manager::SWITCHER,
+				'label_on' => esc_html__( 'Show', 'laia' ),
+				'label_off' => esc_html__( 'Hide', 'laia' ),
+				'return_value' => 'show',
+				'default' => 'show'
+			]
+		);
 		
-		// $this->add_control(
-		// 	'reserver_link_details_text',
-		// 	[
-		// 		'label' => __( 'Reserver Details Link Text', 'laia' ),
-		// 		'type' => \Elementor\Controls_Manager::TEXT,
-		// 		'default' => 'Reserver',
-		// 		'condition' => [
-		// 			'reserver_link_button' => 'show'
-		// 		]
-		// 	]
-		// );
+		$this->add_control(
+			'reserver_link_details_text',
+			[
+				'label' => __( 'Reserver Details Link Text', 'laia' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => 'Reserver',
+				'condition' => [
+					'reserver_link_button' => 'show'
+				]
+			]
+		);
 
-		// $this->add_control(
-		// 	'reserver_detail_button_link',
-		// 	[
-		// 		'label' => __( 'Reserver Detail Button Link', 'laia' ),
-		// 		'type' => \Elementor\Controls_Manager::URL,
-		// 		'default' => [
-		// 			'url' => '#'
-		// 		],
-		// 		'condition' => [
-		// 			'reserver_link_button' => 'show'
-		// 		]
-		// 	]
-		// );
+		$this->add_control(
+			'reserver_detail_button_link',
+			[
+				'label' => __( 'Reserver Detail Button Link', 'laia' ),
+				'type' => \Elementor\Controls_Manager::URL,
+				'default' => [
+					'url' => '#'
+				],
+				'condition' => [
+					'reserver_link_button' => 'show'
+				]
+			]
+		);
 
-		// $this->add_control(
-		// 	'commander_link_button',
-		// 	[
-		// 		'label' => esc_html__( 'Show Commander Details', 'laia' ),
-		// 		'type' => \Elementor\Controls_Manager::SWITCHER,
-		// 		'label_on' => esc_html__( 'Show', 'laia' ),
-		// 		'label_off' => esc_html__( 'Hide', 'laia' ),
-		// 		'return_value' => 'show',
-		// 		'default' => 'show'
-		// 	]
-		// );
+		$this->add_control(
+			'commander_link_button',
+			[
+				'label' => esc_html__( 'Show Commander Details', 'laia' ),
+				'type' => \Elementor\Controls_Manager::SWITCHER,
+				'label_on' => esc_html__( 'Show', 'laia' ),
+				'label_off' => esc_html__( 'Hide', 'laia' ),
+				'return_value' => 'show',
+				'default' => 'show'
+			]
+		);
 		
-		// $this->add_control(
-		// 	'commander_link_details_text',
-		// 	[
-		// 		'label' => __( 'Commander Details Link Text', 'laia' ),
-		// 		'type' => \Elementor\Controls_Manager::TEXT,
-		// 		'default' => 'Commander',
-		// 		'condition' => [
-		// 			'commander_link_button' => 'show'
-		// 		]
-		// 	]
-		// );
+		$this->add_control(
+			'commander_link_details_text',
+			[
+				'label' => __( 'Commander Details Link Text', 'laia' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => 'Commander',
+				'condition' => [
+					'commander_link_button' => 'show'
+				]
+			]
+		);
 
-		// $this->add_control(
-		// 	'commander_detail_button_link',
-		// 	[
-		// 		'label' => __( 'Commander Detail Button Link', 'laia' ),
-		// 		'type' => \Elementor\Controls_Manager::URL,
-		// 		'default' => [
-		// 			'url' => '#'
-		// 		],
-		// 		'condition' => [
-		// 			'commander_link_button' => 'show'
-		// 		]
-		// 	]
-		// );
+		$this->add_control(
+			'commander_detail_button_link',
+			[
+				'label' => __( 'Commander Detail Button Link', 'laia' ),
+				'type' => \Elementor\Controls_Manager::URL,
+				'default' => [
+					'url' => '#'
+				],
+				'condition' => [
+					'commander_link_button' => 'show'
+				]
+			]
+		);
 
 		$this->add_control(
 			'reserves_text',
@@ -377,9 +377,7 @@ class Home extends \Elementor\Widget_Base {
 							preload="none" muted="muted"></video>
 						<?php endif;?>
 						<?php endif; ?>
-						
-						<a href="<?php echo esc_url( $settings['reserves_button_link']['url'] ); ?>" class="btn btn-solid"><?php echo esc_html( $settings['reserves_text'] ); ?></a>
-						
+						<a href="#" class="btn btn-solid">Reserver</a>
                 	</div>
 					
 				</div>
