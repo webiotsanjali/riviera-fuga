@@ -253,7 +253,7 @@ class Instagram extends \Elementor\Widget_Base {
         </h4>
         <?php endif; ?>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
         <div class="insta-image-section swiper">
             <div class="swiper-wrapper">
             <?php foreach( $settings['instagram_section'] as $key => $instagram ): ?>
