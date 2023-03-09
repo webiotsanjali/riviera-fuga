@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'fwingBw7{/hZ(&?5ru1LUQZHhjxfnDIa xj26SG;|y7M8I[tD6OcOxSS%O1wg~h:' );
-define( 'SECURE_AUTH_KEY',  '.2Bwf4Im=yp)%LfLuF*IWTuJwzNAL8#udA@x46*6y+CcJ!A6GxY55rVe@Io.mql^' );
-define( 'LOGGED_IN_KEY',    '~}4@FmFJT^OoGmNjLQ/rw2 f70MVR:egj.Q3.xt,)*CMG!@vXg?EV7dhu5KKXzCp' );
-define( 'NONCE_KEY',        'o/0T7rEJ$DYf]fjbD9nfK(<rg[j48D!-,}&.cfI>n?@r!-dVlIEiME?0@edpj7rO' );
-define( 'AUTH_SALT',        '24+Ek,F+ZhP@Jg]FN~K@prc9YQSQWP,{1H8(I.]_Ee9w-&3{etjI>En$(ANPD.I+' );
-define( 'SECURE_AUTH_SALT', 'i>qy.s{5ZXdKrW`LzO(wX,%r[&pMdY@/u$nB4&q<=e7K}h>mA^=X{y%:WDecmy`}' );
-define( 'LOGGED_IN_SALT',   '}}-la(}l&pfGwb,.A6Q(oxKxW xSsVTOl.cr)^mhp}j/e@QLYubJim1R*#q6$x&+' );
-define( 'NONCE_SALT',       '(32SO*!~uT|i..^=J8=_yWX78xlIo&JP2asCP8%8du%9h&{3gK^uu>E/|2`Q#&DX' );
+define( 'AUTH_KEY',         '<3KH8mMo 879wHV)$DV^B^%db$4|b78G<l+~1j|(!FQPB-N^O}z7ZP*2tT?d[BQ.' );
+define( 'SECURE_AUTH_KEY',  '<MLldgmH959W1QAn[1qI=aEP<0gQCi:]OY=@+{aUudD@k6,qbjmGf&50kllwlgCX' );
+define( 'LOGGED_IN_KEY',    '{3Mzrp|`S4oG#UK(*ft_.x#+QdW}u&`e`M!fk*7GB()?)?-pB#(c-Y)sfvZ*N6F}' );
+define( 'NONCE_KEY',        'SVA%rV<xa>]?Jxk}BEGGT z7sPC))Cv93#!`7=`sK.|&;%$8tTE|4uuWt7zA3!f&' );
+define( 'AUTH_SALT',        'q=~htLs&QuDY,zH#xgyfsDhU4]8gtsmV:$t~Ivj2/}a;HYtIXHI}f5O0Vg>{zHSQ' );
+define( 'SECURE_AUTH_SALT', 'SI%nT;lRf?1tz&CVH_^(x+lV^$3U`$9FI8=-c/yfHgP]qp?`:.aQ~ >N}GXGD|A3' );
+define( 'LOGGED_IN_SALT',   '-BHvXYALr GVg-@CDsAO&HY7LS_Abd3i>mJU{z8YM}QBdAyX$J%rX.qv,I7+*c1[' );
+define( 'NONCE_SALT',       ')`O$HMWcO.+-]B#CDaP*z[|g~^?;1)(AJM)e#`pi`CCnA0@JQhDh84IyNCD<DLn_' );
 
 /**#@-*/
 
@@ -83,7 +83,7 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-
+define('WP_MEMORY_LIMIT', '2024M'); 
 
 /* That's all, stop editing! Happy publishing. */
 

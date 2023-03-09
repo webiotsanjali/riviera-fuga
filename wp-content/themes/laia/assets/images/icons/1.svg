@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="42.495" height="36.287" viewBox="0 0 42.495 36.287"><defs><style>.a{fill:#397674;}.b{fill:none;stroke:#fbfbfb;}</style></defs><g transform="translate(-1184.009 -50)"><g transform="translate(1184.009 50)"><g transform="translate(0)"><path class="a" d="M-24.511,0l-9.372,18.143,9.372,18.143H-.755L8.612,18.143-.755,0Z" transform="translate(33.883)"/></g></g><g transform="translate(1193.498 59.445)"><g transform="translate(0)"><line class="b" x2="24.795" transform="translate(0 0)"/><line class="b" x2="24.795" transform="translate(0 8.265)"/><line class="b" x2="24.795" transform="translate(0 16.53)"/></g></g></g></svg>
+<svg id="Menu_Icon" data-name="Menu Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28.797" height="28.976" viewBox="0 0 28.797 28.976">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_251" data-name="Rectangle 251" width="28.798" height="28.976" fill="#215584"/>
+    </clipPath>
+  </defs>
+  <g id="Group_432" data-name="Group 432" clip-path="url(#clip-path)">
+    <path id="Path_10634" data-name="Path 10634" d="M14.43,7.9A20.754,20.754,0,0,0,28.682,2.182l.116-.108L26.851.005l-.116.109A17.9,17.9,0,0,1,2.051.108L1.934,0,0,2.082l.117.108A21,21,0,0,0,14.43,7.9" transform="translate(0 -0.001)" fill="#215584"/>
+    <path id="Path_10635" data-name="Path 10635" d="M.116,22.282,0,22.392l1.947,2.068.116-.109a17.9,17.9,0,0,1,24.685.006l.116.108,1.934-2.08-.117-.108a20.713,20.713,0,0,0-28.565.006" transform="translate(0 4.512)" fill="#215584"/>
+    <rect id="Rectangle_250" data-name="Rectangle 250" width="25.821" height="2.84" transform="translate(1.487 13.067)" fill="#215584"/>
+  </g>
+</svg>

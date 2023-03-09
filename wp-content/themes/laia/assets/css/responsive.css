@@ -2,64 +2,73 @@
 /**=====================
     responsive css start
 ==========================**/
+@media (min-width: 1660px) {
+  .event-content::before, .event-content::after {
+    height: 12px;
+  }
+}
+@media (min-width: 1600px) {
+  .about-section {
+    padding: 100px 0 100px;
+  }
+  .boat-wrap {
+    padding-bottom: 100px;
+  }
+  .event-section {
+    padding-bottom: 100px;
+  }
+  .title h4 {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 1570px) {
+  .home-img .btn {
+    bottom: 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .event-image {
+    height: 660px;
+  }
+  .event-slider {
+    padding: 0 40px;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1399px) {
   .container {
     max-width: 1170px; } }
 
-@media (max-width: 1810px) {
-  .title h2 {
-    width: 35%; } }
-
 @media (max-width: 1800px) {
   /* instagram section css start */
-  .insta-image-section .slick-slide img {
+  .insta-image-section .swiper-slide img {
     height: 430px; }
   /* instagram section css end */ }
-
-@media (max-width: 1708px) {
-  .title h2 {
-    width: 37%; } }
+@media (max-width: 1700px) {
+  .home-img::before, .home-img::after {
+    height: 44px;
+  }
+}
 
 @media (max-width: 1660px) {
-  /* home section css start */
-  .home-section .home-decoration ul li .decor-2 {
-    left: 42%; }
-  .home-section .home-decoration ul li .decor-3 {
-    left: 55%; }
-  /* home section css end */
-  /* event section css start */
-  .event-image {
-    width: 61%; }
-  .event-content .event-bottom-details {
-    width: 80%; }
-  /* event section css end */
   /* instagram section css start */
-  .insta-image-section .slick-slide img {
+  .insta-image-section .swiper-slide img {
     height: 400px; }
   /* instagram section css end */ }
 
-@media (max-width: 1617px) {
-  .title h2 {
-    width: 39%; } }
-
-@media (max-width: 1536px) {
-  .title h2 {
-    width: 41%; } }
-
 @media (max-width: 1519px) {
   /* instagram section css start */
-  .insta-image-section .slick-slide img {
+  .insta-image-section .swiper-slide img {
     height: 370px; }
   /* instagram section css end */ }
-
-@media (max-width: 1462px) {
-  .title h2 {
-    width: 43%; } }
+@media (max-width: 1550px) {
+  .home-img::before, .home-img::after {
+    height: 39px;
+  }
+}
 
 @media (min-width: 1400px) {
   .event-content .event-bottom-details {
     max-height: 90px;
-    width: 60%;
   }
   .event-slider .slick-dots {
     bottom: 130px;
@@ -70,131 +79,102 @@
     width: 31%; } }
 
 @media (max-width: 1399px) {
-  .title h2 {
-    width: 46%; }
+  .brand-section .title {
+    max-width: 653px;
+  }
+  .event-image {
+    height: 443px;
+  }
   /* home section css start */
-  .home-section .home-decoration ul li .decor-2 {
-    left: 49%; }
-  .home-section .home-decoration ul li .decor-3 {
-    left: 64%; }
+  .home-section .shape-bg::before, .home-section .shape-bg::after {
+    width: 45px !important;
+  }
+  .home-img::before, .home-img::after {
+    height: 33px;
+  }
+  .home-img .btn {
+    bottom: 6px;
+  }
   /* home section css end */
+  /* boat section css start */
+  .boat-wrap::before {
+    width: calc(100% - -3px);
+  }
+  .boat-image .boat-img {
+    min-height: 457px;
+    height: 457px;
+  }
+  /* about section css start */
+  .about-right {
+    padding-top: 38%;
+    margin-left: -23%;
+  }
+  .about-section .about-content {
+    min-height: 760px;
+  }
+  /* about section css end */
   /* instagram section css start */
-  .insta-image-section .slick-slide img {
+  .insta-image-section .swiper-slide img {
     height: 350px; }
   /* instagram section css end */ }
 
 @media (max-width: 1366px) {
   .main-header .navbar ul li a {
-    letter-spacing: 3.6px;
-    font-size: 18px;
-    line-height: 22px; }
-  .main-header .navbar ul li + li {
-    /* margin-top: 11px; */
-    margin-top: 30px;
-   }
+    font-size: 25px;
+    line-height: 34px; }
   .menu-with-bg li a {
     font-size: 14px;
     line-height: 14px; }
     .menu-with-bg li a::before {
       width: 131px;
       height: 34px; }
-  footer ul li a {
-    font-size: 10px; }
   /* home section css start */
-  .home-section {
-    min-height: 800px; }
+
     .home-section .row {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      padding-top: 261px; }
+ }
 
-  
-    .home-section .home-content p {
-      font-size: 10px;
-      line-height: 14px; }
-    
-    .home-section .home-content-restaurant-details p{
-      font-size: 40px;
-      line-height: 52px;
-    }
-
-    .home-section .shape-bg {
-      width: 73%;
-      position: absolute;
-      right: 0;
-      top: 0; }
-    .home-section .home-decoration ul li .decor-1 {
-      bottom: 60px; }
-    .home-section .home-decoration ul li .decor-2 {
-      left: 39%;
-      bottom: 315px; }
-    .home-section .home-decoration ul li .decor-3 {
-      left: 53%;
-      bottom: 80px; }
-    .home-section .home-menu {
-      bottom: 27px; }
   /* home section css end */
   /* event section css start */
-  .event-image, .event-content {
-    height: 508px; }
-  .event-content {
-    padding-top: 55px; }
     .event-content .event-bottom-details {
-      max-height: 67px; }
-    .event-content .event-bottom a {
-      font-size: 10px;
-      line-height: 14px;
-      margin-top: 22px; }
+      max-height: 72px; }
   /* event section css end */
   /* location section css start */
-  .location-section .location-image img {
-    width: 100%;
-    height: 482px; }
   .location-section .location-slider .slick-list {
     padding-left: 0 !important; }
   /* location section css end */
-  /* brand section css start */
-  .brand-slider {
-    padding: 0 40px; }
-  /* brand section css end */
-  /* about section css start */
-  .about-section .about-content {
-    padding-left: 0;
-    margin-left: -1px; }
-    .about-section .about-content p {
-      width: 88%; }
-    .about-section .about-content ul {
-      margin-left: -24px; }
-      .about-section .about-content ul li a {
-        font-size: 12px;
-        letter-spacing: 0.36px; }
-      .about-section .about-content ul li + li {
-        margin-top: 8px; }
-    .about-section .about-content .about-detail {
-      padding-left: 0; }
-  .about-section .about-image img {
-    width: 94%; }
-  /* about section css end */
   /* instagram section css start */
-  .insta-image-section .slick-slide img {
+  .insta-image-section .swiper-slide img {
     height: 346px; }
   /* instagram section css end */ }
 
-@media (max-width: 1305px) {
-  .title h2 {
-    width: 48%; } }
-
-@media (max-width: 1252px) {
-  .title h2 {
-    width: 51%; } }
-
 @media (max-width: 1199px) {
+  .event-content {
+    height: 400px;
+  }
+  .event-content .event-details {
+    padding: 20px 60px;
+  }
+  footer ul li a {
+        font-size: 16px; }
   h1 {
     font-size: 38px;
     line-height: 50px; }
-  .title h2 {
-    width: 56%; }
+   .location-section .location-image img {
+    width: 100%;
+    max-height: 450px; }
+    /* brand section css start */
+    .brand-wrap {
+       margin: 0 20px;
+    }
+    .brand-for {
+      margin-top: 45px;
+    }
+    .brand-section {
+      padding-bottom: 100px;
+    }
   /* home section css start */
   .home-section .home-decoration ul li .decor-2 {
     left: 43%;
@@ -211,45 +191,83 @@
   }
 
   /* home section css end */
+  /* boat section css start */
+  .boat-wrap {
+    padding: 129px 68px 59px 68px;
+  }
+  .boat-image .boat-img {
+    min-height: 400px;
+    height: 400px;
+  }
+  /* boat section css end */
   /* about section css start */
+  .about-section .about-content {
+    padding: 70px 50px 60px;
+  }
+  .about-section {
+    padding: 20px 0 60px;
+  }
   .about-section .about-image img {
-    height: 530px; }
-  .about-section .about-content p {
-    width: 100%; }
-  .about-section .about-content ul {
-    margin-left: 0; }
+    height: 460px;
+  }
+  .about-address {
+    padding-left: 35%;
+  }
+  .about-title h4 {
+    margin-bottom: 20px;
+  }
+  .about-title {
+    margin-bottom: 30px;
+  }
+  .about-right {
+    padding-top: 45%;
+  }
   /* about section css end */ }
 
-@media (max-width: 1077px) {
-  .title h2 {
-    width: 59%; } }
+@media only screen and (max-width: 1091px) {
+  .home-img::before, .home-img::after {
+        height: 25px;
+  }
+  .home-section .shape-bg {
+    min-height: 685px;
+  }
+}
 
 @media (max-width: 1023px) {
-  .insta-image-section .slick-slide:nth-child(3n+1) {
+  .insta-image-section .swiper-slide:nth-child(3n+1) {
     margin-top: 40px; }
-  .insta-image-section .slick-slide:nth-child(3n+2) {
+  .insta-image-section .swiper-slide:nth-child(3n+2) {
     margin-top: 90px; }
-  .insta-image-section .slick-slide:nth-child(3n+3) {
+  .insta-image-section .swiper-slide:nth-child(3n+3) {
     margin-top: 0; } }
 
 @media (max-width: 991px) {
+  .main-header .navbar ul li a {
+    padding: 0 35px
+  }
   footer {
     padding: 30px; }
-  .main-header {
-    padding: 22px 40px; }
     .main-header .menu-brand ul li img {
       width: 160px; }
-    .main-header .menu {
-      padding: 51px 40px 0 17px; }
-  header .menu-bar .bar-icon .menu-toggle, header .menu-bar .bar-icon .menu-close {
-    right: 40px; }
-  .title h2 {
-    width: 65%; }
   .title h4 a {
     width: 42%; }
+  .brand-section {
+      padding: 418px 35px 128px 35px;
+  }
+  .menu-fix {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    top: 285px;
+  }
+  .menu-fix.show {
+    transform: translateX(-50%) scale(1);
+  }
   /* home section css start */
+  .home-img .btn {
+    bottom: 0;
+  }
   .home-section {
-    padding-left: 0;
     height: auto;
     min-height: auto; }
     .home-section .row {
@@ -258,36 +276,55 @@
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-    .home-section .home-content {
-      padding: 0 50px;
-      text-align: center; }
-      .home-section .home-content p {
-        display: inline-block; }
-    .home-section .home-decoration {
-      width: 0;
-      height: 0; }
-      .home-section .home-decoration ul li .decor-1, .home-section .home-decoration ul li .decor-2, .home-section .home-decoration ul li .decor-3 {
-        display: none; }
-    .home-section .shape-bg {
-      position: relative;
-      top: unset;
-      right: unset;
-      width: 100%;
-      height: 700px;
-      min-height: unset;
-      -webkit-mask-image: url(../images/2.svg);
-      mask-image: url(../images/2.svg);
-      -webkit-mask-position: top; }
   /* home section css end */
+  /* boat section css start */
+  .boat-wrap::before {
+    width: calc(100% - 0px);
+  }
+  .boat-wrap .row > div:last-child {
+    order: -1;
+  }
+  .boat-content {
+    padding-top: 30px;
+  }
+  .boat-section p {
+    margin-bottom: 20px !important;
+  }
+  .boat-title {
+    padding-bottom: 40px;
+  }
+  /* boat section css end */
   /* event section css start */
   .event-content {
-    background-image: url(../images/shape/11.svg);
+    /* background-image: url(../images/shape/11.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 130px 0 30px; }
+    background-size: cover; */
+    /* padding: 130px 0 30px;  */
+  }
+  .next-btn {
+    margin-top: 30px;
+  }
+  .event-main::before {
+    position: absolute;
+    content: '';
+    width: 21px;
+    height: 100%;
+    background: url(../images/shapes/16.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .title-main {
+    padding-left: 140px;
+  }
+  .event-slider .row {
+    justify-content: center;
+  }
     .event-content .event-details {
       margin: 0 auto;
-      width: 90%; }
+          padding: 73px 40px 70px; }
     .event-content .event-tag {
       position: absolute;
       left: 50%;
@@ -296,27 +333,19 @@
       bottom: 0;
       margin-right: 0; }
   .event-image {
+    margin-top: -30px;
     position: relative;
-    top: unset;
-    left: unset;
-    width: 100%;
-    -webkit-mask-image: unset;
-    mask-image: unset; }
+    z-index: 2;
+    width: 100%; }
     .slick-slide .event-image img {
-      margin-bottom: 52px;
-      height: 500px; }
-  .event-image, .event-content {
+      margin-bottom: 52px; }
+  .event-content {
     height: unset; }
   .event-content {
     padding-right: 0;
     padding-bottom: 0; }
-    .event-content .event-details {
-      width: 70%;
-      padding: 20px 20px 70px; }
     .event-content .event-bottom-details {
       width: 100%;
-      max-height: unset;
-      height: 42px;
       overflow: auto; }
       .event-slider .slick-list {
         margin-bottom: -11px;
@@ -343,53 +372,80 @@
   /* event section css end */
   /* about section css start */
   .about-section {
-    padding: 90px 0; }
+    padding: 40px 0 32px; }
     .about-section .about-wrapper {
       position: relative; }
     .about-section .about-image {
       text-align: center; }
-      .about-section .about-image img {
-        height: 460px;
-        width: auto; }
-    .about-section .about-content {
-      margin-top: 80px;
-      margin-left: 0; }
+    .about-right {
+      padding-top: 15px;
+      margin-left: 0;
+    }
+    .about-address {
+      padding-left: 23%;
+      margin-bottom: 25px;
+    }
   /* about section css end */
   /* location section css start */
   .location-section .location-slider .slick-list {
     margin-right: -12px; }
+    .location-section .location-image img {
+    max-height: 420px; }
+  .location-slider .slick-prev {
+    left: 48%;
+  }
+  .location-slider .slick-next {
+    left: 52%;
+  }
   /* location section css end */
-  /* instagram section css start */
-  .instagram-section {
-    padding-bottom: 90px; }
-  /* instagram section css end */ }
-
+  }
+@media (max-width: 900px) {
+  .home-img::before, .home-img::after {
+    height: 22px;
+  }
+}
+@media (max-width: 800px) {
+  .home-img::before, .home-img::after {
+    height: 20px;
+  }
+}
 @media (max-width: 767px) {
   h2 {
     font-size: 22px; }
-  .title h2 {
-    line-height: 32px;
-    width: 73%; }
     .title h2 p, .title h2 a {
       font-size: 22px;
       line-height: 32px; }
   .title h4 a {
     width: 60%; }
+    header .menu-bar .bar-icon {
+      width: unset;
+      height: unset;
+    }
+    .main-header .location li + li {
+      margin-top: 30px;
+    }
+    header .menu-bar .bar-icon img {
+      width: 29px;
+      height: 29px;
+    }
+    .main-header .menu-close, .main-header .menu-toggle {
+      right: 17px;
+    }
+    .main-header .menu-top {
+       background-image: url(../images/shapes/20.svg);
+    }
   header {
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    padding: 68px 17px 20px;
     text-align: center; }
     header .language-list {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
+       display: none; }
+              .main-header .menu-top {
+                height: 141px;
+              }
       header .language-list ul {
         opacity: 0;
         visibility: hidden;
@@ -401,32 +457,24 @@
           -ms-flex-order: -1;
               order: -1; }
       header .navbar-brand img {
-        height: 65px; }
-    header .menu-bar .bar-icon .menu-toggle, header .menu-bar .bar-icon .menu-close {
-      position: absolute;
-      right: unset;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      z-index: 1;
-      top: 92px;
-      width: 42px;
-      height: 36px;
-      -webkit-transition: unset;
-      transition: unset; }
-    header .menu-bar .bar-icon .menu-close {
-      top: -147px; }
-  .main-header {
-    padding: 58px 40px; }
+        height: 54px; }
     .main-header .menu {
-      display: block;
-      height: auto;
+      height: calc(100vh - 0px);
       min-height: 500px;
-      top: 200px;
+      top: 0;
       padding: 0; }
+      .main-header .col-md-6 {
+        padding-top: 200px;
+      }
+      .language-list {
+        text-align: center;
+      }
+      .main-header .navbar ul li + li {
+        margin-top: 1px;
+      }
     .main-header .navbar {
-      padding-bottom: 95px;
-      padding-top: 68px; }
+      padding-bottom: 100px;
+    padding-top: 20px; }
       .main-header .navbar ul {
         -webkit-box-align: center;
             -ms-flex-align: center;
@@ -451,8 +499,8 @@
       top: 0;
       overflow: scroll;
       height: 100%; }
-      .main-header.open header .navbar-brand {
-        margin-bottom: 120px; }
+      /* .main-header.open header .navbar-brand {
+        margin-bottom: 120px; } */
       .main-header.open header .language-list ul {
         opacity: 1;
         visibility: visible;
@@ -461,19 +509,28 @@
         opacity: 0;
         visibility: hidden; }
   footer ul li {
+    line-height: 24px;
     display: block;
     text-align: center; }
     footer ul li + li {
+      margin-top: 4px;
       margin-left: 0; }
-  .home-section {
-    padding-bottom: 10px; }
+      .home-section {
+      margin-top: 120px;
+    }
+    .home-section .shape-bg::before, .home-section .shape-bg::after {
+          width: 19px !important;
+          background-image: url(../images/shapes/home-mobile-21.svg);
+    }
     .home-section .shape-bg {
-      height: 640px; }
-    .home-section .home-decor-rs ul li .decor-4 {
-      bottom: 300px;
-      left: 30%; }
-    .home-section .row {
-      padding-top: 224px; }
+      height: calc(100vh - 135px);
+      min-height: 640px; }
+    .home-img {
+      margin-bottom: 7px;
+    }
+    .home-img .btn {
+      bottom: -7px;
+    }
   /* event section css start */
   /* .event-content {
     background-image: url(../images/shape/11.svg);
@@ -490,52 +547,145 @@
               transform: translateX(-50%);
       bottom: 0;
       margin-right: 0; } */
-    .slick-slide .event-image img {
-    height: 450px; }
-  .event-slider .slick-dots {
-    top: 40%; }
+    .title-main {
+      padding-left: 90px;
+    }
+    .event-image {
+      height: 390px;
+    }
     .event-content .event-bottom-details {
       max-height: 140px;
     }
   /* event section css end */
   /* location section css start */
   .location-section .location-image img {
-    height: 360px; }
+    max-height: 360px; }
+  .location-slider .slick-next {
+    left: 53%;
+  }
+  .location-slider .slick-prev {
+    left: 47%;
+  }
   /* location section css end */
   /* about section css start */
-  .about-section {
-    padding: 70px 0; }
-    .about-section .about-image img {
-      height: 390px;
-      -o-object-fit: cover;
-         object-fit: cover; }
     .about-section .about-image .about-shape {
-      top: -113px;
-      width: 155px; }
-    .about-section .about-content .about-detail {
-      padding-left: 0; }
+      left: 0;
+     top: 0px;
+      width: 110px; }
+    .about-section .about-content {
+      min-height: 720px
+    }
+    .about-section .about-content p {
+      margin-bottom: 15px;
+    }
+    .about-section .about-content {
+      padding: 70px 80px 60px;
+    }
+    .about-address {
+      padding-left: 13%;
+    }
+    .about-right {
+      padding-top: 40px;
+    }
+    .about-section .about-image img {
+      height: 430px;
+    }
   /* about section css end */
+  /* boat section css start */
+  .boat-section p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .boat-section a {
+    margin-left: 66px;
+  }
+  .boat-image .boat-img {
+    min-height: 300px;
+    height: 300px;
+  }
+  .boat-wrap::before {
+    width: calc(100% - -7px);
+  }
+  .boat-title {
+    padding-bottom: 0;
+  }
+  .boat-title h2 {
+    padding: 0;
+    padding-bottom: 52px;
+    margin-bottom: 40px;
+  }
+  .boat-title h2::before {
+    top: unset;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+  }
+  .boat-title h2::after {
+    display: none;
+  }
+  .boat-wrap {
+    padding: 100px 40px 54px 40px;
+  }
+  /* boat section css end */
   /* brand section css start */
-  .brand-slider {
-    padding: 0; }
+  .brand-for {
+    margin-top: 0;
+  }
+  .brand-section .title {
+    max-width: unset;
+  }
+  .brand-section .brand-slider {
+    display: none;
+  }
+  .brand-for .brand-image {
+    display: block;
+  }
   .brand-image img {
-    height: 80px !important; }
+    margin: 0;
+    max-height: 76px !important;
+  }
+  .brand-section .slick-slide .brand-image {
+    margin-bottom: 36px;
+  }
+  .title h2 {
+    font: normal normal normal 26px/34px Source Sans Pro;
+    letter-spacing: 0.52px;
+    height: 170px;
+  }
   /* brand section css end */
   /* instagram section css start */
+  .title h4 {
+    padding: 60px 0 54px;
+  }
   .instagram-section {
-    padding-bottom: 80px; }
-    .instagram-section .slick-slide img {
+    padding-bottom: 674px; }
+    .instagram-section .swiper-slide img {
       height: 300px; }
   /* instagram section css end */ }
-
-@media (max-width: 600px) {
-  .title h2 {
-    width: 92%; } }
+@media (max-width: 700px) {
+  .home-img::before, .home-img::after {
+    height: 15px;
+  }
+}
 
 @media (max-width: 575px) {
-  .main-header .location li p {
-    line-height: 14px;
-    letter-spacing: 2.4px; }
+  .main-header .navbar ul li a {
+    font: normal normal bold 26px/51px Source Sans Pro;
+    letter-spacing: 2.6px;
+  }
+  .main-header .navbar ul li a {
+    padding: 0 20px;
+  }
+  .main-header .navbar ul li a:hover::before, .main-header .navbar ul li a.active::before, .main-header .navbar ul li a:hover::after, .main-header .navbar ul li a.active::after {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .next-btn { 
+    padding-left: 109px;
+  }
+  section {
+    padding: 0 6px;
+  }
   .main-header .menu {
     padding-top: 0; }
   /* .main-header .navbar ul li + li {
@@ -557,26 +707,43 @@
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.32px; }
-  .title h2 {
-    line-height: 24px; }
     .title h2 p, .title h2 a {
       font-size: 18px;
       line-height: 24px;
       letter-spacing: 0.54px; }
   .title h4 a {
-	font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 3.6px;
-    width: 72%;
-    padding-top: 44px; }
+	  font: normal normal bold 24px/28px Source Sans Pro;
+    letter-spacing: 4.8px;
+    width: 72%;}
   footer {
-    padding: 23px 23px 33px; }
+    padding: 32px 23px 43px; }
     footer ul li {
       line-height: 24px; }
       footer ul li a {
-        font-size: 10px;
-        line-height: 14px;
-        letter-spacing: 2px; }
+        font-size: 14px;
+        letter-spacing: 2.8px; }
+  .location-slider .slick-next {
+    left: 52%;
+  }
+  .location-slider .slick-prev {
+    left: 46%;
+  }
+  .title h2 {
+    height: 210px;
+  }
+  /* boat section css start */
+  .boat-section .container {
+    padding: 0;
+  }
+  .boat-wrap {
+    padding: 100px 6px 54px 6px;
+  }
+  .boat-wrap::before {
+    width: calc(100% - -13px);
+    left: -1px;
+    top: -1px;
+  }
+  /* boat section css end */
   /* home section css start */
   .home-section .home-content {
     padding: 0 30px; }
@@ -598,184 +765,173 @@
         .home-section .home-content-restaurant-details p{
           width: auto;
         }
+        .home-section {
+          padding: 0;
+        }
   .home-section .shape-bg {
-    height: 420px; }
+    padding: 0 6px;
+    min-height: 426px; }
+    .home-section .shape-bg::before, .home-section .shape-bg::after {
+      background-position: center;
+      width: 24px !important;
+    }
   .home-section .home-decor-rs ul li .decor-4 {
     bottom: 190px;
     left: 29%; }
   /* home section css end */
-  .instagram-section .slick-slide img {
+  .event-content::before, .event-content::after {
+    height: 6px;
+  }
+  .event-content .event-details::after , .event-content .event-details::before{
+    width: 6px;
+  }
+  .instagram-section .swiper-slide img {
     height: 220px; }
-  .insta-image-section {
-    margin-top: -45px; }
+    .event-section {
+      padding: 68px 6px 90px 6px;
+    }
+    .event-image {
+      height: 328px;
+    }
+    .event-content .event-bottom a {
+      margin-top: 19px;
+    }
+    .title-main {
+      padding-left: 30px;
+      font: normal normal bold 24px/28px Source Sans Pro;
+      letter-spacing: 4.8px;
+      margin-bottom: 48px;
+    }
+    .event-content p {
+      font: normal normal normal 18px/24px Source Sans Pro;
+      letter-spacing: 0.36px;
+    }
   .event-image img {
     margin-bottom: 40px; }
   .event-content {
-    padding: 40px 0 32px; }
+    margin: 0 14px; }
     .event-slider.slick-dotted.slick-slider {
       margin-bottom: 6px;
     }
-    .event-content p {
-      font-size: 16px;
-      line-height: 22px;
-      letter-spacing: 0.32px; }
-    .event-content .event-title h4 {
-      font-family: 'Founders Grotesk';
-      font-size: 24px;
-      line-height: 24px;
-      letter-spacing: 0.72px;
-      margin-top: 4px; }
-    .event-content .event-title h3 {
-      font-size: 20px;
-      line-height: 50px;
-      letter-spacing: 0.4px; }
-    .event-content .event-title .event-shape {
-      width: 79px;
-      height: 77px;
-      margin-right: 12px;
-      background-image: url(../images/shape/13.svg); }
-    .event-content .event-details {
-      width: 64%;
-      padding: 10px; }
-    .event-content .event-bottom {
-      margin-top: 13px; }
-      .event-content .event-bottom a {
-        margin-top: 14px;
-        font-size: 8px;
-        letter-spacing: 1.6px; }
-    .event-content .event-tag {
-      width: 130px;
-      height: 72px; }
-      .event-content .event-tag h6 {
-        font-size: 8px;
-        line-height: 11px;
-        letter-spacing: 1.6px;
-        color: #FAF9F5;
-        -webkit-transform: rotate(10deg);
-                transform: rotate(10deg);
-        margin-top: 5px; }
-    .event-content .event-bottom-details {
-      height: 68px;
-      width: 69%; }
-  .event-slider .slick-dots {
-    top: 37.5%; }
-  .slick-slide .event-image img {
-    height: 330px; }
+  
   .brand-section {
-    padding-top: 48px; }
-    .brand-section .slick-slide .brand-image {
-      margin-bottom: 29px; }
-      .brand-section .slick-slide .brand-image::before {
-        width: 69px;
-        height: 19px;
-        bottom: -29px; }
-  .brand-for {
-    margin-top: 20px; }
-  .location-section {
-    padding-top: 40px; }
+    padding: 418px 37px 65px 25px; }
     .location-section .location-slider .slick-slide > div {
       padding: 0 2px; }
   .location-slider {
     margin-left: -12px; }
-  .about-section {
-    padding: 67px 0 51px; }
+  .location-slider .slick-next {
+    left: 52%;
+  }
+  .location-slider .slick-prev {
+    left: 44%;
+  }
+    .about-section .about-content .about-bg-img {
+      object-fit: cover;
+    }
     .about-section .about-content {
-      padding: 0 24px;
-      margin-top: 57px; }
+    padding: 55px;
+  }
+  .about-height::before, .about-height::after {
+        height: 6px;
+  }
+  .about-section {
+    padding: 50px 0 32px; }
+    .about-section .container {
+      padding: 0 7px;
+    }
+    .about-right {
+      padding-top: 30px;
+    }
+    .about-address {
+      padding-left: 29px;
+    }
+    .about-section .about-image img {
+    height: 280px; }
+    .about-section .about-content {
+      padding: 63px 30px;
+      background-size: cover;
+    }
+    .about-title {
+      margin-bottom: 40px;
+    }
       .about-section .about-content h4 {
-        letter-spacing: 3.6px;
-        margin-bottom: 49px; }
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 4.8px; 
+        margin-bottom: 26px;
+      }
       .about-section .about-content p {
-        line-height: 22px;
-        letter-spacing: 0.32px; }
+        margin-bottom: 22px; }
         .about-section .about-content p a {
           font-size: 16px;
           line-height: 22px;
           letter-spacing: 0.32px; }
-      .about-section .about-content ul {
-        margin-top: 20px; }
-        .about-section .about-content ul li a {
-          font-size: 12px;
-          line-height: 14px;
-          letter-spacing: 0.36px; }
-        .about-section .about-content ul li + li {
-          margin-top: 12px; }
-    .about-section .about-image {
-      margin: 0 -12px; } }
+    }
 
+@media (max-width: 520px) {
+  .home-img::before, .home-img::after {
+    height: 13px;
+  }
+}
 @media (max-width: 480px) {
   .slick-dotted.slick-slider {
     margin-bottom: 28px; }
   .main-header .location {
     width: 100%; }
-  footer {
-    padding: 28px 28px 26px; }
   .title h4 a {
     width: 85%; }
   .home-section .home-decor-rs ul li .decor-4 {
     left: 19%; }
   .home-section .home-content p {
     width: 42%; }
-    .event-content .event-details {
-      width: 68%; }
-    .event-content .event-bottom-details {
-      width: 100%; }
-  .event-slider .slick-dots {
-    top: 44%; }
-  .slick-slide .event-image img {
-    height: 241px; }
   /* brand section css start */
   .brand-image img {
     height: 80px !important;
     -o-object-fit: contain;
        object-fit: contain; }
   .brand-slider .slick-list {
-    padding-left: 0 !important;
-    margin-right: -12px; }
-  .brand-section .slick-slide img {
-    padding: 0 0 5px; }
+    padding-left: 0 !important; }
   /* brand section css end */
   /* location section css start */
   .location-section .location-image img {
-    height: 283px;
+    max-height: 280px;
     width: auto; }
   /* location section css end */
-  /* about section css start */
-  .about-section .about-content {
-    margin-top: 56px;
-    padding: 0 24px; }
-    .about-section .about-content ul {
-      margin-top: 35px; }
-  .about-section .about-image img {
-    height: 347px; }
-  .about-section .about-image .about-shape {
-    top: -108px;
-    left: -30px; }
-  /* about section css end */
   /* instagram section css start */
-  .instagram-section {
-    padding-bottom: 59px; }
   .insta-image-section > div {
     padding: 0 2px; }
-  .insta-image-section .slick-slide:nth-child(3n+1) {
+  .insta-image-section .swiper-slide:nth-child(3n+1) {
     margin-top: 13px; }
-  .insta-image-section .slick-slide:nth-child(3n+2) {
+  .insta-image-section .swiper-slide:nth-child(3n+2) {
     margin-top: 46px; }
   /* instagram section css end */ }
-
+@media (max-width: 460px) {
+  .home-img {
+    margin-bottom: 10px;
+  }
+  .home-img .btn {
+    bottom: -10px;
+  }
+}
 @media (max-width: 475px) {
   /* instagram section css start */
-  .insta-image-section .slick-slide:nth-child(3n+1) {
+  .insta-image-section .swiper-slide:nth-child(3n+1) {
     margin-top: 46px; }
-  .insta-image-section .slick-slide:nth-child(3n+2) {
+  .insta-image-section .swiper-slide:nth-child(3n+2) {
     margin-top: 0; }
-  .insta-image-section .slick-slide:nth-child(3n+3) {
+  .insta-image-section .swiper-slide:nth-child(3n+3) {
     margin-top: 13px; }
   /* instagram section css end */ }
 
 @media (max-width: 420px) {
+  .location-slider .slick-next {
+    left: 55%;
+  }
+  .location-slider .slick-prev {
+    left: 44%;
+  }
   .home-section .shape-bg {
-    height: 410px;
     margin-top: -21px; }
   .home-section .home-decor-rs ul li .decor-4 {
     left: 20px;
@@ -784,36 +940,64 @@
     width: 54%; }
     .event-content {
       background-size: auto; }
+      /* boat section css start */
+      .boat-wrap {
+        padding-top: 75px;
+      }
+      .boat-image .boat-img {
+        min-height: 247px;
+        height: 247px;
+      }
+      /* boat section css end */
   /* instagram section css start */
-  .instagram-section .slick-slide img {
+  .instagram-section .swiper-slide img {
     height: 189px; }
   /* instagram section css end */ }
 
 @media (max-width: 400px) {
   .home-section .home-decor-rs ul li .decor-4 {
     bottom: 190px; } }
-
+@media (max-width: 380px) {
+  .home-img::before, .home-img::after {
+    height: 10px;
+  }
+  .home-img {
+    margin-bottom: 12px;
+  }
+  .home-img .btn {
+    bottom: -12px;
+  }
+}
 @media (max-width: 360px) {
+  .main-header .navbar ul li a {
+    letter-spacing: 1.5px;
+  }
   .main-header .menu .container {
     padding: 0; }
   .home-section .home-content p {
     width: 53%; }
   .home-section .home-decor-rs ul li .decor-4 {
     bottom: 198px; }
-  .event-content .event-details {
-    width: 74%; }
+    /* boat section css start */
+    .boat-section a {
+        margin-left: 30px;
+      }
   /* about section css start */
   .about-section .about-content {
-    padding: 0 6px; }
+    padding: 50px 30px;
+  }
+  .about-section .about-content p {
+    margin-bottom: 16px;
+  }
   /* about section css end */
   /* instagram section css start */
-  .instagram-section .slick-slide img {
+  .instagram-section .swiper-slide img {
     height: 175px; }
   /* instagram section css end */ }
 
 @media (max-width: 340px) {
   /* instagram section css start */
-  .instagram-section .slick-slide img {
+  .instagram-section .swiper-slide img {
     height: 140px; }
   /* instagram section css end */ }
 

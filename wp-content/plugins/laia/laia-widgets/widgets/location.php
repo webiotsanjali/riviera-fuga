@@ -141,21 +141,27 @@ class Location extends \Elementor\Widget_Base {
 
 
 <!-- location section start -->
-<section class="location-section">
-    <div class="container-fluid">
+<section id="location" class="location-section px-0">
+    <div class="container-fluid px-0">
+		<div class="row">
+			<div class="col-lg-9 ms-auto">
+				<div class="location-wrap">
+					<div class="location-slider">
+					<?php foreach( $settings['location_details_content'] as $key => $location ): ?>
+					<div>
+						<div class="location-image">
+							<?php if ( !empty($location['location_image']['url']) ): ?>
+							<img src="<?php echo esc_url($location['location_image']['url']); ?>" class="img-fluid" alt="">
+							<?php endif;?>
 
-        <div class="location-slider">
-            <?php foreach( $settings['location_details_content'] as $key => $location ): ?>
-            <div>
-                <div class="location-image">
-                    <?php if ( !empty($location['location_image']['url']) ): ?>
-                    <img src="<?php echo esc_url($location['location_image']['url']); ?>" class="img-fluid" alt="">
-                    <?php endif;?>
-
-                </div>
-            </div>
-            <?php endforeach;?>
-        </div>
+						</div>
+					</div>
+					<?php endforeach;?>
+				</div>
+				</div>
+			</div>
+		</div>
+        
     </div>
 </section>
 <!-- location section end -->
@@ -165,10 +171,10 @@ class Location extends \Elementor\Widget_Base {
 <script>
 // location slider js
 $('.location-slider').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    arrows: false,
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 3000,
     centerPadding: '200px',

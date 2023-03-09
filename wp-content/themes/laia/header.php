@@ -18,6 +18,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
     <?php wp_head(); ?>
 
     <style type="text/css" media="print">
@@ -35,17 +39,18 @@
 
     <!-- header start -->
     <div class="main-header">
+        <div class="menu-top">
+            <div class="container-fluid">
         <header>
             <div class="language-list">
               
                     <?php dynamic_sidebar('header-3') ?>
-               
-                <div class="navbar-brand">
+            </div>
+            <div class="navbar-brand">
                     <a href="<?php echo get_home_url(); ?>"><img
                             src="<?php echo get_template_directory_uri();?>/assets/images/logo.svg" class="img-fluid"
                             alt="logo image"></a>
                 </div>
-            </div>
             <div class="menu-bar">
                 <div class="bar-icon">
                     <a href="javascript:void(0)" class="menu-toggle">
@@ -58,47 +63,77 @@
                     </a>
                 </div>
             </div>
-            <div class="menu">
+        </header>
+    </div>
+        </div>
+             
+    <div class="menu">
+        <div class="container-fluid">
+            <div class="row w-100 h-100 mx-0">
+            <div class="col-xl-4 col-md-3 col-1 px-0">
+                <div class="row row-cols-xl-5 row-cols-md-3 row-cols-1 yellow-line">
+                    <div class="col"></div>
+                    <div class="col d-md-block d-none"></div>
+                    <div class="col d-md-block d-none"></div>
+                    <div class="col d-xl-block d-none"></div>
+                    <div class="col d-xl-block d-none"></div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-10 px-0">
+                <div class="language-list">
+              
+                    <?php dynamic_sidebar('header-3') ?>
+            </div>
                 <nav class="navbar">
-                    <?php
-							wp_nav_menu(
-								array(
-									'theme_location'  => 'menu-1',
-									'container'       => 'div',
-									'container_class' => '"navbar-nav',
-									'container_id'    => '',
-									'menu_class'      => 'navbar-nav',
-									'menu_id'         => 'mymenu',
-									'depth'	          =>  '', // Level of Dropdown Menu
-									'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-									'walker'          => new WP_Bootstrap_Navwalker(),
-								)
-							);
-							?>
+                    
+         <?php wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'container'       => 'div',
+							'container_class' => '"navbar-nav',
+							'container_id'    => '',
+							'menu_class'      => 'navbar-nav',
+						    'menu_id'         => 'mymenu',
+			
+		) ); ?>
                 </nav>
-                <ul class="location d-md-block d-none">
+                <ul class="location">
                     <?php dynamic_sidebar( 'header-1' ); ?>
+                    <li>
+                    </li>
                 </ul>
-                <ul class="location d-md-none d-block">
+            </div>
+            <div class="col-xl-4 col-md-3  col-1 px-0">
+                <div class="row row-cols-xl-5 row-cols-md-3 row-cols-1 yellow-line">
+                    <div class="col"></div>
+                    <div class="col d-md-block d-none"></div>
+                    <div class="col d-md-block d-none"></div>
+                    <div class="col d-xl-block d-none"></div>
+                    <div class="col d-xl-block d-none"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+                
+                <!-- <ul class="location d-md-none d-block">
                     <?php dynamic_sidebar('header-2'); ?>
-                </ul>
-                <ul class="location location-icon d-md-none d-flex">
+                </ul> -->
+                <!-- <ul class="location location-icon d-md-none d-flex"> -->
 <!--                     <li>
                         <a href="#">
                             <img src="<?php //echo get_template_directory_uri();?>/assets/images/icons/3.svg"
                                 alt="phone icon" class="img-fluid">
                         </a>
                     </li> -->
-					 <?php dynamic_sidebar('header-phone-icon'); ?>
-                    <li>
+					 <!-- <?php dynamic_sidebar('header-phone-icon'); ?> -->
+                    <!-- <li> -->
 <!--                         <a href="#">
                             <img src="<?php //echo get_template_directory_uri();?>/assets/images/icons/instagram.svg"
                                 alt="instragram icon" class="img-fluid">
                         </a> -->
-						 <?php dynamic_sidebar('header-insta-icon'); ?>
-                    </li>
-                </ul>
+						 <!-- <?php dynamic_sidebar('header-insta-icon'); ?> -->
+                    <!-- </li> -->
+                <!-- </ul> -->
             </div>
-        </header>
     </div>
+    
     <!-- header end -->

@@ -226,8 +226,25 @@ class Instagram extends \Elementor\Widget_Base {
       ?>
 
 <!-- Instagram section start -->
-<section class="instagram-section pt-0">
-    <div class="title">
+<section id="instagram" class="instagram-section px-0">
+    <div class="row row-cols-sm-15 row-cols-7 mx-0 bg-stripe">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+        <div class="col d-sm-block d-none"></div>
+    </div>
+    <div class="title text-center">
         <?php if ( !empty($settings['post_title']) ): ?>
         <h4>
 			<a href="https://www.instagram.com/laia_restaurant/" target="_blank">
@@ -237,9 +254,10 @@ class Instagram extends \Elementor\Widget_Base {
         <?php endif; ?>
     </div>
     <div class="container-fluid">
-        <div class="insta-image-section">
+        <div class="insta-image-section swiper">
+            <div class="swiper-wrapper">
             <?php foreach( $settings['instagram_section'] as $key => $instagram ): ?>
-            <div>
+            <div class="swiper-slide">
                 <div class="insta-image">
                     <?php if ( !empty($instagram['post_image']['url'])): ?>
                     <?php if( $instagram['show_link'] == 'show' ) : ?>
@@ -267,6 +285,7 @@ class Instagram extends \Elementor\Widget_Base {
                 </div>
             </div>
             <?php endforeach;?>
+            </div>
         </div>
     </div>
 </section>
@@ -274,143 +293,168 @@ class Instagram extends \Elementor\Widget_Base {
 <?php
 if ( \Elementor\Plugin::$instance->editor->is_edit_mode() ) : ?>
 <script>
+ 
 // instagram slider
-$('.insta-image-section').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 0,
-    speed: 8000,
-    pauseOnHover: false,
-    cssEase: 'linear',
-    responsive: [{
-            breakpoint: 1366,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                centerMode: true,
-                centerPadding: '114px',
-            }
+const instagram_swiper = new Swiper('.insta-image-section', {
+    spaceBetween: 6,
+    centeredSlides: true,
+    speed: 5000,
+    loop: true,
+    autoplay: {
+        delay: 1,
+        disableOnInteraction: false,
+    },
+    allowTouchMove: false,
+    breakpoints: {
+        1366: {
+            slidesPerView: '4',
         },
-        {
-            breakpoint: 1250,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                centerMode: true,
-                centerPadding: '80px',
-            }
+        1070: {
+            slidesPerView: '3',
         },
-        {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                centerMode: true,
-                centerPadding: '20px',
-            }
+        320: {
+            slidesPerView: '2',
         },
-        {
-            breakpoint: 1070,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                centerMode: true,
-                centerPadding: '0px',
-            }
-        },
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                centerMode: true,
-                centerPadding: '150px',
-            }
-        },
-        {
-            breakpoint: 992,
-            settings: {
-                centerMode: true,
-                centerPadding: '100px',
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 880,
-            settings: {
-                centerMode: true,
-                centerPadding: '30px',
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                centerMode: true,
-                centerPadding: '70px',
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 720,
-            settings: {
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 640,
-            settings: {
-                centerMode: true,
-                centerPadding: '0px',
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 576,
-            settings: {
-                centerMode: true,
-                centerPadding: '60px',
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 550,
-            settings: {
-                centerMode: true,
-                centerPadding: '20px',
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 476,
-            settings: {
-                centerMode: true,
-                centerPadding: '100px',
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 376,
-            settings: {
-                centerMode: true,
-                centerPadding: '85px',
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        }
-    ]
-});
+    }
+}); 
+ 
+// instagram slider
+// $('.insta-image-section').slick({
+//     slidesToShow: 4,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 0,
+//     speed: 8000,
+//     pauseOnHover: false,
+//     cssEase: 'linear',
+//     responsive: [{
+//             breakpoint: 1366,
+//             settings: {
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 centerMode: true,
+//                 centerPadding: '114px',
+//             }
+//         },
+//         {
+//             breakpoint: 1250,
+//             settings: {
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 centerMode: true,
+//                 centerPadding: '80px',
+//             }
+//         },
+//         {
+//             breakpoint: 1200,
+//             settings: {
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 centerMode: true,
+//                 centerPadding: '20px',
+//             }
+//         },
+//         {
+//             breakpoint: 1070,
+//             settings: {
+//                 slidesToShow: 3,
+//                 slidesToScroll: 1,
+//                 centerMode: true,
+//                 centerPadding: '0px',
+//             }
+//         },
+//         {
+//             breakpoint: 1024,
+//             settings: {
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1,
+//                 centerMode: true,
+//                 centerPadding: '150px',
+//             }
+//         },
+//         {
+//             breakpoint: 992,
+//             settings: {
+//                 centerMode: true,
+//                 centerPadding: '100px',
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1,
+//             }
+//         },
+//         {
+//             breakpoint: 880,
+//             settings: {
+//                 centerMode: true,
+//                 centerPadding: '30px',
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1,
+//             }
+//         },
+//         {
+//             breakpoint: 768,
+//             settings: {
+//                 centerMode: true,
+//                 centerPadding: '70px',
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1,
+//             }
+//         },
+//         {
+//             breakpoint: 720,
+//             settings: {
+//                 centerMode: true,
+//                 centerPadding: '40px',
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1,
+//             }
+//         },
+//         {
+//             breakpoint: 640,
+//             settings: {
+//                 centerMode: true,
+//                 centerPadding: '0px',
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1,
+//             }
+//         },
+//         {
+//             breakpoint: 576,
+//             settings: {
+//                 centerMode: true,
+//                 centerPadding: '60px',
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1,
+//             }
+//         },
+//         {
+//             breakpoint: 550,
+//             settings: {
+//                 centerMode: true,
+//                 centerPadding: '20px',
+//                 slidesToShow: 2,
+//                 slidesToScroll: 1,
+//             }
+//         },
+//         {
+//             breakpoint: 476,
+//             settings: {
+//                 centerMode: true,
+//                 centerPadding: '100px',
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1,
+//             }
+//         },
+//         {
+//             breakpoint: 376,
+//             settings: {
+//                 centerMode: true,
+//                 centerPadding: '85px',
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1,
+//             }
+//         }
+//     ]
+// });
 </script>
 
 <?php endif; 
