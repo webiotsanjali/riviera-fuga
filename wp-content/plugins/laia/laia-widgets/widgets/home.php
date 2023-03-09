@@ -80,22 +80,22 @@ class Home extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Home', 'laia' )
 			]
 		);
-		$this->add_control(
-			'restorent_title',
-			[
-				'label' => esc_html__( 'restorent Title', 'laia' ),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => 'Restaurant caché, Cuisine latine méditerranéenne au charbons de bois.'
-			]
-		);
-		$this->add_control(
-			'details',
-			[
-				'label' => esc_html__( 'Details', 'laia' ),
-				'type' => \Elementor\Controls_Manager::WYSIWYG,
-				'default' => '<p>226 BLVD. VOLTTAIRE <span>•</span> PARIS 11<sup>EME</sup></p>'
-			]
-		);
+		// $this->add_control(
+		// 	'restorent_title',
+		// 	[
+		// 		'label' => esc_html__( 'restorent Title', 'laia' ),
+		// 		'type' => \Elementor\Controls_Manager::TEXT,
+		// 		'default' => 'Restaurant caché, Cuisine latine méditerranéenne au charbons de bois.'
+		// 	]
+		// );
+		// $this->add_control(
+		// 	'details',
+		// 	[
+		// 		'label' => esc_html__( 'Details', 'laia' ),
+		// 		'type' => \Elementor\Controls_Manager::WYSIWYG,
+		// 		'default' => '<p>226 BLVD. VOLTTAIRE <span>•</span> PARIS 11<sup>EME</sup></p>'
+		// 	]
+		// );
 		$this->add_control(
 			'restorent_image_video',
 			[
@@ -144,120 +144,120 @@ class Home extends \Elementor\Widget_Base {
 			]
 		);
 		
-		$this->add_control(
-			'menu_link_button',
-			[
-				'label' => esc_html__( 'Show Menu Details', 'laia' ),
-				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'laia' ),
-				'label_off' => esc_html__( 'Hide', 'laia' ),
-				'return_value' => 'show',
-				'default' => 'show'
-			]
-		);
+		// $this->add_control(
+		// 	'menu_link_button',
+		// 	[
+		// 		'label' => esc_html__( 'Show Menu Details', 'laia' ),
+		// 		'type' => \Elementor\Controls_Manager::SWITCHER,
+		// 		'label_on' => esc_html__( 'Show', 'laia' ),
+		// 		'label_off' => esc_html__( 'Hide', 'laia' ),
+		// 		'return_value' => 'show',
+		// 		'default' => 'show'
+		// 	]
+		// );
 		
-		$this->add_control(
-			'menu_link_details_text',
-			[
-				'label' => __( 'Menu Details Link Text', 'laia' ),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => 'Menu',
-				'condition' => [
-					'menu_link_button' => 'show'
-				]
-			]
-		);
+		// $this->add_control(
+		// 	'menu_link_details_text',
+		// 	[
+		// 		'label' => __( 'Menu Details Link Text', 'laia' ),
+		// 		'type' => \Elementor\Controls_Manager::TEXT,
+		// 		'default' => 'Menu',
+		// 		'condition' => [
+		// 			'menu_link_button' => 'show'
+		// 		]
+		// 	]
+		// );
 
-		$this->add_control(
-			'menu_detail_button_link',
-			[
-				'label' => __( 'Menu Detail Button Link', 'laia' ),
-				'type' => \Elementor\Controls_Manager::URL,
-				'default' => [
-					'url' => '#'
-				],
-				'condition' => [
-					'menu_link_button' => 'show'
-				]
-			]
-		);
+		// $this->add_control(
+		// 	'menu_detail_button_link',
+		// 	[
+		// 		'label' => __( 'Menu Detail Button Link', 'laia' ),
+		// 		'type' => \Elementor\Controls_Manager::URL,
+		// 		'default' => [
+		// 			'url' => '#'
+		// 		],
+		// 		'condition' => [
+		// 			'menu_link_button' => 'show'
+		// 		]
+		// 	]
+		// );
 
 
-		$this->add_control(
-			'reserver_link_button',
-			[
-				'label' => esc_html__( 'Show Reserver Details', 'laia' ),
-				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'laia' ),
-				'label_off' => esc_html__( 'Hide', 'laia' ),
-				'return_value' => 'show',
-				'default' => 'show'
-			]
-		);
+		// $this->add_control(
+		// 	'reserver_link_button',
+		// 	[
+		// 		'label' => esc_html__( 'Show Reserver Details', 'laia' ),
+		// 		'type' => \Elementor\Controls_Manager::SWITCHER,
+		// 		'label_on' => esc_html__( 'Show', 'laia' ),
+		// 		'label_off' => esc_html__( 'Hide', 'laia' ),
+		// 		'return_value' => 'show',
+		// 		'default' => 'show'
+		// 	]
+		// );
 		
-		$this->add_control(
-			'reserver_link_details_text',
-			[
-				'label' => __( 'Reserver Details Link Text', 'laia' ),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => 'Reserver',
-				'condition' => [
-					'reserver_link_button' => 'show'
-				]
-			]
-		);
+		// $this->add_control(
+		// 	'reserver_link_details_text',
+		// 	[
+		// 		'label' => __( 'Reserver Details Link Text', 'laia' ),
+		// 		'type' => \Elementor\Controls_Manager::TEXT,
+		// 		'default' => 'Reserver',
+		// 		'condition' => [
+		// 			'reserver_link_button' => 'show'
+		// 		]
+		// 	]
+		// );
 
-		$this->add_control(
-			'reserver_detail_button_link',
-			[
-				'label' => __( 'Reserver Detail Button Link', 'laia' ),
-				'type' => \Elementor\Controls_Manager::URL,
-				'default' => [
-					'url' => '#'
-				],
-				'condition' => [
-					'reserver_link_button' => 'show'
-				]
-			]
-		);
+		// $this->add_control(
+		// 	'reserver_detail_button_link',
+		// 	[
+		// 		'label' => __( 'Reserver Detail Button Link', 'laia' ),
+		// 		'type' => \Elementor\Controls_Manager::URL,
+		// 		'default' => [
+		// 			'url' => '#'
+		// 		],
+		// 		'condition' => [
+		// 			'reserver_link_button' => 'show'
+		// 		]
+		// 	]
+		// );
 
-		$this->add_control(
-			'commander_link_button',
-			[
-				'label' => esc_html__( 'Show Commander Details', 'laia' ),
-				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'laia' ),
-				'label_off' => esc_html__( 'Hide', 'laia' ),
-				'return_value' => 'show',
-				'default' => 'show'
-			]
-		);
+		// $this->add_control(
+		// 	'commander_link_button',
+		// 	[
+		// 		'label' => esc_html__( 'Show Commander Details', 'laia' ),
+		// 		'type' => \Elementor\Controls_Manager::SWITCHER,
+		// 		'label_on' => esc_html__( 'Show', 'laia' ),
+		// 		'label_off' => esc_html__( 'Hide', 'laia' ),
+		// 		'return_value' => 'show',
+		// 		'default' => 'show'
+		// 	]
+		// );
 		
-		$this->add_control(
-			'commander_link_details_text',
-			[
-				'label' => __( 'Commander Details Link Text', 'laia' ),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => 'Commander',
-				'condition' => [
-					'commander_link_button' => 'show'
-				]
-			]
-		);
+		// $this->add_control(
+		// 	'commander_link_details_text',
+		// 	[
+		// 		'label' => __( 'Commander Details Link Text', 'laia' ),
+		// 		'type' => \Elementor\Controls_Manager::TEXT,
+		// 		'default' => 'Commander',
+		// 		'condition' => [
+		// 			'commander_link_button' => 'show'
+		// 		]
+		// 	]
+		// );
 
-		$this->add_control(
-			'commander_detail_button_link',
-			[
-				'label' => __( 'Commander Detail Button Link', 'laia' ),
-				'type' => \Elementor\Controls_Manager::URL,
-				'default' => [
-					'url' => '#'
-				],
-				'condition' => [
-					'commander_link_button' => 'show'
-				]
-			]
-		);
+		// $this->add_control(
+		// 	'commander_detail_button_link',
+		// 	[
+		// 		'label' => __( 'Commander Detail Button Link', 'laia' ),
+		// 		'type' => \Elementor\Controls_Manager::URL,
+		// 		'default' => [
+		// 			'url' => '#'
+		// 		],
+		// 		'condition' => [
+		// 			'commander_link_button' => 'show'
+		// 		]
+		// 	]
+		// );
 
 		$this->add_control(
 			'reserves_text',
@@ -303,7 +303,7 @@ class Home extends \Elementor\Widget_Base {
 <section class="home-section">
     <div class="container-fluid p-0">
         <div class="row m-0">
-            <div class="col-xxl-3 col-lg-4 col-md-7  p-0">
+            <!-- <div class="col-xxl-3 col-lg-4 col-md-7  p-0">
                 <div class="home-content">
 					<div class="home-content-restaurant-details">
 						<?php if ( !empty($settings['restorent_title']) ): ?>
@@ -358,29 +358,36 @@ class Home extends \Elementor\Widget_Base {
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-xxl-9 col-lg-8 p-0">
-                <div class="shape-bg">
-                    <!-- <img src="assets/images/1.jpg" alt="home image" class="img-fluid bg-home"> -->
-                    <?php if( $settings['restorent_image_video'] == 'image' ):  ?>
+            </div> -->
+            <div class="col-xxl-12 p-0">
+				<div class="home-img">
+					<div class="shape-bg">
+						<!-- <img src="assets/images/1.jpg" alt="home image" class="img-fluid bg-home"> -->
+						<?php if( $settings['restorent_image_video'] == 'image' ):  ?>
 
-                    <?php if ( !empty($settings['restorent_background_image']['url'])): ?>
+						<?php if ( !empty($settings['restorent_background_image']['url'])): ?>
 
-                    <img src="<?php echo esc_url($settings['restorent_background_image']['url']) ?>"
-                        class="img-fluid bg-home" alt="">
-                    <?php endif;?>
-                    <?php else : ?>
-                    <?php if ( !empty($settings['restorent_background_video']['url'])): ?>
-                    <video class="bg-home" autoplay
-                        src="<?php echo esc_url( $settings['restorent_background_video']['url'] ); ?>" loop
-                        preload="none" muted="muted"></video>
-                    <?php endif;?>
-                    <?php endif; ?>
-                </div>
+						<img src="<?php echo esc_url($settings['restorent_background_image']['url']) ?>"
+							class="img-fluid bg-home" alt="">
+						<?php endif;?>
+						<?php else : ?>
+						<?php if ( !empty($settings['restorent_background_video']['url'])): ?>
+						<video class="bg-home" autoplay
+							src="<?php echo esc_url( $settings['restorent_background_video']['url'] ); ?>" loop
+							preload="none" muted="muted"></video>
+						<?php endif;?>
+						<?php endif; ?>
+						
+						<a href="<?php echo esc_url( $settings['reserves_button_link']['url'] ); ?>" class="btn btn-solid"><?php echo esc_html( $settings['reserves_text'] ); ?></a>
+						
+                	</div>
+					
+				</div>
+                
             </div>
         </div>
     </div>
-    <div class="home-decoration d-lg-block d-none">
+    <!-- <div class="home-decoration d-lg-block d-none">
         <ul>
             <li>
                 <img src="<?php echo get_template_directory_uri();?>/assets/images/shape/2.svg" alt=""
@@ -410,8 +417,8 @@ class Home extends \Elementor\Widget_Base {
                     class="img-fluid decor-3">
             </li>
         </ul>
-    </div>
-    <div class="home-decor-rs d-lg-none d-block">
+    </div> -->
+    <!-- <div class="home-decor-rs d-lg-none d-block">
         <ul>
             <li>
                 <img src="<?php echo get_template_directory_uri();?>/assets/images/shape/15.svg" alt=""
@@ -429,17 +436,80 @@ class Home extends \Elementor\Widget_Base {
                                     <?php endif; ?>
 
                        </a>
-<!-- 						Reserver -->
 					</h5>
                 </div>
             </li>
         </ul>
-    </div>
+    </div> -->
 </section>
 <!-- home section end -->
+<div class="menu-fix">
+	<div class="menu-main">
+		<div class="menu-image">
+			<img src="<?php echo get_template_directory_uri();?>/assets/images/seahorse.png" alt=""
+								class="img-fluid">
 
+		</div>
+		<div class="menu-details">
+			<h6>reserver</h6>
+			<ul>
+				<li>
+					<a href="#">
+						table
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						bateau
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 
-<?php  
+<?php
+if ( \Elementor\Plugin::$instance->editor->is_edit_mode() ) : ?>
+<script>
+	$(window).on('scroll resize', function () {
+     var bottom = 350
+	 var top = this.scrollY, about= $("#about").offset().top, boat=$("#about-address").offset().top, brand=$("#brand").offset().top, location=$("#location").offset().top - bottom, instagram=$("#instagram").offset().top, footer=$("#footer").offset().top
+     var style = document.querySelector('#instagram').currentStyle || window.getComputedStyle(document.querySelector('#instagram'));
+     var instaHeight= document.querySelector('#instagram').offsetHeight
+     var instaPadding = parseInt(style.paddingBottom)
+     var showDiv=instaHeight-instaPadding
+     var scrolltoShowdiv= (instagram+showDiv)
+    if(window.innerWidth >= 991 ){
+    
+        if (top >=about-bottom && top<= boat-bottom|| top >= brand-bottom && top<=location-bottom || top >= scrolltoShowdiv-bottom && top <= footer-bottom) {
+            $('.menu-fix').addClass('show');
+        }
+        else {
+            $('.menu-fix').removeClass('show');  
+        }
+    }
+    else {
+         var styleBrand = document.querySelector('#brand').currentStyle || window.getComputedStyle(document.querySelector('#brand'));
+     var brandHeight= document.querySelector('#brand').offsetHeight
+     var brandPadding = parseInt(styleBrand.paddingTop)
+     var showDivBrand=brand+brandPadding
+     var scrolltoShowdivbrand= brand+showDivBrand
+     console.log("brandPadding",brand-280, top, showDivBrand-400);
+         $('.menu-fix').removeClass('show');
+             if(window.innerWidth < 991 ) var bottom = 200
+             console.log("bottom", bottom);
+          if (top >= scrolltoShowdiv-bottom && top <= footer-bottom || top >= brand-280 && top <= showDivBrand-600) {
+            $('.menu-fix').addClass('show');
+            }
+            else {
+                $('.menu-fix').removeClass('show');  
+            }
+    }     
+
+	});
+</script>
+
+<?php endif; 
 	}
 }
 
