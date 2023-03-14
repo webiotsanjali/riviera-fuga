@@ -148,8 +148,11 @@ section {
     color: #215584;
     text-transform: inherit;
     position: relative;
-    height: 164px;
-    overflow: auto;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
     margin: 0 auto; }
@@ -172,7 +175,7 @@ section {
   position: fixed;
   right: 86px;
   top: 375px;
-  z-index: 1;
+  z-index: 2;
   width: 228px;
   height: 310px;
   text-align: center;
@@ -201,9 +204,13 @@ section {
 }
 .menu-details h6 {
   font-weight: 700;
-  margin-bottom: 13px;
-  margin-top: 6px;
   letter-spacing: 2px;
+}
+.menu-fix .menu-details ul {
+	margin-top: 10px;
+}
+.menu-details ul li a h6 {
+	font-weight: 400;
 }
 .menu-details ul li {
   line-height: 14px;
@@ -361,13 +368,13 @@ header {
           height: 18px;
           }
   header .menu-bar .bar-icon img {
-    width: 42px;
-    height: 36px; }
+    width: 28px;
+    height: 28px; }
   header .menu-bar .bar-icon .menu-toggle, header .menu-bar .bar-icon .menu-close {
     display: block !important;}
     header .menu-bar .bar-icon {
-      width: 42px;
-      height: 36px
+      width: 28px;
+      height: 28px
     }
   header .menu-bar .menu-close {
     opacity: 0;
@@ -564,7 +571,7 @@ padding-top: 197px;
     color: #215584;
     background: url(../images/shapes/5.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     transition: 0.1s;
   }
   .home-img .btn:visited {
@@ -585,7 +592,7 @@ padding-top: 197px;
     z-index: 1;
   }
   .home-img::before {
-    top: 0;
+    top: -1px;
   }
   .home-img::after {
     bottom: -1px;
@@ -602,7 +609,7 @@ padding-top: 197px;
     top: 0;
   }
   .home-section .shape-bg::before {
-    left: 0;
+    left: -1px;
   }
   .home-section .shape-bg::after {
     right: -1px;
@@ -705,6 +712,8 @@ padding-top: 197px;
      location css start
 ==========================**/
 .location-section {
+  position: relative;
+  z-index: 3;
   padding-top: 0; }
   .location-section .location-image img {
     max-height: 481px;
@@ -897,6 +906,7 @@ padding-top: 197px;
   position: relative;
   z-index: 1;
   padding-top: 0;
+  overflow: hidden;
 }
 .boat-wrap {
   padding: 129px 68px 59px 96px;
@@ -1007,9 +1017,10 @@ padding-top: 197px;
 }
 .event-image {
   position: relative;
+  z-index: 1;
   height: 480px;
-  -webkit-mask-image: url(../images/shapes/18.svg);
-  mask-image: url(../images/shapes/18.svg);
+  -webkit-mask-image: url(../images/shapes/24.svg);
+  mask-image: url(../images/shapes/24.svg);
   -webkit-mask-size: cover;
   mask-size: cover;
   -webkit-mask-repeat: no-repeat;
@@ -1051,6 +1062,7 @@ padding-top: 197px;
   position: relative;
   height: 420px;
   background-color: #f9edb6;
+  margin-left: -10px;
  }
  .event-content::before, .event-content::after {
   position: absolute;

@@ -190,7 +190,7 @@ $('.location-slider').slick({
 const instagram_swiper = new Swiper('.insta-image-section', {
     spaceBetween: 6,
     centeredSlides: true,
-    speed: 5000,
+    speed: 10000,
     loop: true,
     autoplay: {
         delay: 1,
@@ -354,7 +354,7 @@ const instagram_swiper = new Swiper('.insta-image-section', {
 // menu fix js
 $(window).on('scroll resize', function () {
     var bottom = 460
-    var top = this.scrollY, about = $("#about").offset().top, boat = $("#about-address").offset().top, brand = $("#brand").offset().top, location = $("#location").offset().top - bottom, instagram = $("#instagram").offset().top, footer = $("#footer").offset().top
+    var top = this.scrollY, about = $("#about").offset().top, boat = $("#boat").offset().top, brand = $("#brand").offset().top, location = $("#location").offset().top - bottom, instagram = $("#instagram").offset().top, footer = $("#footer").offset().top
     var style = document.querySelector('#instagram').currentStyle || window.getComputedStyle(document.querySelector('#instagram'));
     var instaHeight = document.querySelector('#instagram').offsetHeight
     var instaPadding = parseInt(style.paddingBottom)
@@ -362,7 +362,7 @@ $(window).on('scroll resize', function () {
     var scrolltoShowdiv = (instagram + showDiv)
     if (window.innerWidth >= 991) {
 
-        if (top >= about - bottom && top <= boat - bottom || top >= brand - bottom && top <= location - bottom || top >= scrolltoShowdiv - bottom && top <= footer - bottom) {
+        if (top >= about - bottom && top <= boat - bottom || top >= brand - bottom && top <= location || top >= scrolltoShowdiv - bottom && top <= footer - bottom) {
             $('.menu-fix').addClass('show');
         }
         else {
@@ -379,7 +379,7 @@ $(window).on('scroll resize', function () {
         $('.menu-fix').removeClass('show');
         if (window.innerWidth < 991) var bottom = 200
         console.log("bottom", bottom);
-        if (top >= scrolltoShowdiv - bottom && top <= footer - bottom || top >= brand - 280 && top <= showDivBrand - 600) {
+        if (top >= scrolltoShowdiv - bottom && top <= footer - bottom || top >= brand - 350 && top <= showDivBrand - 500) {
             $('.menu-fix').addClass('show');
         }
         else {

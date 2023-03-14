@@ -2,6 +2,21 @@
 /**=====================
     responsive css start
 ==========================**/
+@media (min-width: 1800px) {
+.home-img::before, .home-img::after {
+	height: 48px;
+}
+}
+@media only screen and (min-height: 899px) and (min-height: 898px) {
+  .home-section .shape-bg::before, .home-section .shape-bg::after {
+      width: 45px !important;
+  }
+}
+@media only screen and (min-height: 1080px) {
+  .home-section .shape-bg::before, .home-section .shape-bg::after {
+      width: 54px !important;
+  }
+}
 @media (min-width: 1660px) {
 
   .event-content::before,
@@ -37,6 +52,10 @@
 @media (min-width: 1400px) {
   .event-image {
     height: 660px;
+  }
+  .event-content {
+        height: 620px;
+        margin-top: 5px;
   }
 
   .event-slider {
@@ -603,8 +622,8 @@
   }
 
   header .menu-bar .bar-icon img {
-    width: 29px;
-    height: 29px;
+    width: 28px;
+    height: 28px;
   }
 
   .main-header .menu-close,
@@ -921,7 +940,7 @@
   .title h2 {
     font: normal normal normal 26px/34px Source Sans Pro;
     letter-spacing: 0.52px;
-    height: 170px;
+    /* height: 170px; */
   }
 
   /* brand section css end */
@@ -1039,9 +1058,9 @@
     left: 46%;
   }
 
-  .title h2 {
+  /* .title h2 {
     height: 210px;
-  }
+  } */
 
   /* boat section css start */
   .boat-section .container {
