@@ -7,7 +7,17 @@
 	height: 48px;
 }
 }
-@media only screen and (min-height: 899px) and (min-height: 898px) {
+/* @media only screen and (min-height: 814px) {
+  .home-section .shape-bg::before, .home-section .shape-bg::after {
+      width: 40px !important;
+  }
+} */
+@media only screen and (min-height: 899px) {
+  .home-section .shape-bg::before, .home-section .shape-bg::after {
+      width: 45px !important;
+  }
+}
+@media only screen and (min-height: 898px) {
   .home-section .shape-bg::before, .home-section .shape-bg::after {
       width: 45px !important;
   }
@@ -15,6 +25,11 @@
 @media only screen and (min-height: 1080px) {
   .home-section .shape-bg::before, .home-section .shape-bg::after {
       width: 54px !important;
+  }
+}
+@media only screen and (min-height: 1295px) {
+  .home-section .shape-bg::before, .home-section .shape-bg::after {
+    width: 63px !important;
   }
 }
 @media (min-width: 1660px) {
@@ -143,7 +158,7 @@
   /* home section css start */
   .home-section .shape-bg::before,
   .home-section .shape-bg::after {
-    width: 45px !important;
+    width: 43px !important;
   }
 
   .home-img::before,
@@ -184,7 +199,16 @@
 
   /* instagram section css end */
 }
-
+@media only screen and (max-width: 1280px) and (min-height: 814px) {
+  .home-section .shape-bg::before, .home-section .shape-bg::after {
+      width: 40px !important;
+  }
+}
+@media only screen and (min-width: 768px) and (min-height: 1020px) {
+  .home-section .shape-bg::before, .home-section .shape-bg::after {
+      width: 50px !important;
+  }
+}
 @media (max-width: 1366px) {
   .main-header .navbar ul li a {
     font-size: 25px;
@@ -361,6 +385,12 @@
 @media (max-width: 991px) {
   .main-header .navbar ul li a {
     padding: 0 35px
+  }
+
+  .brand-section .row {
+    position: relative;
+    z-index: 2;
+    background: #fff;
   }
 
   footer {
@@ -768,6 +798,9 @@
   .home-section .shape-bg::after {
     width: 19px !important;
     background-image: url(../images/shapes/home-mobile-21.svg);
+  }
+  .home-section .shape-bg::before {
+    left: -2px;
   }
 
   .home-section .shape-bg {

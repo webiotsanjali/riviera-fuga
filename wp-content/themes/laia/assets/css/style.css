@@ -270,7 +270,7 @@ section {
 ==========================**/
 .main-header {
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   width: 100%;
 }
 .main-header .menu-top .container {
@@ -562,6 +562,8 @@ padding-top: 197px;
     display: block;
     bottom: 10px;
     background: #215584;
+    background-repeat: no-repeat;
+    background-size: cover;
     left: 50%;
     transform: translateX(-50%);
     transition: 0.1s;
@@ -577,7 +579,7 @@ padding-top: 197px;
   .home-img .btn:visited {
     background: url(../images/shapes/5.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     transition: 0.3s;
   }
   .home-img::before , .home-img::after {
@@ -692,8 +694,6 @@ padding-top: 197px;
  }
  .brand-section .slick-dotted.slick-slider {
     margin-bottom: 25px;
-    z-index: 2;
-    background: #fff;
 }
  .brand-section .slick-dots {
   text-align: left;
